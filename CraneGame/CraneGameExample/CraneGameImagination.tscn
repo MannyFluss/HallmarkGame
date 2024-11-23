@@ -1,0 +1,114 @@
+[gd_scene load_steps=10 format=3 uid="uid://bx5wudxwb1kq2"]
+
+[ext_resource type="Texture2D" uid="uid://bj6jauco73le8" path="res://Temporary/IMG_6176.png" id="1_aetqm"]
+[ext_resource type="Script" path="res://CraneGame/CraneGameExample/crane_game_imagination.gd" id="1_w8i4t"]
+[ext_resource type="Texture2D" uid="uid://brmu4n3cnhjsy" path="res://Temporary/IMG_6177.png" id="2_unvap"]
+[ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="3_5ny03"]
+[ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="4_nkx0k"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_c55ta"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="Animation" id="Animation_vuq4r"]
+resource_name = "zoom_into_head"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(3.805, 3.805)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(568, 326), Vector2(983, 361)]
+}
+
+[sub_resource type="Animation" id="Animation_kv5yt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(568, 326)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gt6ib"]
+_data = {
+"RESET": SubResource("Animation_kv5yt"),
+"zoom_into_head": SubResource("Animation_vuq4r")
+}
+
+[node name="CraneGameImagination" type="Node2D"]
+script = ExtResource("1_w8i4t")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 326)
+
+[node name="Img6176" type="Sprite2D" parent="."]
+position = Vector2(117, 566)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("1_aetqm")
+
+[node name="Img6177" type="Sprite2D" parent="."]
+position = Vector2(992, 495)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("2_unvap")
+
+[node name="CraneGameSubscene" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(983, 359)
+scale = Vector2(0.09, 0.09)
+texture = SubResource("ViewportTexture_c55ta")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = 3620.0
+offset_top = -89.0
+offset_right = 4859.0
+offset_bottom = 824.0
+scale = Vector2(0.075, 0.075)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+size = Vector2i(1239, 913)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+position = Vector2(13.05, 0)
+texture = ExtResource("3_5ny03")
+
+[node name="Node2D" parent="SubViewportContainer/SubViewport" instance=ExtResource("4_nkx0k")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gt6ib")
+}
