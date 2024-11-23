@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://4sqynr8q87bi"]
+
+[ext_resource type="PackedScene" uid="uid://b1muy2018uf5w" path="res://CraneGame/Crane/Crane.tscn" id="1_au7s2"]
+[ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="2_hfh85"]
+[ext_resource type="PackedScene" uid="uid://dipp57f65c7w5" path="res://CraneGame/RecievingField/RecievingField.tscn" id="3_8ysqc"]
+[ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="4_gba21"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sw4sx"]
+size = Vector2(889, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fi2lt"]
+size = Vector2(35, 138)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Crane" parent="." instance=ExtResource("1_au7s2")]
+position = Vector2(539, 240)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(570, 602)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(150.5, 23)
+shape = SubResource("RectangleShape2D_sw4sx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576, -78)
+shape = SubResource("RectangleShape2D_fi2lt")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(347, -80)
+shape = SubResource("RectangleShape2D_fi2lt")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-573, -80)
+shape = SubResource("RectangleShape2D_fi2lt")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-277, -81)
+shape = SubResource("RectangleShape2D_fi2lt")
+
+[node name="CranePrize" parent="." instance=ExtResource("2_hfh85")]
+position = Vector2(1010, 552)
+
+[node name="CranePrize3" parent="." instance=ExtResource("2_hfh85")]
+position = Vector2(1085, 481)
+
+[node name="CranePrize4" parent="." instance=ExtResource("2_hfh85")]
+position = Vector2(976, 474)
+
+[node name="CranePrize2" parent="." instance=ExtResource("2_hfh85")]
+position = Vector2(1082, 552)
+
+[node name="RecievingField" parent="." instance=ExtResource("3_8ysqc")]
+position = Vector2(146, 629)
+
+[node name="Sprite2D" type="Sprite2D" parent="RecievingField"]
+scale = Vector2(1.875, 1.9375)
+texture = ExtResource("4_gba21")

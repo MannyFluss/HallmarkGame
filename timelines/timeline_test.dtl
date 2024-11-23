@@ -1,0 +1,6 @@
+hello test incoming
+set 
+if {GlobalTracking.has_state("testing_state")} == true:
+	global tracking has this state
+else:
+	global tracking does not have this state
