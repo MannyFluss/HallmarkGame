@@ -1,16 +1,17 @@
-[gd_scene load_steps=17 format=3 uid="uid://c3baplxjwnyd4"]
+[gd_scene load_steps=18 format=3 uid="uid://c3baplxjwnyd4"]
 
 [ext_resource type="Script" path="res://scenes/DialogueSupplementalUI/SupplementalDialogueUI.gd" id="1_br8tu"]
 [ext_resource type="Texture2D" uid="uid://bonu8gmrq1wma" path="res://art/sprites/christine/Christine_dupe.PNG" id="1_inyoe"]
 [ext_resource type="Texture2D" uid="uid://bthqbit3gdc6q" path="res://art/sprites/nico/Nico_dupe.PNG" id="2_70ufw"]
-[ext_resource type="Texture2D" uid="uid://gpcq2dqqy5hb" path="res://art/sprites/christine/Christine_dupe_cursed_yap.png" id="3_wgvx7"]
+[ext_resource type="Texture2D" uid="uid://d341dqlgh31ir" path="res://art/sprites/christine/ChristineCasualLine.PNG" id="2_iyfuu"]
+[ext_resource type="Texture2D" uid="uid://doudxd7v6qll1" path="res://art/sprites/christine/ChristineWorkLine.PNG" id="3_cmu80"]
 [ext_resource type="Texture2D" uid="uid://djd5w0cj2pcyx" path="res://art/sprites/UI/Black_bar.PNG" id="4_0r01c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4iq18"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_inyoe")
+"texture": ExtResource("2_iyfuu")
 }],
 "loop": true,
 "name": &"Idle",
@@ -18,7 +19,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_wgvx7")
+"texture": ExtResource("3_cmu80")
 }],
 "loop": true,
 "name": &"Talking",
