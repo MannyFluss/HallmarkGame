@@ -38,9 +38,8 @@ directories/dtl_directory={
 "s3-home": "res://scenes/act 1/s3-home.dtl",
 "s4-montage": "res://scenes/act 2/s4-montage.dtl",
 "s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl",
-"s5-mistletoe": "res://scenes/act 2/s5-mistletoe.dtl",
-"s5-rePostOffice": "res://scenes/act 1/s5-rePostOffice.dtl",
-"timeline_test": "res://timelines/timeline_test.dtl"
+"timeline_test": "res://timelines/timeline_test.dtl",
+"timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
 variables={
 "mc": "Monina"

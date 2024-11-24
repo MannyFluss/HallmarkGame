@@ -1,0 +1,3 @@
+{GlobalTracking.tracking_variables["your_name"]} is your name
+set {mc} = {GlobalTracking.tracking_variables["your_name"]} 
+{mc}

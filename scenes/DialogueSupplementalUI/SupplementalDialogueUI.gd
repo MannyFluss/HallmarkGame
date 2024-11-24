@@ -42,6 +42,7 @@ func swap_animation_frames_christine()->void:
 	christine_position_tween.tween_property($ChristineSprite,"position",christine_sprite.position + Vector2(500,-1),.1).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	christine_modulate_tween.tween_property($ChristineSprite,"modulate",Color(1,1,1,.4),.1).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	$ChristineSprite.play("Talking")
+	
 	await christine_position_tween.finished
 	christine_position_tween = get_tree().create_tween()
 	christine_modulate_tween = get_tree().create_tween().parallel()
