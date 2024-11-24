@@ -1,0 +1,122 @@
+[gd_scene load_steps=10 format=3 uid="uid://c3baplxjwnyd4"]
+
+[ext_resource type="Script" path="res://scenes/DialogueSupplementalUI/SupplementalDialogueUI.gd" id="1_br8tu"]
+[ext_resource type="Texture2D" uid="uid://bonu8gmrq1wma" path="res://art/sprites/christine/Christine_dupe.PNG" id="1_inyoe"]
+[ext_resource type="Texture2D" uid="uid://bthqbit3gdc6q" path="res://art/sprites/nico/Nico_dupe.PNG" id="2_70ufw"]
+[ext_resource type="Texture2D" uid="uid://gpcq2dqqy5hb" path="res://art/sprites/christine/Christine_dupe_cursed_yap.png" id="3_wgvx7"]
+[ext_resource type="Texture2D" uid="uid://djd5w0cj2pcyx" path="res://art/sprites/UI/Black_bar.PNG" id="4_0r01c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4iq18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_inyoe")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_inyoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wgvx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_inyoe")
+}],
+"loop": true,
+"name": &"Talking",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_v5w42"]
+resource_name = "BlackBarAnimation"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackBars/BlackBar:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(1.145, 1.39), Vector2(1.203, 1.05)]
+}
+
+[sub_resource type="Animation" id="Animation_cm0vg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackBars/BlackBar:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.603, 1.4)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wgave"]
+_data = {
+"BlackBarAnimation": SubResource("Animation_v5w42"),
+"RESET": SubResource("Animation_cm0vg")
+}
+
+[node name="SupplementalDialolgueUi" type="CanvasLayer"]
+script = ExtResource("1_br8tu")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -514.0
+offset_top = -346.0
+offset_right = 551.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+placeholder_text = "this is the general area of the text but we arent using a textbox"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1734, 1142)
+scale = Vector2(0.555, 0.555)
+sprite_frames = SubResource("SpriteFrames_4iq18")
+animation = &"Talking"
+frame_progress = 0.532861
+
+[node name="ChristineDupe" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1736, 1142)
+scale = Vector2(0.555, 0.555)
+texture = ExtResource("1_inyoe")
+
+[node name="NicoDupe" type="Sprite2D" parent="."]
+position = Vector2(147, 1299)
+scale = Vector2(0.595, 0.595)
+texture = ExtResource("2_70ufw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="BlackBars" type="Node2D" parent="."]
+
+[node name="BlackBar" type="Sprite2D" parent="BlackBars"]
+position = Vector2(940, 542)
+rotation = 0.00523599
+scale = Vector2(1.603, 1.4)
+texture = ExtResource("4_0r01c")
+
+[node name="BlackBarAnimator" type="AnimationPlayer" parent="BlackBars"]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_wgave")
+}

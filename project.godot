@@ -31,7 +31,8 @@ directories/dtl_directory={
 "s1-festival": "res://scenes/act 2/s1-festival.dtl",
 "s2-airport": "res://scenes/act 1/s2-airport.dtl",
 "s3-home": "res://scenes/act 1/s3-home.dtl",
-"s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl"
+"s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl",
+"timeline_test": "res://timelines/timeline_test.dtl"
 }
 variables={
 "player_name": "Christine"
@@ -59,6 +60,11 @@ audio/max_channels=4.0
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
