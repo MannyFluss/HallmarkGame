@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct014ypitk3xt"]
+
+[ext_resource type="Script" path="res://scenes/LetterToSanta/SantasLetter.gd" id="1_gxd5f"]
+
+[sub_resource type="Gradient" id="Gradient_as8bp"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.616616, 0.606818, 0.606814, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nsw43"]
+gradient = SubResource("Gradient_as8bp")
+width = 889
+height = 1464
+
+[node name="LetterScene" type="Node2D"]
+script = ExtResource("1_gxd5f")
+
+[node name="LetterToScroll" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="LetterToScroll"]
+position = Vector2(1024, 1074.21)
+texture = SubResource("GradientTexture2D_nsw43")
+
+[node name="Control" type="Control" parent="LetterToScroll/Sprite2D"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -444.5
+offset_top = -732.0
+offset_right = -444.5
+offset_bottom = -732.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="LetterToScroll/Sprite2D/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Sprite2D/Control/MarginContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "The present I want"
+
+[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "My favorite christmas song."
+
+[node name="FavoriteXmasSongTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Favorite christmas drink"
+
+[node name="FavoriteXmasDrinkTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "What I really really want..."
+
+[node name="WhatIReallyWantTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 876.0
+offset_top = 962.0
+offset_right = 1166.0
+offset_bottom = 1044.0
+
+[node name="SubmitButton" type="Button" parent="."]
+offset_left = 1659.0
+offset_top = 954.0
+offset_right = 1905.0
+offset_bottom = 1058.0
+text = "submit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]

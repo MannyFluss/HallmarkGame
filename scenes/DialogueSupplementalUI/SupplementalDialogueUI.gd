@@ -9,16 +9,30 @@ extends CanvasLayer
 
 
 func _ready() -> void:
-	christine_animation.play("test_animation")
-	activate_black_bars()
-	nico_animation.play("test_animation")
-	await christine_animation.animation_finished
+	interuption_test()
 	var tween : Tween = get_tree().create_tween()
-	tween.tween_property($NicoDupe,"position",Vector2(982,1536),5).set_ease(Tween.EASE_IN_OUT)
-	await tween.finished
-	christine_animation.play("do a backflip")
+	tween.tween_property($NicoDupe,"position",Vector2(500,0),5).set_ease(Tween.EASE_IN_OUT)
+	
+	#await tween.finished
+	#print("going off screen wee")
+	#var tween2 : Tween = get_tree().create_tween()
+	#tween2.tween_property($NicoDupe,"position",Vector2(1000,1536),5).set_ease(Tween.EASE_IN_OUT)
+	##
 	pass
 	
+	
+func interuption_test():
+	await get_tree().create_timer(1.5).timeout
+	#$NicoAnimation.stop(true)
+	print("interupt")
+	for tween in get_tree().get_processed_tweens():
+		
+		tween.stop()
+	var tween : Tween = get_tree().create_tween()
+	
+	tween.tween_property($NicoDupe,"position",Vector2(0,1536),1).set_ease(Tween.EASE_IN_OUT)
+
+
 #reciever for any commands
 func play_command(command : String)->void:
 	

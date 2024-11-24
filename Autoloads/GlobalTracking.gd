@@ -4,6 +4,9 @@ extends Node
 
 var states = ["santa_dialogue_available","secret_ending_enabled"]
 
+var favorite_thing = "butt"
+
+
 func has_state(state_name : String)->bool:
 	return states.has(state_name)
 
