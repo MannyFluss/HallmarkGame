@@ -73,7 +73,6 @@ script = ExtResource("1_jqea0")
 
 [node name="RightSide" type="CollisionPolygon2D" parent="AnimatableBody2D"]
 rotation = -0.349066
-scale = Vector2(1, 1)
 polygon = PackedVector2Array(0, 0, 51, 48, 21, 103, 11, 89, 34, 51, 0, 14)
 
 [node name="LeftSide" type="CollisionPolygon2D" parent="AnimatableBody2D"]

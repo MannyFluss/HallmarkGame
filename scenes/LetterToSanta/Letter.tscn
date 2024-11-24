@@ -16,11 +16,11 @@ script = ExtResource("1_gxd5f")
 
 [node name="LetterToScroll" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="LetterToScroll"]
-position = Vector2(1024, 1074.21)
+[node name="Letter" type="Sprite2D" parent="LetterToScroll"]
+position = Vector2(1024, 1080)
 texture = SubResource("GradientTexture2D_nsw43")
 
-[node name="Control" type="Control" parent="LetterToScroll/Sprite2D"]
+[node name="Control" type="Control" parent="LetterToScroll/Letter"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,7 +32,7 @@ offset_bottom = -732.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="LetterToScroll/Sprite2D/Control"]
+[node name="MarginContainer" type="MarginContainer" parent="LetterToScroll/Letter/Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,48 +44,59 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Sprite2D/Control/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Letter/Control/MarginContainer"]
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "The present I want"
 
-[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "My favorite christmas song."
 
-[node name="FavoriteXmasSongTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="FavoriteXmasSongTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="RichTextLabel3" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Favorite christmas drink"
 
-[node name="FavoriteXmasDrinkTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="FavoriteXmasDrinkTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="RichTextLabel4" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "What I really really want..."
 
-[node name="WhatIReallyWantTextEdit" type="TextEdit" parent="LetterToScroll/Sprite2D/Control/MarginContainer/VBoxContainer"]
+[node name="WhatIReallyWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "sign your name here"
+
+[node name="SignMyName" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "sign your name here"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)

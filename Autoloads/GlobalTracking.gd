@@ -4,7 +4,14 @@ extends Node
 
 var states = ["santa_dialogue_available","secret_ending_enabled"]
 
-var favorite_thing = "butt"
+var tracking_variables = {
+	"your_name" : "Christine",
+	"favorite_xmas_drink" : "hot chocolate",
+	"favorite_xmas_song" : "all I want for chirstmas is you",
+	"what_i_want" : "a new car",
+	"what_i_really_want" : "I want santa",
+	
+}
 
 
 func has_state(state_name : String)->bool:
