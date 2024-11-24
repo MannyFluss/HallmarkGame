@@ -1,13 +1,22 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3baplxjwnyd4"]
+[gd_scene load_steps=18 format=3 uid="uid://c3baplxjwnyd4"]
 
 [ext_resource type="Script" path="res://scenes/DialogueSupplementalUI/SupplementalDialogueUI.gd" id="1_br8tu"]
 [ext_resource type="Texture2D" uid="uid://bonu8gmrq1wma" path="res://art/sprites/christine/Christine_dupe.PNG" id="1_inyoe"]
 [ext_resource type="Texture2D" uid="uid://bthqbit3gdc6q" path="res://art/sprites/nico/Nico_dupe.PNG" id="2_70ufw"]
+[ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="2_hupso"]
 [ext_resource type="Texture2D" uid="uid://gpcq2dqqy5hb" path="res://art/sprites/christine/Christine_dupe_cursed_yap.png" id="3_wgvx7"]
 [ext_resource type="Texture2D" uid="uid://djd5w0cj2pcyx" path="res://art/sprites/UI/Black_bar.PNG" id="4_0r01c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4iq18"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hupso")
+}],
+"loop": true,
+"name": &"BREAK",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_inyoe")
@@ -68,29 +77,140 @@ _data = {
 "RESET": SubResource("Animation_cm0vg")
 }
 
+[sub_resource type="Animation" id="Animation_ngq4d"]
+resource_name = "test_animation"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2.5),
+"transitions": PackedFloat32Array(0.5, -2, 1),
+"update": 0,
+"values": [Vector2(209.675, 1438), Vector2(1665, 1413), Vector2(1761, 1413)]
+}
+
+[sub_resource type="Animation" id="Animation_hiwih"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-500, 1438)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NicoDupe:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(982, 1536)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("NicoDupe:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_5do34"]
+resource_name = "do a backflip"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NicoDupe:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(982, 1536), Vector2(1252, 1555)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NicoDupe:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.26667, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2al3d"]
+_data = {
+"RESET": SubResource("Animation_hiwih"),
+"do a backflip": SubResource("Animation_5do34"),
+"test_animation": SubResource("Animation_ngq4d")
+}
+
+[sub_resource type="Animation" id="Animation_j1lxs"]
+resource_name = "test_animation"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NicoDupe:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.23333, 10),
+"transitions": PackedFloat32Array(0.5, -2, 1),
+"update": 0,
+"values": [Vector2(2501, 1645), Vector2(263, 1635), Vector2(160, 1635)]
+}
+
+[sub_resource type="Animation" id="Animation_mu6kr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NicoDupe:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2501, 1645)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_op0jo"]
+_data = {
+"RESET": SubResource("Animation_mu6kr"),
+"test_animation": SubResource("Animation_j1lxs")
+}
+
 [node name="SupplementalDialolgueUi" type="CanvasLayer"]
 script = ExtResource("1_br8tu")
 
-[node name="TextEdit" type="TextEdit" parent="."]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -514.0
-offset_top = -346.0
-offset_right = 551.0
-offset_bottom = -75.0
-grow_horizontal = 2
-grow_vertical = 0
-placeholder_text = "this is the general area of the text but we arent using a textbox"
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1734, 1142)
-scale = Vector2(0.555, 0.555)
+position = Vector2(-500, 1438)
 sprite_frames = SubResource("SpriteFrames_4iq18")
 animation = &"Talking"
-frame_progress = 0.532861
 
 [node name="ChristineDupe" type="Sprite2D" parent="."]
 visible = false
@@ -99,8 +219,7 @@ scale = Vector2(0.555, 0.555)
 texture = ExtResource("1_inyoe")
 
 [node name="NicoDupe" type="Sprite2D" parent="."]
-position = Vector2(147, 1299)
-scale = Vector2(0.595, 0.595)
+position = Vector2(2501, 1645)
 texture = ExtResource("2_70ufw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -119,4 +238,28 @@ unique_name_in_owner = true
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_wgave")
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -514.0
+offset_top = -346.0
+offset_right = 551.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+placeholder_text = "this is the general area of the text but we arent using a textbox"
+
+[node name="ChristineAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2al3d")
+}
+
+[node name="NicoAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_op0jo")
 }
