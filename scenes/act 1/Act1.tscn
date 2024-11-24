@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk7xalrii2xrj"]
+
+[ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="1_h4vv0"]
+[ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
+
+[node name="Act1" type="Node2D"]
+script = ExtResource("1_wci6r")
+
+[node name="SupplementalDialolgueUi" parent="." instance=ExtResource("1_h4vv0")]

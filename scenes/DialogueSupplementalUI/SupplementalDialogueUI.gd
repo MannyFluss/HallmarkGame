@@ -13,7 +13,7 @@ var christine_modulate_tween : Tween
 
 
 func _ready() -> void:
-	$ChristineAnimation.play("test_animation")
+	pass
 	
 
 	
@@ -58,6 +58,10 @@ func _input(event: InputEvent) -> void:
 		
 		if event.pressed == true and event.as_text_physical_keycode() == "0":
 			swap_animation_frames_christine()
+		
+		if event.pressed == true and event.as_text_physical_keycode() == "1":
+			swap_animation_frames_christine()
+			$ChristineAnimation.play("test_animation")
 
 
 #reciever for any commands
