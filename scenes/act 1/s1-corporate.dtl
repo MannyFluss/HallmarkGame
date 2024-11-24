@@ -1,4 +1,7 @@
+set {mc} = {GlobalTracking.tracking_variables["your_name"]}
+[background arg="res://art/sprites/christine/Christine_dupe.PNG" fade="0.0"]
 join christine (sketch) center [animation="Slide In Left"]
+# is this a comment yepppp
 {mc}\: [loud screaming]
 join nico leftmost
 nico: NICO\: hello~
