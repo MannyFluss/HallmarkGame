@@ -1,6 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjhugdiuk3ist"]
+[gd_scene load_steps=6 format=3 uid="uid://cjhugdiuk3ist"]
 
 [ext_resource type="Script" path="res://scenes/act 3/act_3.gd" id="1_3h1vu"]
+[ext_resource type="Texture2D" uid="uid://yw08da8kagc8" path="res://art/very important/LifeIsTerror.png" id="2_0tsre"]
+[ext_resource type="AudioStream" uid="uid://bsjhm34csfjx1" path="res://Audio/Music/Last_call_v2.mp3" id="2_cnydq"]
+[ext_resource type="Texture2D" uid="uid://bf67wc0lloiff" path="res://scenes/act 3/Scanned_Documents-1.png" id="4_olgcp"]
+
+[sub_resource type="Curve" id="Curve_bdhhn"]
+_data = [Vector2(0.14, 0), 0.0, 0.0, 0, 0, Vector2(0.536667, 0.808311), 0.980228, 0.980228, 0, 0, Vector2(0.893333, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -6.58898, 0.0, 0, 0]
+point_count = 4
 
 [node name="Act3" type="Node2D"]
 script = ExtResource("1_3h1vu")
+
+[node name="BadEnding" type="Node2D" parent="."]
+
+[node name="BadSong" type="AudioStreamPlayer" parent="BadEnding"]
+unique_name_in_owner = true
+stream = ExtResource("2_cnydq")
+
+[node name="SantaBad" type="Sprite2D" parent="BadEnding"]
+unique_name_in_owner = true
+position = Vector2(960, 540)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("2_0tsre")
+vframes = 2
+frame = 1
+
+[node name="LetterParts" type="CPUParticles2D" parent="BadEnding"]
+position = Vector2(929, -507)
+emitting = false
+amount = 11
+lifetime = 10.0
+texture = ExtResource("4_olgcp")
+direction = Vector2(0, 1)
+spread = 87.75
+gravity = Vector2(0, 45)
+initial_velocity_min = 31.25
+initial_velocity_max = 187.5
+scale_amount_min = 0.05
+scale_amount_max = 0.05
+scale_amount_curve = SubResource("Curve_bdhhn")
+color = Color(1, 1, 1, 0.494118)

@@ -1,9 +1,49 @@
-[gd_scene load_steps=8 format=3 uid="uid://crmbq8kypactf"]
+[gd_scene load_steps=9 format=3 uid="uid://crmbq8kypactf"]
 
 [ext_resource type="Script" path="res://scenes/act1.2/act_1_2.gd" id="1_li4ru"]
 [ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="2_a0yhq"]
 [ext_resource type="Texture2D" uid="uid://b1gdd2hc0gln2" path="res://art/sprites/christine/christineSketch.png" id="3_8j6kp"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_8ob6v"]
+[ext_resource type="Texture2D" uid="uid://okb4rwp6vm32" path="res://art/sprites/christine/Christine_Front.png" id="5_xl85y"]
+
+[sub_resource type="Animation" id="Animation_fmhd1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SupplementalDialolgueUi/Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SupplementalDialolgueUi/Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(960, 540)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CraneGameBrainChristine:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2599, 1530)]
+}
 
 [sub_resource type="Animation" id="Animation_i6w1h"]
 resource_name = "brain_time"
@@ -11,77 +51,38 @@ length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
+tracks/0/path = NodePath("SupplementalDialolgueUi/Camera2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0.866667, 2),
+"transitions": PackedFloat32Array(2, 0.5),
 "update": 0,
-"values": [Vector2(960, 540), Vector2(1622.49, 390)]
+"values": [Vector2(960, 540), Vector2(1642, 449)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/path = NodePath("SupplementalDialolgueUi/Camera2D:zoom")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0.866667, 2),
+"transitions": PackedFloat32Array(2, 0.5),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(1, 1)]
+"values": [Vector2(1, 1), Vector2(3.22, 3.22)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SupplementalDialolgueUi/Camera2D:position")
+tracks/2/path = NodePath("CraneGameBrainChristine:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(-0.0333333, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.733333),
+"transitions": PackedFloat32Array(-0.5, -2),
 "update": 0,
-"values": [Vector2(960, 540), Vector2(1638, 444)]
-}
-
-[sub_resource type="Animation" id="Animation_fmhd1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(960, 540)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:zoom")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SupplementalDialolgueUi/Camera2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(960, 540)]
+"values": [Vector2(2599, 1530), Vector2(1626, 1488)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r0nfb"]
@@ -95,6 +96,9 @@ script = ExtResource("1_li4ru")
 
 [node name="SupplementalDialolgueUi" parent="." instance=ExtResource("2_a0yhq")]
 layer = -1
+
+[node name="Camera2D" parent="SupplementalDialolgueUi" index="2"]
+enabled = true
 
 [node name="CraneGameContainer" type="Node2D" parent="."]
 z_index = 13
@@ -113,7 +117,11 @@ libraries = {
 "": SubResource("AnimationLibrary_r0nfb")
 }
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 540)
+[node name="CraneGameBrainChristine" type="Sprite2D" parent="."]
+position = Vector2(2599, 1530)
+texture = ExtResource("5_xl85y")
+
+[node name="BrainGameAnchor" type="Marker2D" parent="."]
+position = Vector2(1629, 1485)
 
 [editable path="SupplementalDialolgueUi"]

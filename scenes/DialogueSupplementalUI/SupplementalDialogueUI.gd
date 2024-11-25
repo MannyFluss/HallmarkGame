@@ -62,6 +62,11 @@ func go_to_brain_game_anchor()->void:
 	christine_position_tween = get_tree().create_tween()
 	christine_position_tween.tween_property($ChristineSprite,"position",%BrainGameAnchor.position ,1.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	
+func christine_push(how_much : Vector2)->void:
+	christine_flush_anims()
+	christine_position_tween = get_tree().create_tween()
+	
+	christine_position_tween.tween_property($ChristineSprite,"position",christine_sprite.position + how_much,.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	
 func swap_animation_frames_nico(anim_name : String)->void:
 	
@@ -92,9 +97,9 @@ func _input(event: InputEvent) -> void:
 			play_command("nico_suave_entry")
 		if event.pressed == true and event.as_text_physical_keycode() == "2":
 			play_command("christine_go_to_brain_anchor")
-		#if event.pressed == true and event.as_text_physical_keycode() == "1":
-			#swap_animation_frames_christine()
-			#$ChristineAnimation.play("test_animation")
+		if event.pressed == true and event.as_text_physical_keycode() == "3":
+			play_command("christine_push_right")
+
 			
 #reciever for any commands
 func play_command(command : String)->void:
@@ -105,6 +110,8 @@ func play_command(command : String)->void:
 			%NicoAnimation.play("test_animation")
 		"christine_go_to_brain_anchor":
 			go_to_brain_game_anchor()
+		"christine_push_right":
+			christine_push(Vector2(1000,0))
 			
 			pass
 	
