@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="3_mmai8"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_ln7ay"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="5_5v0b1"]
-[ext_resource type="PackedScene" uid="uid://bgv7niotibvmv" path="res://styles/layouts/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="6_flilq"]
+[ext_resource type="PackedScene" uid="uid://bgv7niotibvmv" path="res://Styles/layouts/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="6_flilq"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="7_kb5lr"]
 [ext_resource type="PackedScene" uid="uid://c0l7oe5wqmn41" path="res://styles/layouts/CenteredChoices/custom_centered_choices.tscn" id="8_ldssu"]
 [ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="9_6hagi"]
@@ -41,11 +41,11 @@ overrides = {
 "box_color_custom": "Color(0, 0, 0, 0)",
 "box_color_use_global": "false",
 "box_margin_bottom": "30.0",
-"box_size": "Vector2(800, 150)",
+"box_size": "Vector2(1000, 150)",
 "next_indicator_enabled": "false",
 "next_indicator_show_on_questions": "false",
 "text_alignment": "1",
-"text_size": "22.0",
+"text_size": "30.0",
 "text_use_global_color": "false",
 "text_use_global_font": "false",
 "text_use_global_size": "false",
