@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://ct014ypitk3xt"]
+[gd_scene load_steps=7 format=3 uid="uid://ct014ypitk3xt"]
 
 [ext_resource type="Script" path="res://scenes/LetterToSanta/SantasLetter.gd" id="1_gxd5f"]
 [ext_resource type="Texture2D" uid="uid://70fgwlwdntir" path="res://scenes/LetterToSanta/Letter paper.PNG" id="2_o7eke"]
+[ext_resource type="Texture2D" uid="uid://cpwi08xvr1w0a" path="res://scenes/LetterToSanta/letterupdated.png" id="2_q8x45"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bayl4"]
+
+[sub_resource type="Theme" id="Theme_pmdyw"]
+TextEdit/colors/font_placeholder_color = Color(0.4528, 0.695768, 0.747911, 1)
+TextEdit/styles/normal = SubResource("StyleBoxEmpty_bayl4")
 
 [node name="LetterScene" type="Node2D"]
 script = ExtResource("1_gxd5f")
@@ -12,7 +19,7 @@ script = ExtResource("1_gxd5f")
 [node name="Letter" type="Sprite2D" parent="LetterToScroll"]
 position = Vector2(960, 1080)
 scale = Vector2(0.69, 0.69)
-texture = ExtResource("2_o7eke")
+texture = ExtResource("2_q8x45")
 
 [node name="Control" type="Control" parent="LetterToScroll/Letter"]
 layout_mode = 3
@@ -47,76 +54,124 @@ theme_override_fonts/normal_font = ExtResource("3_mfclv")
 theme_override_font_sizes/normal_font_size = 56
 text = "Dear Santa Claus,
 
-Lately, I feel like my life has been spiraling out of control. I'm skyrocketing up the corporate ladder, which sounds totally radical, but I’m left unfulfilled. While you’re spreading joy and laughter, I’m stealing children’s money. At least, my cold heart can still be warmed when I listen to my favorite Christmas song, [fav song].   
+Lately, I feel like my life has been spiraling out of control. I'm skyrocketing up the corporate ladder, which sounds totally radical, but I’m left unfulfilled. While you’re spreading joy and laughter, I’m stealing children’s money. At least, my cold heart can still be warmed when I listen to my favorite Christmas song,   
 
-I miss the peace of childhood, when Christmas felt magical. When I wasn’t aware of the realities of this harsh world. When all I had to worry about was if, this Christmas, my mom was going to cook [fav food].   
+I miss the peace of childhood, when Christmas felt magical. When I wasn’t aware of the realities of this harsh world. When all I had to worry about was if, this Christmas, my mom was going to cook   
 
 At that time, uncertainty was exciting. What presents did I get this year? Did Santa really come? Now uncertainty is terrifying. I don’t know if I can keep going on at this pace.
 
-I wish I could be a kid again, sitting around the fireplace watching Christmas movies with my family, drinking [fav drink]    and eating my favorite cookies, [fav cookie]   . If there’s somehow a Blockbuster in my parent’s neighborhood, I really should rent my favorite movie again, [fav movie].   
+I wish I could be a kid again, sitting around the fire watching Christmas movies with my family, drinking     
+and eating my favorite cookies,   
 
-This Christmas, I’d like [what i want].    But honestly, there’s something I want more, but I’m not sure if this is something you can give me. All I really want is a sense of purpose.
+This Christmas, I’d like   
+But honestly, there’s something I want more, but I’m not sure if this is something you can give me. All I really want is a sense of purpose.
 
 Sincerely,
-[first name]    [last name]   
+   ,   
 "
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Letter/Control/MarginContainer"]
-visible = false
-layout_mode = 2
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-text = "My favorite christmas song."
-
-[node name="FavoriteXmasSongTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+[node name="TheTextEdits" type="Control" parent="LetterToScroll/Letter/Control/MarginContainer"]
 unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-text = "Favorite christmas drink"
-
-[node name="FavoriteXmasDrinkTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+[node name="FavoriteSong" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
 unique_name_in_owner = true
-layout_mode = 2
-size_flags_vertical = 3
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 133.0
+offset_top = 444.0
+offset_right = 1295.0
+offset_bottom = 529.0
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "click here and type your favorite song..."
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-text = "What I really really want..."
-
-[node name="WhatIReallyWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+[node name="ChildhoodMeal" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
 unique_name_in_owner = true
-layout_mode = 2
-size_flags_vertical = 3
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 357.333
+offset_top = 761.727
+offset_right = 1361.33
+offset_bottom = 846.727
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "your fav childhood meal..."
 
-[node name="RichTextLabel5" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-text = "sign your name here"
-
-[node name="SignMyName" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+[node name="FavoriteDrink" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
 unique_name_in_owner = true
-layout_mode = 2
-size_flags_vertical = 3
-placeholder_text = "sign your name here"
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 1115.78
+offset_top = 1212.71
+offset_right = 1783.78
+offset_bottom = 1288.71
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "your fav drink..."
 
-[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control"]
+[node name="FavoriteCookie" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
 unique_name_in_owner = true
-offset_left = 346.0
-offset_top = 762.0
-offset_right = 621.0
-offset_bottom = 844.0
-size_flags_vertical = 3
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 829.797
+offset_top = 1274.7
+offset_right = 1497.8
+offset_bottom = 1350.7
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "your fav cookie..."
+
+[node name="WhatIWant" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 583.167
+offset_top = 1404.47
+offset_right = 1251.17
+offset_bottom = 1480.47
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "what I want... "
+
+[node name="FirstName" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 3.71013
+offset_top = 1806.58
+offset_right = 351.71
+offset_bottom = 1882.58
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "first name..."
+
+[node name="LastName" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/TheTextEdits"]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 376.174
+offset_top = 1805.13
+offset_right = 724.174
+offset_bottom = 1881.13
+theme = SubResource("Theme_pmdyw")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mfclv")
+theme_override_font_sizes/font_size = 56
+placeholder_text = "last name..."
 
 [node name="Sprite2D" type="Sprite2D" parent="LetterToScroll"]
 visible = false
@@ -127,16 +182,17 @@ texture = ExtResource("2_o7eke")
 position = Vector2(960, 540)
 
 [node name="ContinueButton" type="Button" parent="."]
-offset_left = 852.0
-offset_top = 772.0
-offset_right = 1142.0
-offset_bottom = 854.0
+offset_left = 834.0
+offset_top = 988.0
+offset_right = 1124.0
+offset_bottom = 1070.0
 
 [node name="SubmitButton" type="Button" parent="."]
-offset_left = 1506.0
-offset_top = 805.0
-offset_right = 1752.0
-offset_bottom = 909.0
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 1643.0
+offset_top = 943.0
+offset_right = 1889.0
+offset_bottom = 1047.0
 text = "submit"
 
 [connection signal="pressed" from="ContinueButton" to="." method="_on_button_pressed"]
