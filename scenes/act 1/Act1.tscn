@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=10 format=3 uid="uid://c2qx6uynpjia1"]
 
 [ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="1_h4vv0"]
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
@@ -6,33 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://chovdg34dx24o" path="res://art/TV stuff/TvOutLine.PNG" id="4_ofwqp"]
 [ext_resource type="Texture2D" uid="uid://15mhvrb4taip" path="res://art/TV stuff/TvInLine.PNG" id="5_3onbl"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
-
-[sub_resource type="Animation" id="Animation_18umf"]
-resource_name = "start_game"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:zoom")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(2.48, 2.48), Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(620, 450), Vector2(960, 540)]
-}
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
 length = 0.001
@@ -59,6 +32,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(620, 450)]
+}
+
+[sub_resource type="Animation" id="Animation_18umf"]
+resource_name = "start_game"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2.48, 2.48), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(620, 450), Vector2(960, 540)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dlfy3"]
@@ -90,24 +90,11 @@ texture = ExtResource("5_3onbl")
 position = Vector2(279, 215)
 scale = Vector2(0.6, 0.6)
 
-[node name="Crane" parent="CraneGame/Node2D" index="0"]
-enabled = true
-
 [node name="Ballz" type="Node2D" parent="CraneGame"]
 
 [node name="CranePrize" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(613, 507)
 prize_tracker_name = "start_game"
-
-[node name="TopHalf" parent="CraneGame/Ballz/CranePrize/RigidBody2D" index="1"]
-self_modulate = Color(0.752941, 0.356863, 0.321569, 1)
-
-[node name="Label" parent="CraneGame/Ballz/CranePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
-text = "[center] start
-game"
-
-[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize/RigidBody2D" index="2"]
-self_modulate = Color(0.479056, 0.696842, 0.399739, 1)
 
 [node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(786, 526)
@@ -123,8 +110,6 @@ position = Vector2(620, 450)
 libraries = {
 "": SubResource("AnimationLibrary_dlfy3")
 }
-
-[connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
 
 [editable path="CraneGame/Node2D"]
 [editable path="CraneGame/Ballz/CranePrize"]
