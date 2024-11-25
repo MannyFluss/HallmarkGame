@@ -41,10 +41,20 @@ directories/dtl_directory={
 "s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl",
 "s5-mistletoe": "res://scenes/act 2/s5-mistletoe.dtl",
 "s5-rePostOffice": "res://scenes/act 1/s5-rePostOffice.dtl",
+"s6-jingleAccept": "res://scenes/act 1/s6-jingleAccept.dtl",
+"s6-jingleReject": "res://scenes/act 1/s6-jingleReject.dtl",
 "timeline_test": "res://timelines/timeline_test.dtl",
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
 variables={
+"jingle": {
+"date": false,
+"freaky": false,
+"gay": false,
+"no": false,
+"work": false,
+"yes": false
+},
 "mc": "CHRISTINE",
 "n": "NICO"
 }
