@@ -45,7 +45,10 @@ directories/dtl_directory={
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
 variables={
-"mc": "Monina"
+"jingle": {
+"jingle": ""
+},
+"mc": "Christine"
 }
 layout/style_list=["res://styles/subtitles.tres"]
 layout/default_style="res://styles/subtitles.tres"
