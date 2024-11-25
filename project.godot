@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GlobalTracking="*res://Autoloads/GlobalTracking.gd"
+SceneSwitcher="*res://Autoloads/SceneSwitcher/SceneSwitcher.tscn"
 
 [dialogic]
 
@@ -69,6 +70,11 @@ audio/max_channels=4.0
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
