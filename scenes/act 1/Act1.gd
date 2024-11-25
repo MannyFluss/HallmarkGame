@@ -6,6 +6,7 @@ var next_scene_path : String = ""
 
 @onready var act_1_animator: AnimationPlayer = $Act1Animator
 
+const S_1_CORPORATE = preload("res://scenes/act 1/s1-corporate.dtl")
 
 func _ready() -> void:
 	Dialogic.timeline_ended.connect(on_timeline_ended)
@@ -15,7 +16,7 @@ func _ready() -> void:
 	
 
 func start_dialogic_timeline()->void:
-	Dialogic.start_timeline("res://scenes/act 1/s1-corporate.dtl")
+	Dialogic.start(S_1_CORPORATE)
 	
 func on_timeline_started()->void:
 	pass
