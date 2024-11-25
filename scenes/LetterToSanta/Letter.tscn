@@ -47,18 +47,18 @@ theme_override_fonts/normal_font = ExtResource("3_mfclv")
 theme_override_font_sizes/normal_font_size = 56
 text = "Dear Santa Claus,
 
-Lately, I feel like my life has been spiraling out of control. I'm skyrocketing up the corporate ladder, which sounds totally radical, but I’m left unfulfilled. While you’re spreading joy and laughter, I’m stealing children’s money. At least, my cold heart can still be warmed when I listen to my favorite Christmas song, [fav song].
+Lately, I feel like my life has been spiraling out of control. I'm skyrocketing up the corporate ladder, which sounds totally radical, but I’m left unfulfilled. While you’re spreading joy and laughter, I’m stealing children’s money. At least, my cold heart can still be warmed when I listen to my favorite Christmas song, [fav song].   
 
-I miss the peace of childhood, when Christmas felt magical. When I wasn’t aware of the realities of this harsh world. When all I had to worry about was if, this Christmas, my mom was going to cook [fav food]. 
+I miss the peace of childhood, when Christmas felt magical. When I wasn’t aware of the realities of this harsh world. When all I had to worry about was if, this Christmas, my mom was going to cook [fav food].   
 
 At that time, uncertainty was exciting. What presents did I get this year? Did Santa really come? Now uncertainty is terrifying. I don’t know if I can keep going on at this pace.
 
-I wish I could be a kid again, sitting around the fireplace watching Christmas movies with my family, drinking [fav drink] and eating my favorite cookies, [fav cookie]. If there’s somehow a Blockbuster in my parent’s neighborhood, I really should rent my favorite movie again, [fav movie].
+I wish I could be a kid again, sitting around the fireplace watching Christmas movies with my family, drinking [fav drink]    and eating my favorite cookies, [fav cookie]   . If there’s somehow a Blockbuster in my parent’s neighborhood, I really should rent my favorite movie again, [fav movie].   
 
-This Christmas, I’d like [what i want]. But honestly, there’s something I want more, but I’m not sure if this is something you can give me. All I really want is a sense of purpose.
+This Christmas, I’d like [what i want].    But honestly, there’s something I want more, but I’m not sure if this is something you can give me. All I really want is a sense of purpose.
 
 Sincerely,
-[first name] [last name]
+[first name]    [last name]   
 "
 
 [node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Letter/Control/MarginContainer"]
@@ -126,7 +126,7 @@ texture = ExtResource("2_o7eke")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
-[node name="Button" type="Button" parent="."]
+[node name="ContinueButton" type="Button" parent="."]
 offset_left = 852.0
 offset_top = 772.0
 offset_right = 1142.0
@@ -139,5 +139,5 @@ offset_right = 1752.0
 offset_bottom = 909.0
 text = "submit"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ContinueButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]

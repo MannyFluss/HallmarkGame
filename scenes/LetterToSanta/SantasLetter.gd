@@ -16,6 +16,7 @@ extends Node2D
 
 #first name
 #last name
+signal continue_typing
 
 @onready var all_of_the_text: RichTextLabel = %AllOfTheText
 
@@ -35,13 +36,21 @@ var init_position_letter : Vector2 = $LetterToScroll/Letter.position
 
 var tween : Tween = null
 
+var space_counter = 0
+
+
 func _ready() -> void:
 	all_of_the_text.text = ""
 	for letter in letter_text:
 		await get_tree().create_timer(randf_range(.01/2,.05/2)).timeout
 		all_of_the_text.text += letter
+		if letter == " ":
+			space_counter += 1
+		else:
+			space_counter = 0
+		if space_counter == 3:
+			await continue_typing
 		
-		pass
 	
 	pass
 
@@ -51,9 +60,11 @@ func _on_button_pressed() -> void:
 		return
 	
 	tween = get_tree().create_tween()
-	tween.tween_property(letter_to_scroll,"position",letter_to_scroll.position + Vector2(0,-300),1.7).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
-	pass # Replace with function body.
-
+	var fuck = letter_to_scroll.position + Vector2(0,-300)
+	fuck.y = max(fuck.y, -1000)
+	
+	tween.tween_property(letter_to_scroll,"position",fuck,1.7).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	continue_typing.emit()
 
 func _on_submit_button_pressed() -> void:
 	for edit : TextEdit in text_edits:
