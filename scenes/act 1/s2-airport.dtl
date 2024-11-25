@@ -41,6 +41,6 @@ ELF\: Donate $2.50 and write a letter to Santa! All proceeds go to families in n
 [i]I give $5 to the strange elf man, grab one of the themed letter sheets, and sit down to write.[/i]
 
 # start letter game
-jump s3-home/
 
 [end_timeline]
+jump s3-home/

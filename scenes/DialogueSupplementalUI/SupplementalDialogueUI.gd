@@ -56,7 +56,13 @@ func swap_animation_frames_christine(anim_name : String)->void:
 	christine_position_tween.tween_property($ChristineSprite,"position",christine_og_position,.1).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 	christine_modulate_tween.tween_property($ChristineSprite,"modulate",Color(1,1,1,1),.1).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 
-
+func go_to_brain_game_anchor()->void:
+	christine_flush_anims()
+	
+	christine_position_tween = get_tree().create_tween()
+	christine_position_tween.tween_property($ChristineSprite,"position",%BrainGameAnchor.position ,1.5).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
+	
+	
 func swap_animation_frames_nico(anim_name : String)->void:
 	
 	nico_flush_anims()
@@ -84,6 +90,8 @@ func _input(event: InputEvent) -> void:
 			play_command("nico_swap_to_cozy")
 		if event.pressed == true and event.as_text_physical_keycode() == "1":
 			play_command("nico_suave_entry")
+		if event.pressed == true and event.as_text_physical_keycode() == "2":
+			play_command("christine_go_to_brain_anchor")
 		#if event.pressed == true and event.as_text_physical_keycode() == "1":
 			#swap_animation_frames_christine()
 			#$ChristineAnimation.play("test_animation")
@@ -95,6 +103,10 @@ func play_command(command : String)->void:
 			swap_animation_frames_nico("idle_cozy")
 		"nico_suave_entry":
 			%NicoAnimation.play("test_animation")
+		"christine_go_to_brain_anchor":
+			go_to_brain_game_anchor()
+			
+			pass
 	
 func activate_black_bars()->void:
 	black_bar_animator.play("BlackBarAnimation")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2qx6uynpjia1"]
+[gd_scene load_steps=10 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="1_h4vv0"]
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
@@ -69,6 +69,7 @@ _data = {
 
 [node name="Act1" type="Node2D"]
 script = ExtResource("1_wci6r")
+next_scene_path = "res://scenes/LetterToSanta/Letter.tscn"
 
 [node name="SupplementalDialolgueUi" parent="." instance=ExtResource("1_h4vv0")]
 
@@ -90,6 +91,9 @@ texture = ExtResource("5_3onbl")
 position = Vector2(279, 215)
 scale = Vector2(0.6, 0.6)
 
+[node name="Crane" parent="CraneGame/Node2D" index="0"]
+enabled = true
+
 [node name="Ballz" type="Node2D" parent="CraneGame"]
 
 [node name="CranePrize" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
@@ -110,6 +114,8 @@ position = Vector2(620, 450)
 libraries = {
 "": SubResource("AnimationLibrary_dlfy3")
 }
+
+[connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
 
 [editable path="CraneGame/Node2D"]
 [editable path="CraneGame/Ballz/CranePrize"]

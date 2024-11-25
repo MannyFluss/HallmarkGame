@@ -28,5 +28,6 @@ func on_timeline_ended()->void:
 
 func _on_recieving_field_prize_obtained(name: String) -> void:
 	if name == "start_game":
+		print("sssss")
 		start_dialogic_timeline()
 		act_1_animator.play("start_game")
