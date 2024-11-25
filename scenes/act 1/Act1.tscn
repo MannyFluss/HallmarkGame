@@ -1,9 +1,124 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=10 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="1_h4vv0"]
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
+[ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
+[ext_resource type="Texture2D" uid="uid://chovdg34dx24o" path="res://art/TV stuff/TvOutLine.PNG" id="4_ofwqp"]
+[ext_resource type="Texture2D" uid="uid://15mhvrb4taip" path="res://art/TV stuff/TvInLine.PNG" id="5_3onbl"]
+[ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
+
+[sub_resource type="Animation" id="Animation_18umf"]
+resource_name = "start_game"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2.48, 2.48), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(620, 450), Vector2(960, 540)]
+}
+
+[sub_resource type="Animation" id="Animation_h7mxn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.48, 2.48)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(620, 450)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dlfy3"]
+_data = {
+"RESET": SubResource("Animation_h7mxn"),
+"start_game": SubResource("Animation_18umf")
+}
 
 [node name="Act1" type="Node2D"]
 script = ExtResource("1_wci6r")
 
 [node name="SupplementalDialolgueUi" parent="." instance=ExtResource("1_h4vv0")]
+
+[node name="TV" type="Node2D" parent="."]
+position = Vector2(960, 541)
+metadata/_edit_lock_ = true
+
+[node name="Outline" type="Sprite2D" parent="TV"]
+texture = ExtResource("4_ofwqp")
+
+[node name="Inline" type="Sprite2D" parent="TV"]
+position = Vector2(-339, 6)
+scale = Vector2(0.646875, 0.65)
+texture = ExtResource("5_3onbl")
+
+[node name="CraneGame" type="Node2D" parent="."]
+
+[node name="Node2D" parent="CraneGame" instance=ExtResource("3_ttx68")]
+position = Vector2(279, 215)
+scale = Vector2(0.6, 0.6)
+
+[node name="Crane" parent="CraneGame/Node2D" index="0"]
+enabled = true
+
+[node name="Ballz" type="Node2D" parent="CraneGame"]
+
+[node name="CranePrize" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(613, 507)
+prize_tracker_name = "start_game"
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] start
+game"
+
+[node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(786, 526)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(620, 450)
+zoom = Vector2(2.48, 2.48)
+
+[node name="Marker" type="Node2D" parent="."]
+position = Vector2(620, 450)
+
+[node name="Act1Animator" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_dlfy3")
+}
+
+[connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
+
+[editable path="CraneGame/Node2D"]
+[editable path="CraneGame/Ballz/CranePrize"]

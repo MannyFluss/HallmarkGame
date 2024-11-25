@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GlobalTracking="*res://Autoloads/GlobalTracking.gd"
+SceneSwitcher="*res://Autoloads/SceneSwitcher/SceneSwitcher.tscn"
 
 [dialogic]
 
@@ -38,6 +39,8 @@ directories/dtl_directory={
 "s3-home": "res://scenes/act 1/s3-home.dtl",
 "s4-montage": "res://scenes/act 2/s4-montage.dtl",
 "s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl",
+"s5-mistletoe": "res://scenes/act 2/s5-mistletoe.dtl",
+"s5-rePostOffice": "res://scenes/act 1/s5-rePostOffice.dtl",
 "timeline_test": "res://timelines/timeline_test.dtl",
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
@@ -67,6 +70,11 @@ audio/max_channels=4.0
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 

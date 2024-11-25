@@ -47,3 +47,5 @@ func _on_submit_button_pressed() -> void:
 	GlobalTracking.tracking_variables["favorite_xmas_song"] = favorite_xmas_song_text_edit.text
 	GlobalTracking.tracking_variables["what_i_want"] = present_i_want_text_edit.text
 	GlobalTracking.tracking_variables["what_i_really_want"] = what_i_really_want_text_edit.text
+	
+	
