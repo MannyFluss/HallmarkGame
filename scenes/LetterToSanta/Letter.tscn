@@ -1,15 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://ct014ypitk3xt"]
 
 [ext_resource type="Script" path="res://scenes/LetterToSanta/SantasLetter.gd" id="1_gxd5f"]
-
-[sub_resource type="Gradient" id="Gradient_as8bp"]
-offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0.616616, 0.606818, 0.606814, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_nsw43"]
-gradient = SubResource("Gradient_as8bp")
-width = 889
-height = 1464
+[ext_resource type="Texture2D" uid="uid://70fgwlwdntir" path="res://scenes/LetterToSanta/Letter paper.PNG" id="2_o7eke"]
+[ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
 
 [node name="LetterScene" type="Node2D"]
 script = ExtResource("1_gxd5f")
@@ -17,18 +10,19 @@ script = ExtResource("1_gxd5f")
 [node name="LetterToScroll" type="Node2D" parent="."]
 
 [node name="Letter" type="Sprite2D" parent="LetterToScroll"]
-position = Vector2(1024, 1080)
-texture = SubResource("GradientTexture2D_nsw43")
+position = Vector2(960, 1080)
+scale = Vector2(0.69, 0.69)
+texture = ExtResource("2_o7eke")
 
 [node name="Control" type="Control" parent="LetterToScroll/Letter"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -444.5
-offset_top = -732.0
-offset_right = -444.5
-offset_bottom = -732.0
+offset_left = -1024.0
+offset_top = -1366.0
+offset_right = -1024.0
+offset_bottom = -1366.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -39,25 +33,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 300
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 300
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Letter/Control/MarginContainer"]
-layout_mode = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "The present I want"
-
-[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+[node name="AllOfTheText" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_mfclv")
+theme_override_font_sizes/normal_font_size = 56
+text = "Dear Santa Claus,
+
+Lately, I feel like my life has been spiraling out of control. I'm skyrocketing up the corporate ladder, which sounds totally radical, but I’m left unfulfilled. While you’re spreading joy and laughter, I’m stealing children’s money. At least, my cold heart can still be warmed when I listen to my favorite Christmas song, [fav song].
+
+I miss the peace of childhood, when Christmas felt magical. When I wasn’t aware of the realities of this harsh world. When all I had to worry about was if, this Christmas, my mom was going to cook [fav food]. 
+
+At that time, uncertainty was exciting. What presents did I get this year? Did Santa really come? Now uncertainty is terrifying. I don’t know if I can keep going on at this pace.
+
+I wish I could be a kid again, sitting around the fireplace watching Christmas movies with my family, drinking [fav drink] and eating my favorite cookies, [fav cookie]. If there’s somehow a Blockbuster in my parent’s neighborhood, I really should rent my favorite movie again, [fav movie].
+
+This Christmas, I’d like [what i want]. But honestly, there’s something I want more, but I’m not sure if this is something you can give me. All I really want is a sense of purpose.
+
+Sincerely,
+[first name] [last name]
+"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LetterToScroll/Letter/Control/MarginContainer"]
+visible = false
+layout_mode = 2
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "My favorite christmas song."
@@ -68,6 +77,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "Favorite christmas drink"
@@ -78,6 +88,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "What I really really want..."
@@ -88,6 +99,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="RichTextLabel5" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "sign your name here"
@@ -98,20 +110,33 @@ layout_mode = 2
 size_flags_vertical = 3
 placeholder_text = "sign your name here"
 
+[node name="PresentIWantTextEdit" type="TextEdit" parent="LetterToScroll/Letter/Control"]
+unique_name_in_owner = true
+offset_left = 346.0
+offset_top = 762.0
+offset_right = 621.0
+offset_bottom = 844.0
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="LetterToScroll"]
+visible = false
+position = Vector2(972, 1076)
+texture = ExtResource("2_o7eke")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 876.0
-offset_top = 962.0
-offset_right = 1166.0
-offset_bottom = 1044.0
+offset_left = 852.0
+offset_top = 772.0
+offset_right = 1142.0
+offset_bottom = 854.0
 
 [node name="SubmitButton" type="Button" parent="."]
-offset_left = 1659.0
-offset_top = 954.0
-offset_right = 1905.0
-offset_bottom = 1058.0
+offset_left = 1506.0
+offset_top = 805.0
+offset_right = 1752.0
+offset_bottom = 909.0
 text = "submit"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

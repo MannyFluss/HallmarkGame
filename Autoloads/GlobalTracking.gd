@@ -5,14 +5,28 @@ extends Node
 var states = ["santa_dialogue_available","secret_ending_enabled"]
 
 var tracking_variables = {
-	"your_name" : "Christine",
-	"favorite_xmas_drink" : "hot chocolate",
-	"favorite_xmas_song" : "all I want for chirstmas is you",
+	"your_first_name" : "Christine",
+	"your_last_name" : "Evergreen",
+	
+	"favorite_drink" : "hot chocolate",
+	"favorite_food" : "Spiral Ham",
+	"favorite_movie" : "Santa 2, slay again",
+	"favorite_song": "yo mama",
 	"what_i_want" : "a new car",
-	"what_i_really_want" : "I want santa",
 	
 }
 
+
+
+#fav song -
+#fav cookie
+#fav movie
+#fav drink
+#fav food
+
+
+#first name
+#last name
 
 func has_state(state_name : String)->bool:
 	return states.has(state_name)

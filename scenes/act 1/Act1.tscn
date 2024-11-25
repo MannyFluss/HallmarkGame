@@ -99,9 +99,15 @@ enabled = true
 position = Vector2(613, 507)
 prize_tracker_name = "start_game"
 
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize/RigidBody2D" index="1"]
+self_modulate = Color(0.752941, 0.356863, 0.321569, 1)
+
 [node name="Label" parent="CraneGame/Ballz/CranePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] start
 game"
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize/RigidBody2D" index="2"]
+self_modulate = Color(0.479056, 0.696842, 0.399739, 1)
 
 [node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(786, 526)

@@ -8,6 +8,20 @@ extends Node2D
 @onready var favorite_xmas_drink_text_edit: TextEdit = %FavoriteXmasDrinkTextEdit
 @onready var sign_my_name: TextEdit = %SignMyName
 
+#fav song
+#fav cookie
+#fav movie
+#fav drink
+#fav food
+
+#first name
+#last name
+
+@onready var all_of_the_text: RichTextLabel = %AllOfTheText
+
+@onready
+var letter_text = all_of_the_text.text
+
 @onready var text_edits = [
 	%PresentIWantTextEdit,
 	%FavoriteXmasSongTextEdit,
@@ -21,6 +35,15 @@ var init_position_letter : Vector2 = $LetterToScroll/Letter.position
 
 var tween : Tween = null
 
+func _ready() -> void:
+	all_of_the_text.text = ""
+	for letter in letter_text:
+		await get_tree().create_timer(randf_range(.01/2,.05/2)).timeout
+		all_of_the_text.text += letter
+		
+		pass
+	
+	pass
 
 
 func _on_button_pressed() -> void:
