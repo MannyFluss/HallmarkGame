@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="HallmarkGame"
-run/main_scene="res://CraneGame/TestingScene/TestingScene.tscn"
+run/main_scene="res://scenes/act 1/Act1.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -47,14 +47,6 @@ directories/dtl_directory={
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
 variables={
-"jingle": {
-"date": false,
-"freaky": false,
-"gay": false,
-"no": false,
-"work": false,
-"yes": false
-},
 "mc": "CHRISTINE",
 "n": "NICO"
 }
