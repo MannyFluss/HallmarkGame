@@ -5,9 +5,9 @@
 	[i]I decide it’s better to respect Nico’s privacy and leave the notebook alone.[/i]
 	[i]I pick it up to put it safely behind the counter, when I trip over a fold in the rug and drop it.[i]
 	[i]It lands open to a blank black page.[/i]
-	{mc}: That’s strange, I’ve never seen a notebook with black pages before.
-	[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
-	[i]it’s ink.[/i]
+	#{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
+[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
+[i]it’s ink.[/i]
 
 [wait_input ]
 #MUSIC FADE OUT AND CREEPY MUSIC START
@@ -25,9 +25,9 @@ The list continues on…
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
 {mc}\: What the fuck… 
 {n}\: {name.first} is that you?
-{n}: What are you doing here? 
+{n}\: What are you doing here? 
 #NICOS FACE FALLS
-{n}\: You shouldn’t be reading that
+{n}\: You shouldn’t be reading that...
 {mc}\: Nico… what is this?
 #does he take the book away? I’ll say no for now
 {n}\: It’s nothing.
@@ -50,9 +50,14 @@ The list continues on…
 {n}\: I’m Santa Claus.
 [wait_input]
 {mc}\: Nico, what the fuck…
-{n}\: I swear!!
 {n}\: Nico, Nicolas! St Nick? Nicolas Claus?
-{mc}\: …You’re gonna have to do better than that.
+{mc}\: ...
+{mc}\: I'm leaving.
+{n}\: {name.first} wait! 
+# she leaves
+[i][door chime jingles]
+#change bg
+{n}\: Please listen to me! I swear I'm telling the truth!!
 {n}\: I work at the post office because it’s my job to deliver presents!! 
 {n}\: Did you really think Santa could give out all those presents in just one night??! That’s impossible!!!
 {n}\: [i]That’s[/i] why I know so much about you! 
@@ -63,5 +68,4 @@ The list continues on…
 {n}\: But somewhere along the way…
 {n}\: I fell in love with you…
 #MC: silent eyes shaking omg thoughts grappling
-{mc}\: Nico… (sad)
-
+{mc}\: Nico…

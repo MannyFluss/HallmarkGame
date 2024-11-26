@@ -1,1 +1,44 @@
-
+- I believe you. | [if {santa.believe} == true]
+	{mc}\: I can’t believe I’m saying this, but I believe you.
+	{n}\: You do?
+	{mc}\: After spending this week with you, how could I not?
+	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
+	{mc}\: And I’m so grateful to you for helping life feel magical again, for the first time in forever.
+	{mc}\: Even though it sounds insane, I honestly can’t believe you’d lie to me like this.
+	{n}\: {player.name}...
+	{n}\: Thank you.
+	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
+	# #fade to black
+- I love you. | [if {santa.love} == true]
+	{mc}\: I love you, Nico.
+	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
+	{mc}\: But I love you and I want to be with you…
+	{n}\: {name.first}...
+	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
+	{mc}\: You make life feel magical again, for what feels like the first time in forever.
+	{mc}\: So even though this might eventually blow up in my face…
+	{mc}\: I’ll trust you.
+	# #nico smiles
+	{n}\: {name.first}... I want to be with you forever…
+	{n}\: I’m sorry for ever making you doubt me, but I promise you I will be faithful and true to you for the rest of my life.
+	[i]Nico takes my hand in his.[/i]
+	{n}\: I promise you, you won’t regret it!
+	# #fade to black
+- I want Santa… | [if {santa.desire} == true]
+	{n}\: What?
+	{mc}\: Make me your Mrs. Claus.
+	{mc}\: NOW!
+	{n}\: Yes, ma’am!
+	{mc}\: World, prepare to tremble at my forthcoming toy empire!!
+	# #I really don’t know what to say here
+- I really don't know what to say...
+	{mc}\: …
+	{n}\: It’s okay, you don’t have to believe me…
+	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
+	{mc}\: …
+	{mc}\: Just give me a little time.
+	{mc}\: I honestly don’t know what to believe… [pause=0.5]but I want to understand.
+	{n}\: Well, if you do believe me…
+	# #nico smiles
+	{n}\: I promise you won’t regret it!
+	# #fade to black
