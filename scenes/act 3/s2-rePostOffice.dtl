@@ -9,6 +9,7 @@
 	{n}\: Thank you.
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
 	# #fade to black
+	# GOOD ENDING
 - I love you. | [if {santa.love} == true]
 	{mc}\: I love you, Nico.
 	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
@@ -24,13 +25,17 @@
 	[i]Nico takes my hand in his.[/i]
 	{n}\: I promise you, you won’t regret it!
 	# #fade to black
+	# GOOD ENDING
 - I want Santa… | [if {santa.desire} == true]
 	{n}\: What?
 	{mc}\: Make me your Mrs. Claus.
 	{mc}\: NOW!
 	{n}\: Yes, ma’am!
-	{mc}\: World, prepare to tremble at my forthcoming toy empire!!
-	# #I really don’t know what to say here
+	{mc}\: Are you looking for a tree topper? Because I’ve been told I’m a star on top.
+	# nico is shocked! (hold for pause)
+	{n}\: Ever do it in a sleigh?
+	# #fade to black
+	# #GOOD ENGING
 - I really don't know what to say...
 	{mc}\: …
 	{n}\: It’s okay, you don’t have to believe me…
@@ -42,3 +47,5 @@
 	# #nico smiles
 	{n}\: I promise you won’t regret it!
 	# #fade to black
+	# GOOD ENDING
+[end_timeline]

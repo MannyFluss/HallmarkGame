@@ -1,3 +1,27 @@
+[i]I hadn’t seen Nico since that night.[/i]
+[i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
+[i]But a part of me is worried he’s avoiding me…[/i]
+[i]Today, I finally decided to stop by with some hot chocolate, his favorite.[/i]
+[i]He’s always so generous and thoughtful with me, so I wanted to return the favor.[/i]
+# he’s a good gift giver 
+[i]But honestly more than that… [pause=0.3]I miss him.[/i]
+[i]And I want to understand what that night under the mistletoe meant.[/i]
+[wait_instance]
+[i]I look around the post office, setting the warm cup on a table near the center of the room.[/i]
+{mc}\: Hello? Nico?
+[i]The post office is empty, like the first time I visited.[/i]
+[i]I remember when we first met, I was so cold to him.[/i]
+[i]But somehow, over this short holiday, we’ve gotten so close.[/i]
+[i]I’ve never met someone so joyful and warm.[/i]
+[i]It doesn’t take long to see how much the people of this small town love him.[/i]
+[i]How much I think that I might actually…[/i]
+[i]Love him??![/i]
+[i]Frantic with this newfound revelation, I swing my arms around to clear my head and almost knock over the cup of hot chocolate.[/i]
+[i]Steadying it, I notice a small deep maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
+[i]Nico’s Notebook[/i]
+[i]Of course he’s the type of guy who journals, that’s just like him.[/i]
+[i]…I kinda want to take a peek.[/i]
+
 - Pick it up
 	[i]Unable to resist, I pick up the notebook, and open to the first page.[/i]
 	[i]Smiling to myself, I begin to read.[/i]
@@ -5,34 +29,34 @@
 	[i]I decide it’s better to respect Nico’s privacy and leave the notebook alone.[/i]
 	[i]I pick it up to put it safely behind the counter, when I trip over a fold in the rug and drop it.[i]
 	[i]It lands open to a blank black page.[/i]
-	#{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
+	# #{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
 [i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
 [i]it’s ink.[/i]
 
-[wait_input ]
-#MUSIC FADE OUT AND CREEPY MUSIC START
-#[as she reads, we slowly zoom into her anxious face, and her eyes are animated wavering back and forth]
+[wait_input]
+# #MUSIC FADE OUT AND CREEPY MUSIC START
+# #[as she reads, we slowly zoom into her anxious face, and her eyes are animated wavering back and forth]
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
 [i]I frantically search for a name that I recognize…[/i]
 [i]And I find my own.[/i]
 {name.first} {name.last}
 [i]There’s a number in parentheses to the right of my name, and I quickly flip to the page.[/i]
-[i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases:[/i]
-{name.first} {name.last}:
-Favorite food: {fav.food}, favorite drink: {fav.drink}...
-Favorite cookie: {fav.cookie}... favorite Christmas song: {fav.song}...
+[i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases\:[/i]
+{name.first} {name.last}\:
+Favorite food\: {fav.food}, favorite drink\: {fav.drink}...
+Favorite cookie\: {fav.cookie}... favorite Christmas song\: {fav.song}...
 The list continues on…
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
-{mc}\: What the fuck… 
+{mc}\: What the fuck…
 {n}\: {name.first} is that you?
-{n}\: What are you doing here? 
-#NICOS FACE FALLS
+{n}\: What are you doing here?
+# #NICOS FACE FALLS
 {n}\: You shouldn’t be reading that...
 {mc}\: Nico… what is this?
-#does he take the book away? I’ll say no for now
+# #does he take the book away? I’ll say no for now
 {n}\: It’s nothing.
 {mc}\: Nico… tell me what this is.
-#Nico is silent, looking worried
+# #Nico is silent, looking worried
 {mc}\: How do you know so much about me? Why do you have it written down?
 {mc}\: And, who are all these people?!
 {n}\: …
@@ -53,19 +77,20 @@ The list continues on…
 {n}\: Nico, Nicolas! St Nick? Nicolas Claus?
 {mc}\: ...
 {mc}\: I'm leaving.
-{n}\: {name.first} wait! 
+{n}\: {name.first} wait!
 # she leaves
 [i][door chime jingles]
-#change bg
+# #change bg
 {n}\: Please listen to me! I swear I'm telling the truth!!
-{n}\: I work at the post office because it’s my job to deliver presents!! 
+{n}\: I work at the post office because it’s my job to deliver presents!!
 {n}\: Did you really think Santa could give out all those presents in just one night??! That’s impossible!!!
-{n}\: [i]That’s[/i] why I know so much about you! 
+{n}\: [i]That’s[/i] why I know so much about you!
 {n}\: That’s why I have this book!
 {n}\: And… I need you to know that I’m only telling you this because you mean so much to me.
 {n}\: I didn’t- I didn’t expect to feel this way about you.
 {n}\: I knew you were going through a rough time, and I just wanted to make you feel better when we ran into each other.
 {n}\: But somewhere along the way…
 {n}\: I fell in love with you…
-#MC: silent eyes shaking omg thoughts grappling
+# #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…
+[end_timeline]
