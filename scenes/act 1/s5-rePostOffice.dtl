@@ -10,16 +10,16 @@
 
 - Oooh, you want me so bad | [if {jingle.freaky} == true] [else="disable"]
 	{n}\: Oh!
-	[i]Why did I say that out loud[/i]
+	[i]Why did I say that out loud?[/i]
 	{n}\: Umm…
-	{n}\: Sorry! Maybe I’m giving you the wrong impression.
+	{n}\: Sorry! [pause=0.3]Maybe I’m giving you the wrong impression.
 	[i]I blush, embarrassed[/i]
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 
 - I'M GAY!!! | [if {jingle.gay} == true] [else="disable"]
-	{n}\: Nice! Though maybe I’m giving you the wrong impression, haha!
+	{n}\: Nice! [pause=0.5]Though maybe I’m giving you the wrong impression, haha!
 	{n}\: I wasn’t trying to hit on you, sorry about that.
 	{mc}\: Yeah I just… I can’t.
 	{n}\: No worries! Totally okay!

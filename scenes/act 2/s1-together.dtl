@@ -1,0 +1,18 @@
+[i]I arrived early to the Jingle Jangle since my parents dragged me to join them.[/i]
+[i]I should have known they were planning on going.[/i]
+[i]After watching my parents and their friends become tipsy off of spiked eggnog, I realized I was running late to meet Nico.[/i]
+[i]As I meandered toward the assemblage of lights that surrounded the town’s gaudy unlit Christmas tree,[/i]
+[i]I notice a man with curly chestnut hair, searching the faces of the crowd with a slightly concerned expression.[/i]
+[i]That must be him.[/i]
+{mc}\: Nico!
+[i]Nico doesn’t notice me. My gait increases into a light jog. My coat trails behind me in the snow. [/i]
+{mc}\: Nico! I’m over here!
+[i]He turns around, and his blue orbs twinkle in the Christmas lights. [/i]
+[i]Although the Christmas decorations at the Jingle Jangle are a bit too garish for my tastes, his eyes remind me of home. [/i]
+[i]For some reason, I begin to think about my childhood nights, my family sitting around a warm fireplace, and the smell of {fav.drink}.[/i]
+{n}\: Oh hey {name.first}! I was worried you got lost on the way here. The snowy roads can be hard to navigate in the dark.
+{mc}\: It really wasn’t that bad.
+{n}\: Well, I’m glad you survived and that you made it here!
+{mc}\: Thanks…
+jump s2-jingleJangle/
+[end_timeline]

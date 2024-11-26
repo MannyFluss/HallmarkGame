@@ -1,6 +1,8 @@
 {n}\: If you do change your mind, I know you won’t regret it.
 {n}\: The Jingle Jangle is one of my favorite festivities!
-{n}\: Though they’re all kind of tied for first on my list! 
+{n}\: Though they’re all kind of tied for first on my list!
 {mc}\: Well, I’ve got to be heading back now.
 {n}\: Get back safe! Merry Christmas! Have a great night!
 {mc}\: [i]I can’t help but feel like maybe I shouldn’t have been so quick to say no…[/i]
+jump s1-happenstance/
+[end_timeline]

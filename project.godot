@@ -35,7 +35,7 @@ directories/dtl_directory={
 "s2-airport": "res://scenes/act 1/s2-airport.dtl",
 "s2-jingleJangle": "res://scenes/act 2/s2-jingleJangle.dtl",
 "s2-rePostOffice": "res://scenes/act 3/s2-rePostOffice.dtl",
-"s3-bakery": "res://scenes/act 2/s3-bakery.dtl",
+"s3-bakery": "res://scenes/act 2/bye bye.dtl",
 "s3-home": "res://scenes/act 1/s3-home.dtl",
 "s4-montage": "res://scenes/act 2/s4-montage.dtl",
 "s4-postOffice": "res://scenes/act 1/s4-postOffice.dtl",
@@ -47,8 +47,27 @@ directories/dtl_directory={
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
 variables={
-"mc": "CHRISTINE",
-"n": "NICO"
+"fav": {
+"cookie": "chocolate chip",
+"drink": "boba",
+"food": "burrito",
+"song": "Last Christmas"
+},
+"gimme": "a new coat",
+"jingle": {
+"date": true,
+"freaky": true,
+"gay": true,
+"no": true,
+"work": true,
+"yes": true
+},
+"mc": "MONICA",
+"n": "NICO",
+"name": {
+"first": "Monica",
+"last": "Sivayavirojna"
+}
 }
 layout/style_list=["res://styles/subtitles.tres"]
 layout/default_style="res://styles/subtitles.tres"

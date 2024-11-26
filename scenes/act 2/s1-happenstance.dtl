@@ -1,0 +1,22 @@
+[i]Although I told that mailman I wouldn’t go, I somehow ended up at the Jingle Jangle.[/i]
+[i]After watching my parents and their friends become tipsy off of spiked eggnog, I decided I had enough and headed home.[/i]
+[i]It was a bit lonely walking through the bustling market on my own, surrounded by happy families and loving couples.[/i]
+[i]I keep my head down to block them out and quicken my pace…[/i]
+[i]When I accidentally run headfirst into someone and launch them across the marketplace![i]
+[i][crowd gasps][/i]
+{mc}\: Oh my god! I’m so sorry!!
+[i]I rush over to pick them up off the group.[/i]
+{mc}\: Nico?
+# #nico appears
+{mc}\: What are you doing here…
+{n}\: Well, it’s my favorite festival after all!
+{n}\: I’m more curious what you’re doing here. I thought it “wasn’t your style?”
+{mc}\: My parents dragged me out. Anyways, I was on my way back home. Sorry again for running into you.
+{n}\: Don’t worry about it, I’m a chill guy.
+{n}\: But since you’re already here, you might as well enjoy it!
+{mc}\: I highly doubt I will enjoy this.
+{n}\: Trust me.
+{mc}\: …
+{mc}\: Alright.
+jump s2-jingleJangle/
+[end_timeline]

@@ -1,39 +1,41 @@
 [i][door chime jingles][/i]
 [i]I quickly opened the door to the post office, grateful to finally escape the frigid winter air.[/i]
 [i]As I stepped inside, I was enveloped in the faint smell of sweet cinnamon and pine, and the warmth from a fire crackling in the fireplace.[/i]
-[i]I felt like I had just walked into someone’s home.[/i]
+[i]I looked around and suddenly I felt like I just walked into someone’s home.[/i]
 [i]There were thick rugs layed on the floor, a miniature Christmas village displayed on the fireplace mantle, and garlands strung up along the corners of the room.[/i]
 [i]The post office was completely empty, and I started to fear that I actually did break into some poor grandma’s house.[/i]
 {mc}\: Hello? Anyone there?
 MAN’S VOICE\: Coming!
 [i]I busied myself looking at some stamps on the counter until the postman arrived.[/i]
 [i]But I felt my heart skip as I looked up and locked eyes with his [br] [pause=0.3][b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
-#swoop in nico
-#make her blush
-{mc}\: … 
+# #swoop in nico
+# #make her blush
+{mc}\: …
 MAILMAN\: Can I help you?
-{mc}\: …No!
+{mc}\: …[pause=0.5]No!
 {mc}\: I mean- yes! I mean, I had some packages to deliver.
 {mc}\: Do I just drop them off here?
 MAILMAN\: Haha! Yup! This is the only post office for the next 50 miles.
-MAILMAN\: So how are you liking it here? Have you explored the town square yet? 
+MAILMAN\: So how are you liking it here? Have you explored the town square yet?
 {mc}\: Ah… Is it that easy to tell I’m not from around here?
-MAILMAN\: You say that like it’s a bad thing, haha! 
+MAILMAN\: You say that like it’s a bad thing, haha!
 # he says haha every 5 seconds because he’s just a chill guy
 {n}\: I’m Nico by the way!
-{mc}\: I’m {playername}.
-{n}\: {playername} {lastname}?
+{mc}\: I’m {name.first}.
+{n}\: {name.first} {name.last}?
 # he is shocked
 {mc}\: How do you know that?
-{n}\: You’re part of the {lastname} family, right? Your folks are so nice.
+{n}\: You’re part of the {name.last} family, right? Your folks are so nice.
 {n}\: Your mother was telling me her daughter was visiting this year. I hear you’re a big shot in the city.
 {mc}\: She said that? Oh my god…
-{n}\: Well, while you’re here, you should make sure to enjoy yourself! 
+{n}\: Well, while you’re here, you should make sure to enjoy yourself!
 {n}\: There’s the Jingle Jangle Christmas Twinkle Sparkle Tree Lighting Ceremony and Market tonight.
-{mc}\: I don’t know, those kind of things aren’t really my style.
+{mc}\: I don’t know, those kinds of things aren’t really my style.
 {n}\: What?!
 {n}\: Even if you don’t celebrate Christmas, it’s still a good time, I swear!
 {n}\: How about we go together?
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]
 [i]WHAT DO I SAY?!?!?![/i]
+jump s5-rePostOffice/
+[end_timeline]
