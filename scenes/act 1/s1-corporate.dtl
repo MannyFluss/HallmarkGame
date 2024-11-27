@@ -1,3 +1,4 @@
+[music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
 [background arg="res://art/backgrounds/Office.PNG" fade="0.0"]
 join christine right
 # Internal company meeting, no powerpoints since this is the 80s, maybe a poster 

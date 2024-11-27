@@ -20,7 +20,7 @@ join christine center [animation="Fade In"]
 [i]It doesn’t take long to see how much the people of this small town love him.[/i]
 [i]How much I think that I might actually…[/i]
 [i]Love him??![/i]
-[i]Frantic with this newfound revelation, I swing my arms around to clear my head and almost knock over the cup of hot chocolate.[/i]
+[i]Frantic with this newfound revelation, I swing my arms around and almost knock over the cup of hot chocolate.[/i]
 [i]Steadying it, I notice a small deep maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
 [i]Nico’s Notebook[/i]
 [i]Of course he’s the type of guy who journals, that’s just like him.[/i]
@@ -35,10 +35,12 @@ join christine center [animation="Fade In"]
 	[i]It lands open to a blank black page.[/i]
 	# #{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
 	[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
+	[music fade="0.0" volume="0.0"]
 	[i]it’s ink.[/i]
 [background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
 
 [wait_input]
+[music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
 # #MUSIC FADE OUT AND CREEPY MUSIC START
 # #[as she reads, we slowly zoom into her anxious face, and her eyes are animated wavering back and forth]
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
@@ -71,15 +73,16 @@ join christine left
 update christine [animation="Heartbeat"]
 {mc}\: Nico, answer me!
 {n}\: …I’ll tell you but promise not to freak out.
-{mc}\: I’m already freaking out.
-{mc}\:I don’t know if you could say [i]anything[/i] to make this situation worse!!
+{mc}\: I’m already freaking out!
+# #{mc}\:I don’t know if you could say [i]anything[/i] to make this situation worse!!
 {n}\: Just- just stay calm!
 {mc}\: You expect me to stay calm in this situation?!?!
-{n}\: You have a right to be upset, but-
-{mc}\: Just get to the point.
+# #{n}\: You have a right to be upset, but-
+# #{mc}\: Just get to the point.
 {n}\: I-
-{n}\: [sighs]
+{n}\: [i][sighs]
 [wait_input]
+[music fade="0.0" volume="0.0"]
 {n}\: I’m Santa Claus.
 [wait_input]
 join christine leftmost
@@ -91,7 +94,7 @@ leave christine
 {n}\: {name.first} wait!
 leave nico
 # she leaves
-[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="0.0"]
+[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
 join christine right
 [wait_input]
 join nico left
@@ -102,11 +105,13 @@ join nico left
 {n}\: [i]That’s[/i] why I know so much about you!
 {n}\: That’s why I have this book!
 {n}\: And… I need you to know that I’m only telling you this because you mean so much to me.
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: I didn’t- I didn’t expect to feel this way about you.
 {n}\: I knew you were going through a rough time, and I just wanted to make you feel better when we ran into each other.
 {n}\: But somewhere along the way…
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…
+[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 jump s2-rePostOffice/
 [end_timeline]

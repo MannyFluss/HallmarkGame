@@ -4,6 +4,7 @@ join nico right
 [background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="1.0"]
 [i]Background conversations fade away, and we all look towards the tree as the lights turn on, one by one.[/i]
 [wait_input]
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 [i]Although I like to think I’m all grown-up, I have to admit that I couldn’t help but feel a bit of childlike wonder.[/i]
 [i]Even though there are so many people in the big city, it’s easy to feel alone.[/i]
 [i]But here, it really feels like there’s a community. Every single person in this town gathered in the piercing cold to watch a couple of lights turn on together.[/i]
@@ -29,6 +30,7 @@ BARISTA\: No, [i]I[/i] insist.
 {mc}\: Wow! That’s amazing…
 {mc}\: You know, {fav.drink} is actually my favorite.
 {n}\: Really? I’m glad I ordered it for you then.
+[music fade="0.0" volume="0.0"]
 leave nico [animation="Slide Out Left"]
 # #NICO GETS KNOCKED OFF THE SCREEN
 [i][b][THUD]
@@ -36,7 +38,7 @@ GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF\: Hey, [b]WATCH IT!
 [i]Nico is struggling to get up, his cup of hot chocolate spilling out into a puddle next to him.[/i]
 [i]What should I do?[/i]
 - Help Nico
-	join christine right [z_index=200]
+	join christine right
 	[i]I run over to Nico’s side, offering him my hand and pulling him up off the dirt.
 	join christine left [z_index="200"]
 	join nico right
@@ -48,11 +50,12 @@ GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF\: Hey, [b]WATCH IT!
 	[i]I turn around and spot the man who ran into Nico lingering near by.[i]
 	{mc}\: Hey!
 	join christine center [z_index="200"]
-	{mc}\: What’s your damage, man?
 
 - Confront the guy who ran into him
 	join christine center
-	{mc}\: What’s your damage, man?
+	{mc}\: Hey!
+[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
+{mc}\: What’s your damage, man?
 
 [i]He slowly turns towards me, a look of disbelief written on his face.[/i]
 You talking to me?
@@ -69,6 +72,7 @@ BYSTANDER 2\: Oh my god! His hot chocolate!!
 {mc}\: [b][i]Eat[pause=0.5] my[pause=0.5] shorts.
 [i]Completely torn apart by this devastating blow I’ve just dealt him, tears begin to well in his eyes.
 “BIFF”\: Fine, fine, I’m sorry! Happy now? Just leave me alone!
+[music path="res://audio/music/hallmarkGeneric.mp3" fade="3.0" volume="0.0"]
 [i]He runs away defeated, slips on the puddle of hot chocolate, and face plants into the snow.
 # call back to Alex lol
 join christine left
@@ -83,43 +87,46 @@ join nico right
 {mc}\: I find that hard to believe. It seems like everyone here loves you.
 {n}\: Not that guy apparently.
 {mc}\: Whatever, you know what I mean.
-{mc}\: But how has no one ever done that for you before?
-{n}\: I mean honestly, I kind of stick to myself.
-{mc}\: Well, no one should be talking to you like that. I’ve only known you for a day but you’re like the sweetest guy I’ve ever met.
-{n}\: Oh uh… thanks…
-{mc}\: No problem…
+# #{mc}\: But how has no one ever done that for you before?
+# #{n}\: I mean honestly, I kind of stick to myself.
+{mc}\: Well, no one should be talking to you like that.
+# #{n}\: Oh uh… thanks…
+# #{mc}\: No problem…
 
-[i]Again an awkward lull settles over us, but it doesn’t last long.
+# #[i]Again an awkward lull settles over us, but it doesn’t last long.
 [i]As Nico and I begin to explore the market together, he tells me stories about the history of this town.
 [i]At first I didn’t say much, but as the night dragged on, I could feel myself opening up, allowing myself to smile, to laugh.
-[i]His joy and enthusiasm was infectious, even to my cold city girl heart.
+[i]His joy and enthusiasm were infectious, even to my cold city girl heart.
 [i]A snowball fight breaks out among the kids, and Nico decides to join in.
 [i]He throws a snowball at me. I throw one back.
 [wait_input]
 {mc}\: Ah! Is it already this late? I really should be going back.
-Before you go, I forgot to give you something! I got this for you earlier.
+{n}\: Before you go, I forgot to give you something! I got this for you earlier.
 [i]He hands me a small paper bag.
-[i]Inside the bag were cookies, specifically {fav.cookie}.
+[i]Inside the bag were cookies, {fav.cookie}.
 How did you…. These are my favorite cookies.
 I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
 {mc}\: Oh, shut up…
-{mc}\: Well, thank you regardless. This was… fun…
+{mc}\: Well, thank you regardless. This was fun…
 {n}\: See! I told you that you wouldn’t regret it!
 {n}\: Get home safe!
 [i]Nico waves energetically as I walk away, and I give him a small wave in return.
 [i]I smile to myself, already reminiscing about the memories I made tonight…
+[music fade="3.0" volume="0.0"]
 [i]But for whatever reason, I can’t help but also feel a bit… [pause=0.3]sad? [pause=0.3]Disappointed?
 [i]Why?
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: Wait, {name.first}!
 [i]I turn around, and Nico is right behind me, face flushed and out of breath.
 {n}\: So if you end up liking those cookies, you’ve got to check out the bakery in town!
 {n}\: Those cookies are good, but fresh? Absolutely phenomenal!
-{n}\: Would you want to… I mean only if you want to! I don’t want you to feel-
+{n}\: Would you want to go together tomorrow… I mean only if you want to! I don’t want you to feel-
 {mc}\: I’d love to.
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine [animation="Fade Out" length="1.0"]
+leave nico
 [wait time="1.0"]
 
 jump s4-montage/

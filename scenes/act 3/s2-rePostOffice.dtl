@@ -1,4 +1,5 @@
 - I believe you. | [if {santa.believe} == true]
+	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I can’t believe I’m saying this, but I believe you.
 	{n}\: You do?
 	{mc}\: After spending this week with you, how could I not?
@@ -11,6 +12,7 @@
 	# #fade to black
 	# GOOD ENDING
 - I love you. | [if {santa.love} == true]
+	[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I love you, Nico.
 	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
 	{mc}\: But I love you and I want to be with you…
@@ -28,6 +30,7 @@
 	# #fade to black
 	# GOOD ENDING
 - I want Santa… | [if {santa.desire} == true]
+	[music path="res://audio/music/CraneGame_1.mp3" fade="1.0" volume="0.0"]
 	{n}\: What?
 	{mc}\: Make me your Mrs. Claus.
 	update christine [animation="Heartbeat"]
@@ -39,6 +42,7 @@
 	# #fade to black
 	# #GOOD ENGING
 - I really don't know what to say...
+	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 	{mc}\: …
 	{n}\: It’s okay, you don’t have to believe me…
 	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
@@ -53,6 +57,7 @@
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-leave christine [animation="Fade Out" length="1.0"]
+leave christine [animation="Fade Out"]
+leave nico
 [wait time="1.0"]
 [end_timeline]

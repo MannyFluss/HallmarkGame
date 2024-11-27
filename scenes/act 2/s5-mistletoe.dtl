@@ -1,3 +1,5 @@
 [background arg="res://art/backgrounds/Airport.PNG" fade="1.0"]
 join christine center [animation="Fade In Up" length="1.0"]
 blehg
+jump s1-postOffice/
+[end_timeline]

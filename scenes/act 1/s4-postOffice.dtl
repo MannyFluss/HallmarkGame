@@ -10,19 +10,24 @@ join christine right [animation="Fade In" length="1.0"]
 {mc}\: Hello? Anyone there?
 MAN’S VOICE\: Coming!
 [i]I busied myself looking at some stamps on the counter until the postman arrived.[/i]
-[i]But I felt my heart skip as I looked up and locked eyes with his [br] [pause=0.3][b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
+[music fade="3.0" volume="0.0"]
+[i]But I felt my heart skip as I looked up and locked eyes with his [br] [b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
 # #swoop in nico
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 join nico left
 # #make her blush
 {mc}\: …
 MAILMAN\: Can I help you?
-{mc}\: …[pause=0.5]No!
+[wait_input]
+[music fade="0.0" volume="0.0"]
+{mc}\: No!
+[music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
 {mc}\: I mean- yes! I mean, I had some packages to deliver.
 {mc}\: Do I just drop them off here?
 MAILMAN\: Haha! Yup! This is the only post office for the next 50 miles.
 MAILMAN\: So how are you liking it here? Have you explored the town square yet?
 {mc}\: Ah… Is it that easy to tell I’m not from around here?
-MAILMAN\: You say that like it’s a bad thing, haha!
+MAILMAN\: You say that like it’s a bad thing! [i][laughs]
 # he says haha every 5 seconds because he’s just a chill guy
 {n}\: I’m Nico by the way!
 {mc}\: I’m {name.first}.
@@ -35,6 +40,7 @@ MAILMAN\: You say that like it’s a bad thing, haha!
 {n}\: Well, while you’re here, you should make sure to enjoy yourself!
 {n}\: There’s the Jingle Jangle Christmas Twinkle Sparkle Tree Lighting Ceremony and Market tonight.
 {mc}\: I don’t know, those kinds of things aren’t really my style.
+update nico left [animation="Heartbeat"]
 {n}\: What?!
 {n}\: Even if you don’t celebrate Christmas, it’s still a good time, I swear!
 {n}\: How about we go together?
