@@ -1,6 +1,8 @@
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 
 [i]I hadn’t seen Nico since that night.[/i]
+leave christine
+leave nico
 [i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
 [i]But a part of me is worried he’s avoiding me…[/i]
 [i][door chime jingles]
@@ -38,9 +40,9 @@ join christine center [animation="Fade In"]
 	[music fade="0.0" volume="0.0"]
 	[i]it’s ink.[/i]
 [background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
+[music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
 
 [wait_input]
-[music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
 # #MUSIC FADE OUT AND CREEPY MUSIC START
 # #[as she reads, we slowly zoom into her anxious face, and her eyes are animated wavering back and forth]
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
@@ -82,7 +84,6 @@ update christine [animation="Heartbeat"]
 {n}\: I-
 {n}\: [i][sighs]
 [wait_input]
-[music fade="0.0" volume="0.0"]
 {n}\: I’m Santa Claus.
 [wait_input]
 join christine leftmost

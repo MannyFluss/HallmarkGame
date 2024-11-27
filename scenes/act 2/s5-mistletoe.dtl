@@ -1,5 +1,14 @@
-[background arg="res://art/backgrounds/Airport.PNG" fade="1.0"]
-join christine center [animation="Fade In Up" length="1.0"]
-blehg
+[background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="1.0"]
+join christine left [animation="Fade In Up" length="1.0"]
+join nico right
+[i]Light snow falls around us as we take our regular Christmas light stroll.
+{mc}\: You know, I actually wrote a letter to Santa this year.
+{n}\: Whaaaaat? Really?
+{mc}\: Yeah… Pretty embarrassing, I know.
+{n}\: Not at all! So… what did you wish for?
+{mc}\: I said I wanted {gimme}.
+{n}\: <Great choice!/Interesting choice.../Oh!/So do I!/Classic!/I've never thought of that before./If I were you I'd keep that to myself.>
+
+
 jump s1-postOffice/
 [end_timeline]

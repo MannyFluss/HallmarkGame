@@ -1,8 +1,12 @@
-[background arg="res://art/backgrounds/Office.PNG" fade="1.0"]
-join christine right [animation="Fade In"]
-[i][sighs][/i]
-[i]At least the pay is good…[/i]
+[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-leave christine [animation="Fade Out" length="1.0"]
-[wait time="1.0"]
+[i]Nico and I begin to spend every free moment we can together.
+
+[i]He shows me how to make the perfect gingerbread house.
+[i]I show him the tricks to winning a prize from the claw machine every time.
+[i]We cover the town in an army of snowmen.
+[i]And every day we end the night by walking around town, looking at the Christmas lights, and swapping stories.
+
+[i]For the first time in what’s felt like years, I felt carefree![pause=0.5] Lighthearted![pause=0.5] Jolly!
+[i]I never imagined that someone could bring this out of me…
 jump s5-mistletoe/
