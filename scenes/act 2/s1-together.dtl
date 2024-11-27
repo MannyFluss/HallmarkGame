@@ -1,3 +1,6 @@
+[background arg="res://art/backgrounds/JingleBeforeNico.PNG" fade="1.0"]
+join christine center [animation="Fade In"]
+
 [i]I arrived early to the Jingle Jangle since my parents dragged me to join them.[/i]
 [i]I should have known they were planning on going.[/i]
 [i]After watching my parents and their friends become tipsy off of spiked eggnog, I realized I was running late to meet Nico.[/i]
@@ -7,6 +10,7 @@
 {mc}\: Nico!
 [i]Nico doesn’t notice me. My gait increases into a light jog. My coat trails behind me in the snow. [/i]
 {mc}\: Nico! I’m over here!
+join nico right
 [i]He turns around, and his blue orbs twinkle in the Christmas lights. [/i]
 [i]Although the Christmas decorations at the Jingle Jangle are a bit too garish for my tastes, his eyes remind me of home. [/i]
 [i]For some reason, I begin to think about my childhood nights, my family sitting around a warm fireplace, and the smell of {fav.drink}.[/i]

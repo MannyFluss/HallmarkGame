@@ -1,12 +1,16 @@
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+
 [i]I hadn’t seen Nico since that night.[/i]
 [i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
 [i]But a part of me is worried he’s avoiding me…[/i]
+[i][door chime jingles]
+[background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
+join christine center [animation="Fade In"]
 [i]Today, I finally decided to stop by with some hot chocolate, his favorite.[/i]
 [i]He’s always so generous and thoughtful with me, so I wanted to return the favor.[/i]
 # he’s a good gift giver 
-[i]But honestly more than that… [pause=0.3]I miss him.[/i]
+[i]But honestly more than that… I miss him.[/i]
 [i]And I want to understand what that night under the mistletoe meant.[/i]
-[wait_instance]
 [i]I look around the post office, setting the warm cup on a table near the center of the room.[/i]
 {mc}\: Hello? Nico?
 [i]The post office is empty, like the first time I visited.[/i]
@@ -30,8 +34,9 @@
 	[i]I pick it up to put it safely behind the counter, when I trip over a fold in the rug and drop it.[i]
 	[i]It lands open to a blank black page.[/i]
 	# #{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
-[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
-[i]it’s ink.[/i]
+	[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
+	[i]it’s ink.[/i]
+[background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
 
 [wait_input]
 # #MUSIC FADE OUT AND CREEPY MUSIC START
@@ -44,14 +49,17 @@
 [i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases\:[/i]
 {name.first} {name.last}\:
 Favorite food\: {fav.food}, favorite drink\: {fav.drink}...
-Favorite cookie\: {fav.cookie}... favorite Christmas song\: {fav.song}...
+Favorite Christmas song\: {fav.song}...
 The list continues on…
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
 {mc}\: What the fuck…
 {n}\: {name.first} is that you?
+join nico rightmost
 {n}\: What are you doing here?
 # #NICOS FACE FALLS
+join nico right
 {n}\: You shouldn’t be reading that...
+join christine left
 {mc}\: Nico… what is this?
 # #does he take the book away? I’ll say no for now
 {n}\: It’s nothing.
@@ -60,6 +68,7 @@ The list continues on…
 {mc}\: How do you know so much about me? Why do you have it written down?
 {mc}\: And, who are all these people?!
 {n}\: …
+update christine [animation="Heartbeat"]
 {mc}\: Nico, answer me!
 {n}\: …I’ll tell you but promise not to freak out.
 {mc}\: I’m already freaking out.
@@ -73,13 +82,19 @@ The list continues on…
 [wait_input]
 {n}\: I’m Santa Claus.
 [wait_input]
+join christine leftmost
 {mc}\: Nico, what the fuck…
 {n}\: Nico, Nicolas! St Nick? Nicolas Claus?
 {mc}\: ...
 {mc}\: I'm leaving.
+leave christine
 {n}\: {name.first} wait!
+leave nico
 # she leaves
-[i][door chime jingles]
+[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="0.0"]
+join christine right
+[wait_input]
+join nico left
 # #change bg
 {n}\: Please listen to me! I swear I'm telling the truth!!
 {n}\: I work at the post office because it’s my job to deliver presents!!
@@ -93,4 +108,5 @@ The list continues on…
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…
+jump s2-rePostOffice/
 [end_timeline]

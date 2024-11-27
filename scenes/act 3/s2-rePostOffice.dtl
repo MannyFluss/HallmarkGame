@@ -22,6 +22,7 @@
 	# #nico smiles
 	{n}\: {name.first}... I want to be with you forever…
 	{n}\: I’m sorry for ever making you doubt me, but I promise you I will be faithful and true to you for the rest of my life.
+	join nico center
 	[i]Nico takes my hand in his.[/i]
 	{n}\: I promise you, you won’t regret it!
 	# #fade to black
@@ -29,6 +30,7 @@
 - I want Santa… | [if {santa.desire} == true]
 	{n}\: What?
 	{mc}\: Make me your Mrs. Claus.
+	update christine [animation="Heartbeat"]
 	{mc}\: NOW!
 	{n}\: Yes, ma’am!
 	{mc}\: Are you looking for a tree topper? Because I’ve been told I’m a star on top.
@@ -42,13 +44,13 @@
 	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
 	{mc}\: …
 	{mc}\: Just give me a little time.
-	{mc}\: I honestly don’t know what to believe… [pause=0.5]but I want to understand.
+	{mc}\: I honestly don’t know what to believe… but I want to understand.
 	{n}\: Well, if you do believe me…
 	# #nico smiles
 	{n}\: I promise you won’t regret it!
 	# #fade to black
 	# GOOD ENDING
-	
+
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine [animation="Fade Out" length="1.0"]
