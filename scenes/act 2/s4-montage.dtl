@@ -1,0 +1,8 @@
+[background arg="res://art/backgrounds/Office.PNG" fade="1.0"]
+join christine right [animation="Fade In"]
+[i][sighs][/i]
+[i]At least the pay is good…[/i]
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+leave christine [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
+jump s5-mistletoe/

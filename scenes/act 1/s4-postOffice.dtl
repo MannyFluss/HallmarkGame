@@ -1,3 +1,6 @@
+[background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
+join christine right [animation="Fade In" length="1.0"]
+
 [i][door chime jingles][/i]
 [i]I quickly opened the door to the post office, grateful to finally escape the frigid winter air.[/i]
 [i]As I stepped inside, I was enveloped in the faint smell of sweet cinnamon and pine, and the warmth from a fire crackling in the fireplace.[/i]
@@ -9,6 +12,7 @@ MAN’S VOICE\: Coming!
 [i]I busied myself looking at some stamps on the counter until the postman arrived.[/i]
 [i]But I felt my heart skip as I looked up and locked eyes with his [br] [pause=0.3][b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
 # #swoop in nico
+join nico left
 # #make her blush
 {mc}\: …
 MAILMAN\: Can I help you?

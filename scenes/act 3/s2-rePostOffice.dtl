@@ -48,4 +48,9 @@
 	{n}\: I promise you won’t regret it!
 	# #fade to black
 	# GOOD ENDING
+	
+# fade to black
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+leave christine [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
 [end_timeline]

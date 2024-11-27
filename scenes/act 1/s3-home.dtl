@@ -1,3 +1,6 @@
+[background arg="res://art/backgrounds/MomHouse.PNG" fade="1.0"]
+join christine left
+
 {mc}\: So this is the new place?
 [i]I look around at the cabin that my mother very clearly lovingly and meticulously decorated for the holidays.[/i]
 MOM\: Isn’t it wonderful?
@@ -27,5 +30,11 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go to the po
 
 MOM\: I gotta run some more errands, so I’ll see you later! Love you darling!
 {mc}\: Love you too.
+
+# fade to black
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+join  center
+[wait time="1.0"]
+
 jump s4-postOffice/
 [end_timeline]

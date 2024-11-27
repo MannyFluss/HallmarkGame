@@ -3,6 +3,13 @@
 {n}\: Though they’re all kind of tied for first on my list!
 {mc}\: Well, I’ve got to be heading back now.
 {n}\: Get back safe! Merry Christmas! Have a great night!
+leave nico
 {mc}\: [i]I can’t help but feel like maybe I shouldn’t have been so quick to say no…[/i]
+
+# fade to black
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+leave christine [animation="Fade Out"]
+[wait time="1.0"]
+
 jump s1-happenstance/
 [end_timeline]
