@@ -5,8 +5,8 @@
 	{mc}\: After spending this week with you, how could I not?
 	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
 	{mc}\: And I’m so grateful to you for helping life feel magical again, for the first time in forever.
-	{mc}\: Even though it sounds insane, I honestly can’t believe you’d lie to me like this.
-	{n}\: {player.name}...
+	{mc}\: I honestly can’t believe you’d lie to me like this.
+	{n}\: {name.first}...
 	{n}\: Thank you.
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
 	# #fade to black
@@ -19,8 +19,7 @@
 	{n}\: {name.first}...
 	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
 	{mc}\: You make life feel magical again, for what feels like the first time in forever.
-	{mc}\: So even though this might eventually blow up in my face…
-	{mc}\: I’ll trust you.
+	{mc}\: So... I’ll trust you.
 	# #nico smiles
 	{n}\: {name.first}... I want to be with you forever…
 	{n}\: I’m sorry for ever making you doubt me, but I promise you I will be faithful and true to you for the rest of my life.
@@ -47,6 +46,7 @@
 	{n}\: It’s okay, you don’t have to believe me…
 	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
 	{mc}\: …
+	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 	{mc}\: Just give me a little time.
 	{mc}\: I honestly don’t know what to believe… but I want to understand.
 	{n}\: Well, if you do believe me…
@@ -58,6 +58,6 @@
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine [animation="Fade Out"]
-leave nico
+leave nico [animation="Fade Out"]
 [wait time="1.0"]
 [end_timeline]

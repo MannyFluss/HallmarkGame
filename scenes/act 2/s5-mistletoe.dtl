@@ -9,6 +9,58 @@ join nico right
 {mc}\: I said I wanted {gimme}.
 {n}\: <Great choice!/Interesting choice.../Oh!/So do I!/Classic!/I've never thought of that before./If I were you I'd keep that to myself.>
 
+{mc}\: Well… what I said I [i]really[/i] wanted is a sense of purpose.
+{mc}\: Lately I’ve just been so unfulfilled. My life is just my career, and my career is just “how can we best exploit children and take all their money.”
+{mc}\: Honestly, all I really want to do is… No, it’s stupid.
+{n}\: What?! You can’t just stop now! Tell me!
+{mc}\: [i][sighs]
+{mc}\: I really just want to be a toymaker.
+{n}\: !
+{mc}\: Weird, I know.
+{n}\: No, I think that’s really cool! What kind of toys do you want to make?
+{mc}\: Ha, thanks. Any kind really! I have so many ideas...
+{mc}\: You know, I naively thought that claw machines could be the bridge to take me there, since they’re made for kids.
+{mc}\: But the claw machine industry… it’s so corrupt…
+{mc}\: Maybe I should’ve asked Santa for a job instead!
+{n}\: [i][laughs]
+{n}\: Let’s say Santa just gave you full control of the workshop, what’s the first thing you’re making?
+{mc}\: Hmmm, let’s see…
 
+- A fuzzy creature
+	{mc}\: Kids are drawn to strange and uncanny things, right?
+	{mc}\: So why not give them one they can treat as a little pet?
+	{mc}\: Oh, and they've [i]got[/i] to make noises. And turn on randomly in the middle of the night!
+	{mc}\: And for design, it should look like a weird owl or hamster hybrid, but like super creepy!
+	{mc}\: I'd call it, the Purby!
+- Versatile video game console
+	{mc}\: You know, since they came out with the Microvision in recent years, handheld video games have gotten more popular.
+	{mc}\: Why not have one that you can attach to your home console?
+	{mc}\: That way, you can take your games on the go [i]and[/i] play comfortably at home! And you'd have access to your save files no matter where you are!
+	{mc}\: I'd call it, the Swish!
+{n}\: …
+{mc}\: What? You don't like my idea?
+{n}\: No, it’s just… your eyes… right now they’re just [i][b]sparkling.
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
+{mc}\: ?!
+{n}\: Haha, sorry… Ignore me…
+{mc}\: No, um… Thank you.
+[wait_input]
+
+# insert kiss scene???
+
+{n}\: Here, I want you to have this.
+[i]He pulls out a cassette tape with a red ribbon tied around it.
+{mc}\: You made me a mixtape?! How long did this take you?
+[i]On the front of the tape it reads, "for {name.first}" with two badly drawn snowmen holding hands.
+[i]He taped the song list to the otherside, and my breath catches when I read the first track.
+{mc}\: [i]{fav.song}[/i]?! That’s my favorite Christmas song!
+{n}\: [i][laughs][/i]
+{n}\: That’s why I added it.
+{n}\: I know you’re planning to go back to the big city soon, so when you’re there, you can listen to this tape and remember your time here.
+{n}\: And hopefully remember me too…
+{mc}\: Nico…
+{mc}\: Thank you.
+
+# #just jump
 jump s1-postOffice/
 [end_timeline]

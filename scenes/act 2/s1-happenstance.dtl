@@ -15,9 +15,9 @@ join christine left
 join nico right
 {mc}\: Nico?
 # #nico appears
-{mc}\: What are you doing here…
-{n}\: Well, it’s my favorite festival after all!
-{n}\: I’m more curious what you’re doing here. I thought it “wasn’t your style?”
+# {mc}\: What are you doing here…
+{n}\: Ow...
+{n}\: {name.first}? You made it! And here I thought the Jingle Jangle “wasn’t your style?”
 {mc}\: My parents dragged me out. Anyways, I was on my way back home. Sorry again for running into you.
 {n}\: Don’t worry about it, I’m a chill guy.
 {n}\: But since you’re already here, you might as well enjoy it!

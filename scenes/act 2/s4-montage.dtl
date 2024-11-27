@@ -1,9 +1,9 @@
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
-[background arg="res://art/backgrounds/black.png" fade="1.0"]
+[background arg="res://art/backgrounds/black.PNG" fade="1.0"]
 [i]Nico and I begin to spend every free moment we can together.
 
 [i]He shows me how to make the perfect gingerbread house.
-[i]I show him the tricks to winning a prize from the claw machine every time.
+[i]I show him the tricks to winning a prize from the claw machine [b][i]every [pause=0.3]time.
 [i]We cover the town in an army of snowmen.
 [i]And every day we end the night by walking around town, looking at the Christmas lights, and swapping stories.
 

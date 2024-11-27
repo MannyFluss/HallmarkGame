@@ -2,12 +2,14 @@ join christine left [z_index="200"]
 join nico right
 [i]An awkward air settles between us, but it’s interrupted by a bell tolling in the distance.[/i]
 [background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="1.0"]
+[music fade="3.0" volume="0.0"]
 [i]Background conversations fade away, and we all look towards the tree as the lights turn on, one by one.[/i]
 [wait_input]
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 [i]Although I like to think I’m all grown-up, I have to admit that I couldn’t help but feel a bit of childlike wonder.[/i]
 [i]Even though there are so many people in the big city, it’s easy to feel alone.[/i]
-[i]But here, it really feels like there’s a community. Every single person in this town gathered in the piercing cold to watch a couple of lights turn on together.[/i]
+[i]But here, it really feels like there’s a community.
+[i]Every single person in this town gathered in the piercing cold to watch a couple of lights turn on... together.[/i]
 [wait_input]
 [i]And I couldn’t help but notice how cinematically Nico’s glasses reflected the lights.[/i]
 [i]It looked as if his eyes were filled with a million glittering stars.[/i]
@@ -23,18 +25,18 @@ BARISTA\: I’ve been good! And don’t worry about the drink man, it’s on me.
 {n}\: C'mon, I couldn’t do that to you. I’ll pay, I insist.
 BARISTA\: No, [i]I[/i] insist.
 {n}\: In that case, I’ll pay for her drink then.
-{n}\: One hot chocolate for me, and one {fav.drink} for her.
+{n}\: Two cups of {fav.drink} please.
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
 {mc}\: You didn’t have to do that… but thank you.
 [i]We begin to explore the market together, drinks in hand, and I take a sip out of mine.
 {mc}\: Wow! That’s amazing…
 {mc}\: You know, {fav.drink} is actually my favorite.
-{n}\: Really? I’m glad I ordered it for you then.
+{n}\: Really? Mine too!
 [music fade="0.0" volume="0.0"]
 leave nico [animation="Slide Out Left"]
 # #NICO GETS KNOCKED OFF THE SCREEN
 [i][b][THUD]
-GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF\: Hey, [b]WATCH IT!
+GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 [i]Nico is struggling to get up, his cup of hot chocolate spilling out into a puddle next to him.[/i]
 [i]What should I do?[/i]
 - Help Nico
@@ -44,8 +46,8 @@ GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF\: Hey, [b]WATCH IT!
 	join nico right
 	{mc}\: Are you alright?
 	{n}\: Haha, well. I guess I could be better.
-	[i]He gazes at the growing puddle of hot chocolate on the ground.
-	{n}\: My hot choccy…
+	[i]He gazes at the growing puddle of {fav.drink} on the ground.
+	{n}\: My drink…
 	{mc}\: This in unacceptable…
 	[i]I turn around and spot the man who ran into Nico lingering near by.[i]
 	{mc}\: Hey!
@@ -60,42 +62,42 @@ GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF\: Hey, [b]WATCH IT!
 [i]He slowly turns towards me, a look of disbelief written on his face.[/i]
 You talking to me?
 {mc}\: Yeah, I am.
-{mc}\: You ran into my friend and completely obliterated his hot chocolate.
+{mc}\: You ran into my friend and completely obliterated his drink.
 {mc}\: You need to apologize.
 “BIFF”\: [i][laughs]
 “BIFF”\: Sure.
 {mc}\: Do you think you can just bully people however you please?
 BYSTANDER 1\: Did he just run into Nico?
-BYSTANDER 2\: Oh my god! His hot chocolate!!
+BYSTANDER 2\: Oh my god! His {fav.drink}!!
 {mc}\: Like I said, apologize, [b][i]now.
 "BIFF"\: Take a chill pill lady.
 {mc}\: [b][i]Eat[pause=0.5] my[pause=0.5] shorts.
 [i]Completely torn apart by this devastating blow I’ve just dealt him, tears begin to well in his eyes.
 “BIFF”\: Fine, fine, I’m sorry! Happy now? Just leave me alone!
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="3.0" volume="0.0"]
-[i]He runs away defeated, slips on the puddle of hot chocolate, and face plants into the snow.
+[i]He runs away defeated, slips on the puddle of spilled {fav.drink}, and face plants into the snow.
 # call back to Alex lol
 join christine left
 join nico right
 
 [i]I turn to Nico.
-{mc}\: What’s [i]his[/i] problem? Here, I can buy you another hot chocolate.
+{mc}\: What’s [i]his[/i] problem? Here, I can buy you another.
 {n}\: It’s alright don’t worry about it, but thank you.
 {n}\: …and thank you for standing up for me.
 {n}\: No one’s ever actually stuck up for me like that before…
-{mc}\: What??
-{mc}\: I find that hard to believe. It seems like everyone here loves you.
-{n}\: Not that guy apparently.
-{mc}\: Whatever, you know what I mean.
+{mc}\: What?? I find that hard to believe.
+# #{mc}\: I find that hard to believe. It seems like everyone here loves you.
+# #{n}\: Not that guy apparently.
+# #{mc}\: Whatever, you know what I mean.
 # #{mc}\: But how has no one ever done that for you before?
-# #{n}\: I mean honestly, I kind of stick to myself.
+{n}\: Though I'm friendly with the people here, I honestly mostly stick to myself.
 {mc}\: Well, no one should be talking to you like that.
 # #{n}\: Oh uh… thanks…
 # #{mc}\: No problem…
 
 # #[i]Again an awkward lull settles over us, but it doesn’t last long.
 [i]As Nico and I begin to explore the market together, he tells me stories about the history of this town.
-[i]At first I didn’t say much, but as the night dragged on, I could feel myself opening up, allowing myself to smile, to laugh.
+[i]At first I didn’t say much, but as the night drags on, I could feel myself opening up, allowing myself to smile, to laugh.
 [i]His joy and enthusiasm were infectious, even to my cold city girl heart.
 [i]A snowball fight breaks out among the kids, and Nico decides to join in.
 [i]He throws a snowball at me. I throw one back.
@@ -104,19 +106,22 @@ join nico right
 {n}\: Before you go, I forgot to give you something! I got this for you earlier.
 [i]He hands me a small paper bag.
 [i]Inside the bag were cookies, {fav.cookie}.
-How did you…. These are my favorite cookies.
-I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
+{mc}\: How did you…. These are my favorite cookies.
+{n}\: I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
 {mc}\: Oh, shut up…
 {mc}\: Well, thank you regardless. This was fun…
 {n}\: See! I told you that you wouldn’t regret it!
 {n}\: Get home safe!
+leave nico
 [i]Nico waves energetically as I walk away, and I give him a small wave in return.
 [i]I smile to myself, already reminiscing about the memories I made tonight…
 [music fade="3.0" volume="0.0"]
-[i]But for whatever reason, I can’t help but also feel a bit… [pause=0.3]sad? [pause=0.3]Disappointed?
+[i]But for whatever reason, I can’t help but also feel a bit… 
+[i]Sad? [pause=0.5]Disappointed?
 [i]Why?
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: Wait, {name.first}!
+join nico center
 [i]I turn around, and Nico is right behind me, face flushed and out of breath.
 {n}\: So if you end up liking those cookies, you’ve got to check out the bakery in town!
 {n}\: Those cookies are good, but fresh? Absolutely phenomenal!
@@ -125,8 +130,8 @@ I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-leave christine [animation="Fade Out" length="1.0"]
-leave nico
+leave christine [animation="Fade Out"]
+leave nico [animation="Fade Out"]
 [wait time="1.0"]
 
 jump s4-montage/

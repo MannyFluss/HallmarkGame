@@ -4,25 +4,25 @@
 leave christine
 leave nico
 [i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
-[i]But a part of me is worried he’s avoiding me…[/i]
+#[i]But a part of me is worried he’s avoiding me…[/i]
 [i][door chime jingles]
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
 join christine center [animation="Fade In"]
-[i]Today, I finally decided to stop by with some hot chocolate, his favorite.[/i]
+[i]Today, I finally decided to stop by with some {fav.drink}, his favorite.[/i]
 [i]He’s always so generous and thoughtful with me, so I wanted to return the favor.[/i]
 # he’s a good gift giver 
 [i]But honestly more than that… I miss him.[/i]
-[i]And I want to understand what that night under the mistletoe meant.[/i]
-[i]I look around the post office, setting the warm cup on a table near the center of the room.[/i]
+# [i]And I want to understand what that night under the mistletoe meant.[/i]
+[i]I look around the post office, setting the cup on a table near the center of the room.[/i]
 {mc}\: Hello? Nico?
 [i]The post office is empty, like the first time I visited.[/i]
 [i]I remember when we first met, I was so cold to him.[/i]
 [i]But somehow, over this short holiday, we’ve gotten so close.[/i]
 [i]I’ve never met someone so joyful and warm.[/i]
 [i]It doesn’t take long to see how much the people of this small town love him.[/i]
-[i]How much I think that I might actually…[/i]
+[i]How much I think that I too might actually…[/i]
 [i]Love him??![/i]
-[i]Frantic with this newfound revelation, I swing my arms around and almost knock over the cup of hot chocolate.[/i]
+[i]Frantic with this newfound revelation, I swing my arms around and almost knock over the cup.[/i]
 [i]Steadying it, I notice a small deep maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
 [i]Nico’s Notebook[/i]
 [i]Of course he’s the type of guy who journals, that’s just like him.[/i]
@@ -38,7 +38,7 @@ join christine center [animation="Fade In"]
 	# #{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
 	[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
 	[music fade="0.0" volume="0.0"]
-	[i]it’s ink.[/i]
+	[i]It’s ink.[/i]
 [background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
 [music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
 
@@ -61,6 +61,7 @@ The list continues on…
 join nico rightmost
 {n}\: What are you doing here?
 # #NICOS FACE FALLS
+[wait_input]
 join nico right
 {n}\: You shouldn’t be reading that...
 join christine left
@@ -69,15 +70,14 @@ join christine left
 {n}\: It’s nothing.
 {mc}\: Nico… tell me what this is.
 # #Nico is silent, looking worried
-{mc}\: How do you know so much about me? Why do you have it written down?
+{mc}\: How do you know so much about me?
 {mc}\: And, who are all these people?!
 {n}\: …
-update christine [animation="Heartbeat"]
 {mc}\: Nico, answer me!
 {n}\: …I’ll tell you but promise not to freak out.
 {mc}\: I’m already freaking out!
 # #{mc}\:I don’t know if you could say [i]anything[/i] to make this situation worse!!
-{n}\: Just- just stay calm!
+{n}\: {name.first}, stay calm!
 {mc}\: You expect me to stay calm in this situation?!?!
 # #{n}\: You have a right to be upset, but-
 # #{mc}\: Just get to the point.
@@ -88,14 +88,16 @@ update christine [animation="Heartbeat"]
 [wait_input]
 join christine leftmost
 {mc}\: Nico, what the fuck…
+{n}\: I swear!
 {n}\: Nico, Nicolas! St Nick? Nicolas Claus?
 {mc}\: ...
 {mc}\: I'm leaving.
 leave christine
-{n}\: {name.first} wait!
+{n}\: {name.first}, wait!
 leave nico
 # she leaves
 [background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
+[wait time="1.0"]
 join christine right
 [wait_input]
 join nico left
@@ -106,10 +108,11 @@ join nico left
 {n}\: [i]That’s[/i] why I know so much about you!
 {n}\: That’s why I have this book!
 {n}\: And… I need you to know that I’m only telling you this because you mean so much to me.
-[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
+[music fade="1.0" volume="0.0"]
 {n}\: I didn’t- I didn’t expect to feel this way about you.
-{n}\: I knew you were going through a rough time, and I just wanted to make you feel better when we ran into each other.
+{n}\: I knew you were going through a rough time, and I just wanted to bring you some holiday cheer when we first met.
 {n}\: But somewhere along the way…
+[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…

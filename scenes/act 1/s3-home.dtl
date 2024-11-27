@@ -3,17 +3,17 @@ join christine left
 
 {mc}\: So this is the new place?
 [i]I look around at the cabin that my mother very clearly lovingly and meticulously decorated for the holidays.[/i]
-MOM\: Isn’t it wonderful?
-{mc}\: It sure is.
-MOM\: I know it may not seem like much compared to the big city, but your father and I are very happy here.
-MOM\: Everyone here is so friendly, and you can tell that they really love Christmas.
-{mc}\: Yeah I’ve never seen so many Christmas lights before. People here really go all out,huh?
-MOM\: You should explore, get to know the people in town!
-MOM\: Oh wait! Before that,
+MOM\: Isn’t it wonderful? Your father and I are so happy we moved here.
+#{mc}\: It sure is.
+#MOM\: I know it may not seem like much compared to the big city, but your father and I are very happy here.
+#MOM\: Everyone here is so friendly, and you can tell that they really love Christmas.
+#{mc}\: Yeah I’ve never seen so many Christmas lights before. People here really go all out,huh?
+MOM\: You should explore the area, get to know the people in town!
+MOM\: Oh, wait! Before that!
 MOM\: Here, I have these presents for Uncle Manny.
-MOM\: I forgot Hanukkah started earlier this year, so I need you to go to the post office now to deliver them.
+MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to the post office to deliver them.
 - Deliver the presents
-	You got it, Mom.
+	{mc}\: You got it, Mom.
 	MOM\: Thank you darling!
 	MOM\: It’s so nice having you home for Christmas this year.
 	MOM\: We really missed you last Christmas. That job’s taking up too much of your time, you know!
@@ -24,9 +24,9 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go to the po
 	MOM\: So much so that you didn’t come to see your poor mother for Christmas.
 	{mc}\: Fine, fine, I understand. I’m sorry, I’ll go deliver them.
 	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun!
-	MOM\: Sure, Mom.
-	MOM\: Oh, have some Christmas spirit!
-	MOM\: You should spend more time caring about your loved ones than that job, you know!
+	#{mc}\: Sure, Mom.
+	#MOM\: Oh, have some Christmas spirit!
+	#MOM\: You should spend more time caring about your loved ones than that job, you know!
 
 MOM\: I gotta run some more errands, so I’ll see you later! Love you darling!
 {mc}\: Love you too.
