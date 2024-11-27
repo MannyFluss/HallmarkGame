@@ -1,0 +1,119 @@
+[i]An awkward air settles between us, but it’s interrupted by a bell tolling in the distance.[/i]
+[i]Background conversations fade away, and we all look towards the tree as the lights turn on, one by one.[/i]
+[wait_input]
+[i]Although I like to think I’m all grown-up, I have to admit that I couldn’t help but feel a bit of childlike wonder.[/i]
+[i]Even though there are so many people in the big city, it’s easy to feel alone.[/i]
+[i]But here, it really feels like there’s a community. Every single person in this town gathered in the piercing cold to watch a couple of lights turn on together.[/i]
+[wait_input]
+[i]And I couldn’t help but notice how cinematically Nico’s glasses reflected the lights.[/i]
+[i]It looked as if his eyes were filled with a million glittering stars.[/i]
+[wait_input]
+
+[i]The ceremony comes to a close as the sunburst on the top of the tree lights up.[/i]
+[i][applause][i]
+[i]The crowd begins to disperse and Nico and I make our way over to the coffee booth.
+BARISTA\: Nico! How’ve you been?
+{n}\: I’ve been great! But you know how busy this season can get for me, haha. How are you?
+BARISTA\: I’ve been good! And don’t worry about the drink, it’s on me.
+{n}\: Jackson, I couldn’t do that to you, I’ll pay, I insist.
+BARISTA\: No, [i]I[/i] insist.
+{n}\: Well, in that case, I’ll pay for her drink then.
+{n}\: One hot chocolate for me, and one {fav.drink} for her.
+[i]Nico pays the barista and we step off to the side while we wait.[/i]
+{mc}\: You didn’t have to do that… [pause=0.3] but thank you.
+[i]Another barista calls Nico’s name and he picks up the drinks for us.[/i]
+[i]We begin to explore the market together, and I take a sip out of mine.
+{mc}\: Wow! That’s amazing…
+{mc}\: You know, {fav.drink} is actually my favorite thing to drink during the holidays.
+{n}\: Really? I’m glad I ordered it for you then.
+#NICO GETS KNOCKED OFF THE SCREEN
+GUY WHO LOOKS LIKE HIS NAME SHOULD BE BIFF: Hey, [b]WATCH IT!
+[i]Nico is struggling to get up, his cup of hot chocolate spilling out into a puddle next to him.[/i]
+[i]What should I do?[/i]
+- Help Nico
+	[i]I run over to Nico’s side, offering him my hand and pulling him up off the dirt.
+	{mc}\: Are you alright?
+	{n}\: Haha, well. I guess I got be better.
+	[i]He gazes at the growing puddle of hot chocolate on the ground.
+	{n}\: My hot choccy…
+	{mc}\: This in unacceptable…
+	[i]I turn around and spot the man who ran into Nico lingering near by.[i]
+	{mc}\: Hey!
+	{mc}\: What’s your damage, man?
+	[i]He slowly turns towards me, a look of disbelief written on his face.[/i]
+
+- Confront the guy who ran into him
+	{mc}\: What’s yo	ur damage, man?
+
+[i]He slowly turns towards me, a look of disbelief written on his face.[/i]
+“BIFF”: You talking to me?
+{mc}\: Yeah, I am.
+{mc}\: You ran into my friend and completely obliterated his hot chocolate.
+{mc}\: You need to apologize, [b][i]now.
+“BIFF”\: [i][laughs]
+“BIFF”\: Take a chill pill lady.
+{mc}\: Bite me.
+“BIFF”\: What did you just say to me?
+[i]A crowd starts to form around us, drawn to the commotion.[/i]
+{mc}\: Do you think you’re better than other people?
+{mc}\: That you can just bully people however you please?
+BYSTANDER 1: Did he just run into Nico?
+BYSTANDER 2: Oh my god! His hot chocolate!! 
+{mc}\: Well, you can’t. And you’re not better than anyone.
+{mc}\: In fact, you’re nothing more than a  
+[i]The guy seems to grow more and more nervous as more people surround us.
+“BIFF”: You better shut up now before it’s too late.
+“BIFF”: If you keep this up, you’re gonna be sorry.
+{mc}\: [b][i]Eat[pause=0.5] my[pause=0.5] shorts.
+[i]Completely torn apart by this devastating blow I’ve just dealt him, tears begin to well in his eyes.
+“BIFF”\: Fine, fine, I’m sorry! Happy now? Just leave me alone!
+[i]He runs away defeated, slips on the puddle of hot chocolate, and face plants into the snow.
+# call back to Alex lol
+
+[i]I turn to Nico.
+{mc}\: What’s his problem?
+{n}\: He’s just going through something right now. His mom died.
+{mc}\: Well, regardless I’m really sorry you had to deal with that. 
+{mc}\: I can buy you another hot chocolate.
+{n}\: It’s alright don’t worry about it, but thank you.
+{n}\: …and thank you for standing up for me.
+{n}\: No one’s ever actually stuck up for me like that before…
+{mc}\: What??
+{mc}\: I find that hard to believe. It seems like everyone here loves you.
+{n}\: Not that guy apparently.
+{mc}\: Whatever, you know what I mean.
+{mc}\: You’re like a bundle of fluff, how come no one’s done that for you before?
+{n}\: I mean honestly, I kind of stick to myself.
+{mc}\: Well, no one should be talking to you like that. I’ve only known you for a day but you’re like the sweetest guy I’ve ever met.
+{n}\: Oh uh… thanks…
+{mc}\: No problem…
+
+[i]Again an awkward lull settles over us, but it doesn’t last long.
+[i]As Nico and I begin to explore the market together, he tells me stories about the history of this town.
+[i]At first I didn’t say much, but as the night dragged on, I could feel myself opening up, allowing myself to smile, to laugh. 
+[i]His joy and enthusiasm was infectious, even to my cold city girl heart.
+[i]A snowball fight breaks out among the kids, and Nico decides to join in. 
+[i]He throws a snowball at me. I throw one back.
+[wait_input]
+{mc}\: Ah! Is it already this late? I really should be going back.
+{n}: Before you go, I forgot to give you something! I got this for you earlier.
+[i]He hands me a small paper bag.
+[i]Inside the bag were cookies, specifically {fav.cookie}.
+MC: How did you…. These are my favorite cookies.
+N: I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
+{mc}\: Oh, shut up…
+{mc}\: Well, thank you regardless. This was… [pause=0.3]fun…
+{n}\: See! I told you that you wouldn’t regret it! 
+{n}\: Get home safe!
+[i]Nico waves energetically as I walk away, and I give him a small wave in return.
+[i]I smile to myself, already reminiscing about the memories I made tonight…
+[i]But for whatever reason, I can’t help but also feel a bit… [pause=0.3]sad? [pause=0.3]Disappointed
+[i]Why?
+{n}\: Wait, {name.first}!
+[i]I turn around, and Nico is right behind me, face flushed and out of breath.
+{n}\: So if you end up liking those cookies, you’ve got to check out the bakery in town!
+{n}\: Those cookies are good, but fresh? Absolutely phenomenal! 
+{n}\: Would you want to… I mean only if you want to! I don’t want you to feel-
+{mc}\: I’d love to.
+# fade to black
+
