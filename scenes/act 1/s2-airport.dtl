@@ -61,6 +61,6 @@ set {mc} = {name.first}.to_upper()
 leave christine
 [wait time="1.0"]
 
-jump intro/
+jump s3-home/
 
 [end_timeline]

@@ -1,4 +1,4 @@
-[background arg="res://art/backgrounds/momCozyHouse.png" fade="1.0"]
+[background arg="res://art/backgrounds/MomHouse.PNG" fade="1.0"]
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="2.0" volume="0.0"]
 join christine (wNeutral) left
 

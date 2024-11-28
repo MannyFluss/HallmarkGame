@@ -22,5 +22,4 @@ void fragment() {
 
 	// Clamp the final color to make sure it stays in the valid range
 	COLOR = clamp(original_color, 0.0, 1.0);
-	COLOR = vec4(original_color.r*1.0, original_color.g*0.9, original_color.b*0.9, original_color.a);
 }
