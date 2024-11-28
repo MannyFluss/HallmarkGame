@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 ]
+[gd_scene load_steps=3 format=3 uid="uid://cjrvh6a78mh28"]
 
 [ext_resource type="Script" path="res://styles/layouts/5Portraits/vn_portrait_layer.gd" id="1_1i7em"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="1_rxdcc"]

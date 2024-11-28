@@ -44,6 +44,7 @@ directories/dtl_directory={
 "s6-jingleAccept": "res://scenes/act 1/s6-jingleAccept.dtl",
 "s6-jingleReject": "res://scenes/act 1/s6-jingleReject.dtl",
 "test": "res://scenes/testing/test.dtl",
+"test letter": "res://scenes/testing/test letter.dtl",
 "timeline_test": "res://timelines/timeline_test.dtl",
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
