@@ -1,5 +1,5 @@
 [background arg="res://art/backgrounds/JingleBeforeNico.PNG" fade="1.0"]
-join christine center [animation="Fade In"]
+join christine (cNeutral) center [animation="Fade In"]
 
 [i]Although I told that mailman I wouldn’t go, I somehow ended up at the Jingle Jangle.[/i]
 [i]After watching my parents and their friends become tipsy off of spiked eggnog, I decided I had enough and headed home.[/i]
@@ -12,11 +12,12 @@ update christine center [animation="Heartbeat"]
 join christine right
 [i]I rush over to pick them up off the ground.[/i]
 join christine left
-join nico right
+join nico (cShocked) right
 {mc}\: Nico?
 # #nico appears
 # {mc}\: What are you doing here…
 {n}\: Ow...
+join nico (cNeutral) center
 {n}\: {name.first}? You made it! And here I thought the Jingle Jangle “wasn’t your style?”
 {mc}\: My parents dragged me out. Anyways, I was on my way back home. Sorry again for running into you.
 {n}\: Don’t worry about it, I’m a chill guy.

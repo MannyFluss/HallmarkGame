@@ -1,6 +1,6 @@
-[music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
+[music path="res://audio/music/sad christmas.mp3" fade="0.0" volume="0.0"]
 [background arg="res://art/backgrounds/Office.PNG" fade="0.0"]
-join christine right
+join christine (wHappy) right
 # Internal company meeting, no powerpoints since this is the 80s, maybe a poster 
 As you can see, the new state of the art model works like a charm!
 Simply by adjusting the settings, we can now control the dropping skill and claw strength of the crane.
@@ -17,7 +17,7 @@ MR. FLUSS\: Wonderful job yet again!
 MISS MONICA\: The shareholders are going to love this.
 Any questions?
 MR. STONE\: How do you expect to deal with potential backlash of including our product in family establishments?
-MR. STONE\: Since we’ve started expanding in the American market, we’ve received more and more accusations that these games are essentially marketing gambling towards children.
+MR. STONE\: Since we’ve started expanding in the American market, we’ve received accusations that these games are marketing gambling towards children.
 # #MR STONE: Has PR been involved? 
 MR. FLUSS\: Hey, we’re here to make money, not save the world.
 No, he makes a great point. Thank you for your question.
@@ -49,20 +49,21 @@ VP\: Keep up the great work! I see partner status in your future.
 Thank you ma’am.
 # #VP\: Expect a [i]very[/i] generous Christmas bonus. 
 # #VP\: Happy holidays!
+join christine (wSad) center
 [i]Once she leaves, I’m left alone, and a silence settles over the conference room that was bustling with noise just a few minutes ago.[/i]
 # #[i]I’m finally able to catch my breath.[/i]
 [i]Did I really just defend gambling for children to a room full of executives?[/i]
-#[i]And did they just buy it?[/i]
+# #[i]And did they just buy it?[/i]
 [i]Anyways, I’m at least glad this project is finally over.[/i]
-#[i]This was the first project they allowed me to lead completely on my own.[/i]
+# #[i]This was the first project they allowed me to lead completely on my own.[/i]
 [i]I’m happy it was a huge success, but I’m not surprised. I know I’m good at my job.[/i]
-#[i]I put so many long nights into this project, talked to so many incompetent partners, all to pull this off.[/i]
-#[i]If things didn’t result in a massive success then I’d be pissed.[/i]
+# #[i]I put so many long nights into this project, talked to so many incompetent partners, all to pull this off.[/i]
+# #[i]If things didn’t result in a massive success then I’d be pissed.[/i]
 [i]I put so many long nights into this project, so I’m relieved, but…[/i]
 [i]I can’t help but feel a bit guilty.[/i]
 [i]What’s worse\: taking candy from a baby, or dangling it in front of them, just out of reach.
-#[i][sighs][/i]
-#[i]At least the pay is good…[/i]
+# #[i][sighs][/i]
+# #[i]At least the pay is good…[/i]
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]

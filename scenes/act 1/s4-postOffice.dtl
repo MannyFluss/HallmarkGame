@@ -1,5 +1,5 @@
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
-join christine right [animation="Fade In" length="1.0"]
+join christine (wNeutral) right [animation="Fade In" length="1.0"]
 
 [i][door chime jingles][/i]
 [i]I quickly opened the door to the post office, grateful to finally escape the frigid winter air.[/i]
@@ -14,7 +14,8 @@ MAN’S VOICE\: Coming!
 [i]But I felt my heart skip as I looked up and locked eyes with his [br] [b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
 # #swoop in nico
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
-join nico left
+join nico (wNeutral) left
+join christine (wBlush) right
 # #make her blush
 {mc}\: …
 MAILMAN\: Can I help you?
@@ -27,9 +28,10 @@ MAILMAN\: Can I help you?
 MAILMAN\: Haha! Yup! This is the only post office for the next 50 miles.
 MAILMAN\: So how are you liking it here? Have you explored the town square yet?
 {mc}\: Ah… Is it that easy to tell I’m not from around here?
-MAILMAN\: You say that like it’s a bad thing! 
+MAILMAN\: You say that like it’s a bad thing!
 # he says haha every 5 seconds because he’s just a chill guy
 {n}\: I’m Nico by the way!
+join christine (wNeutral) right
 {mc}\: I’m {name.first}.
 {n}\: {name.first} {name.last}?
 # he is shocked

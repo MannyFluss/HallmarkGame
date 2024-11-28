@@ -13,7 +13,6 @@
 	[i]Why did I say that out loud?[/i]
 	{n}\: Umm…
 	{n}\: Sorry! [pause=0.3]Maybe I’m giving you the wrong impression.
-	[i]I blush, embarrassed.[/i]
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
@@ -28,7 +27,6 @@
 - Are you asking me on a date? | [if {jingle.date} == true] [else="disable"]
 	{n}\: Ah! Sorry, that’s not what I had in mind!
 	{n}\: Maybe I gave you the wrong impression haha, sorry about that!
-	[i]I blush, embarrassed.[/i]
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
 	{n}\: But we should still go!
 	jump s6-jingleAccept/

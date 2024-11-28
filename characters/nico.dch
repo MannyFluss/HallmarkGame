@@ -12,14 +12,104 @@
 },
 "default_portrait": "sketch",
 "description": "A soft and endearing postal service man with a warm heart and a surprising secret.",
-"display_name": "nico",
+"display_name": "Nico",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"cBlush": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Blush_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cHappy": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Happy_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cNeutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Neutral_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cSad": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Sad_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"cShocked": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Shocked_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "sketch": {
 "export_overrides": {
 "image": "\"res://art/sprites/nico/Nico_Front.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wBlush": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Blush_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wHappy": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Happy_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wNeutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Neutral_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wSad": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Sad_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"wShocked": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Shocked_W_F.PNG\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

@@ -15,7 +15,8 @@ join nico right
 [i]It looked as if his eyes were filled with a million glittering stars.[/i]
 [wait_input]
 
-[i]The ceremony comes to a close as the sunburst on the top of the tree lights up.[/i]
+# fix it
+[i]The ceremony ends as the tree topper light begins to glow, and Nico seems to as well.[/i]
 [i][applause][i]
 [background arg="res://art/backgrounds/JingleJangle Cafe.PNG" fade="1.0"]
 [i]The crowd begins to disperse and Nico and I make our way over to the coffee booth.
@@ -28,28 +29,28 @@ BARISTA\: No, [i]I[/i] insist.
 {n}\: Two cups of {fav.drink} please.
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
 {mc}\: You didn’t have to do that… but thank you.
-[i]We begin to explore the market together, drinks in hand, and I take a sip out of mine.
+[i]We begin to explore the market together drinks in hand, and I take a sip out of mine.
 {mc}\: Wow! That’s amazing…
 {mc}\: You know, {fav.drink} is actually my favorite.
 {n}\: Really? Mine too!
 [music fade="0.0" volume="0.0"]
-leave nico [animation="Slide Out Left"]
+leave nico [animation="Slide Out Left" length="2.0"]
 # #NICO GETS KNOCKED OFF THE SCREEN
 [i][b][THUD]
 GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
-[i]Nico is struggling to get up, his cup of hot chocolate spilling out into a puddle next to him.[/i]
+[i]Nico is struggling to get up, his cup of {fav.drink} spilling out into a puddle next to him.[/i]
 [i]What should I do?[/i]
 - Help Nico
 	join christine right
 	[i]I run over to Nico’s side, offering him my hand and pulling him up off the dirt.
 	join christine left [z_index="200"]
-	join nico right
+	join nico (cSad) right
 	{mc}\: Are you alright?
 	{n}\: Haha, well. I guess I could be better.
 	[i]He gazes at the growing puddle of {fav.drink} on the ground.
 	{n}\: My drink…
-	{mc}\: This in unacceptable…
-	[i]I turn around and spot the man who ran into Nico lingering near by.[i]
+	{mc}\: This is unacceptable…
+	[i]I turn around and spot the man who ran into Nico.[i]
 	{mc}\: Hey!
 	join christine center [z_index="200"]
 
@@ -60,12 +61,12 @@ GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 {mc}\: What’s your damage, man?
 
 [i]He slowly turns towards me, a look of disbelief written on his face.[/i]
-You talking to me?
+"BIFF"\: You talking to me?
 {mc}\: Yeah, I am.
 {mc}\: You ran into my friend and completely obliterated his drink.
 {mc}\: You need to apologize.
 “BIFF”\: [i][laughs]
-“BIFF”\: Sure.
+“BIFF”\: Whatever...
 {mc}\: Do you think you can just bully people however you please?
 BYSTANDER 1\: Did he just run into Nico?
 BYSTANDER 2\: Oh my god! His {fav.drink}!!
@@ -78,18 +79,19 @@ BYSTANDER 2\: Oh my god! His {fav.drink}!!
 [i]He runs away defeated, slips on the puddle of spilled {fav.drink}, and face plants into the snow.
 # call back to Alex lol
 join christine left
-join nico right
+join nico (cHappy) right
 
 [i]I turn to Nico.
 {mc}\: What’s [i]his[/i] problem? Here, I can buy you another.
 {n}\: It’s alright don’t worry about it, but thank you.
 {n}\: …and thank you for standing up for me.
+# RETHINK
 {n}\: No one’s ever actually stuck up for me like that before…
 {mc}\: What?? I find that hard to believe.
-# #{mc}\: I find that hard to believe. It seems like everyone here loves you.
-# #{n}\: Not that guy apparently.
-# #{mc}\: Whatever, you know what I mean.
-# #{mc}\: But how has no one ever done that for you before?
+{mc}\: I find that hard to believe. It seems like everyone here loves you.
+{n}\: Not that guy apparently.
+{mc}\: Whatever, you know what I mean.
+{mc}\: But how has no one ever done that for you before?
 {n}\: Though I'm friendly with the people here, I honestly mostly stick to myself.
 {mc}\: Well, no one should be talking to you like that.
 # #{n}\: Oh uh… thanks…
@@ -116,14 +118,14 @@ leave nico
 [i]Nico waves energetically as I walk away, and I give him a small wave in return.
 [i]I smile to myself, already reminiscing about the memories I made tonight…
 [music fade="3.0" volume="0.0"]
-[i]But for whatever reason, I can’t help but also feel a bit… 
+[i]But for whatever reason, I can’t help but also feel a bit…
 [i]Sad? [pause=0.5]Disappointed?
 [i]Why?
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: Wait, {name.first}!
 join nico center
 [i]I turn around, and Nico is right behind me, face flushed and out of breath.
-{n}\: So if you end up liking those cookies, you’ve got to check out the bakery in town!
+{n}\: So... if you end up liking those cookies, you’ve got to check out the bakery in town!
 {n}\: Those cookies are good, but fresh? Absolutely phenomenal!
 {n}\: Would you want to go together tomorrow… I mean only if you want to! I don’t want you to feel-
 {mc}\: I’d love to.

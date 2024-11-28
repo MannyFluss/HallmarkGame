@@ -4,10 +4,10 @@
 leave christine
 leave nico
 [i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
-#[i]But a part of me is worried he’s avoiding me…[/i]
+# #[i]But a part of me is worried he’s avoiding me…[/i]
 [i][door chime jingles]
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
-join christine center [animation="Fade In"]
+join christine (cHappy) center [animation="Fade In"]
 [i]Today, I finally decided to stop by with some {fav.drink}, his favorite.[/i]
 [i]He’s always so generous and thoughtful with me, so I wanted to return the favor.[/i]
 # he’s a good gift giver 
@@ -23,7 +23,7 @@ join christine center [animation="Fade In"]
 [i]How much I think that I too might actually…[/i]
 [i]Love him??![/i]
 [i]Frantic with this newfound revelation, I swing my arms around and almost knock over the cup.[/i]
-[i]Steadying it, I notice a small deep maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
+[i]Steadying it, I notice a small maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
 [i]Nico’s Notebook[/i]
 [i]Of course he’s the type of guy who journals, that’s just like him.[/i]
 [i]…I kinda want to take a peek.[/i]
@@ -42,7 +42,9 @@ join christine center [animation="Fade In"]
 [background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
 [music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
 
+
 [wait_input]
+join christine (cSad) center
 # #MUSIC FADE OUT AND CREEPY MUSIC START
 # #[as she reads, we slowly zoom into her anxious face, and her eyes are animated wavering back and forth]
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
@@ -58,13 +60,14 @@ The list continues on…
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
 {mc}\: What the fuck…
 {n}\: {name.first} is that you?
-join nico rightmost
+join nico (wHappy) rightmost
 {n}\: What are you doing here?
 # #NICOS FACE FALLS
+join nico (wSad) rightmost
 [wait_input]
 join nico right
 {n}\: You shouldn’t be reading that...
-join christine left
+join christine (cAngry) left
 {mc}\: Nico… what is this?
 # #does he take the book away? I’ll say no for now
 {n}\: It’s nothing.
@@ -96,12 +99,13 @@ leave christine
 {n}\: {name.first}, wait!
 leave nico
 # she leaves
-[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
-[wait time="1.0"]
-join christine right
-[wait_input]
-join nico left
 # #change bg
+[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
+
+[wait time="1.0"]
+join christine (cNeutral) right
+[wait_input]
+join nico (cSad) left
 {n}\: Please listen to me! I swear I'm telling the truth!!
 {n}\: I work at the post office because it’s my job to deliver presents!!
 {n}\: Did you really think Santa could give out all those presents in just one night??! That’s impossible!!!
