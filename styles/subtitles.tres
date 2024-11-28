@@ -42,13 +42,13 @@ overrides = {
 "box_color_use_global": "false",
 "box_margin_bottom": "30.0",
 "box_size": "Vector2(1000, 160)",
+"disabled": "true",
 "next_indicator_enabled": "false",
 "next_indicator_show_on_questions": "false",
 "text_alignment": "1",
 "text_size": "30.0",
 "text_use_global_color": "false",
 "text_use_global_font": "false",
-"text_use_global_size": "false",
 "typing_sounds_enabled": "false"
 }
 
