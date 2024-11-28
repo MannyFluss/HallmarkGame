@@ -44,7 +44,7 @@ GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 	join christine right
 	[i]I run over to Nico’s side, offering him my hand and pulling him up off the dirt.
 	join christine left [z_index="200"]
-	join nico (cSad) right
+	join nico (cSad) right [z_index="-1"]
 	{mc}\: Are you alright?
 	{n}\: Haha, well. I guess I could be better.
 	[i]He gazes at the growing puddle of {fav.drink} on the ground.
