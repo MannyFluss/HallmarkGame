@@ -1,0 +1,6 @@
+[background arg="res://art/backgrounds/DateMontage.PNG" fade="0.0"]
+join bar-san (vert_thicc) center [animation="Instant In" z_index="500"]
+join nico (headshot) center
+NICO\: I love you Manny The Gecko...
+[wait time="1.0"]
+[wait_input]

@@ -62,6 +62,15 @@
 "scale": 1,
 "scene": ""
 },
+"headshot": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/N_Blush_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1600),
+"scale": 2.5,
+"scene": ""
+},
 "sketch": {
 "export_overrides": {
 "image": "\"res://art/sprites/nico/Nico_Front.png\""
@@ -104,7 +113,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "wShocked": {

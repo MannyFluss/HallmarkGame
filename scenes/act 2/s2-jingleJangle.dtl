@@ -51,13 +51,14 @@ GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 	{n}\: My drink…
 	{mc}\: This is unacceptable…
 	[i]I turn around and spot the man who ran into Nico.[i]
+	[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 	{mc}\: Hey!
 	join christine center [z_index="200"]
 
 - Confront the guy who ran into him
 	join christine center
+	[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 	{mc}\: Hey!
-[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 {mc}\: What’s your damage, man?
 
 [i]He slowly turns towards me, a look of disbelief written on his face.[/i]

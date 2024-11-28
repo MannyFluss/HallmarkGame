@@ -59,8 +59,10 @@ join nico (cHappy) right
 {n}\: I know you’re planning to go back to the big city soon, so when you’re there, you can listen to this tape and remember your time here.
 {n}\: And hopefully remember me too…
 {mc}\: Nico…
+# shows mistletoe
+# option to smooch
 {mc}\: Thank you.
 
-# #just jump
+# kiss smooch
 jump s1-postOffice/
 [end_timeline]

@@ -24,6 +24,7 @@ SceneSwitcher="*res://Autoloads/SceneSwitcher/SceneSwitcher.tscn"
 [dialogic]
 
 directories/dch_directory={
+"bar-san": "res://characters/bar-san.dch",
 "christine": "res://characters/christine.dch",
 "nico": "res://characters/nico.dch"
 }
@@ -42,6 +43,7 @@ directories/dtl_directory={
 "s5-rePostOffice": "res://scenes/act 1/s5-rePostOffice.dtl",
 "s6-jingleAccept": "res://scenes/act 1/s6-jingleAccept.dtl",
 "s6-jingleReject": "res://scenes/act 1/s6-jingleReject.dtl",
+"test": "res://scenes/testing/test.dtl",
 "timeline_test": "res://timelines/timeline_test.dtl",
 "timelineyestlslalalal": "res://Temporary/timelineyestlslalalal.dtl"
 }
