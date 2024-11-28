@@ -29,6 +29,7 @@ directories/dch_directory={
 "nico": "res://characters/nico.dch"
 }
 directories/dtl_directory={
+"badEnd": "res://scenes/act 3/badEnd.dtl",
 "intro": "res://scenes/credits/intro.dtl",
 "s1-corporate": "res://scenes/act 1/s1-corporate.dtl",
 "s1-happenstance": "res://scenes/act 2/s1-happenstance.dtl",
@@ -74,7 +75,10 @@ variables={
 "santa": {
 "believe": true,
 "desire": true,
-"love": true
+"die": true,
+"love": true,
+"no": true,
+"police": true
 }
 }
 layout/style_list=["res://styles/subtitles.tres"]
