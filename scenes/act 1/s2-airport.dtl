@@ -63,6 +63,6 @@ set {mc} = {name.first}.to_upper()
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine
 
-jump s3-home/
+jump intro/
 
 [end_timeline]

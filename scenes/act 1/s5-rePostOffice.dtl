@@ -1,3 +1,8 @@
+- I don't know what to say
+	[i]I stare at him silently, my mind unable to form words.[/i]
+	{n}\: If you don't want to come, no worries! Totally okay!
+	jump s6-jingleReject/
+
 - ...Sure, why not? | [if {jingle.yes} == true] [else="disable"]
 	[i]Maybe mom is right, I should try to have some holiday spirit[/i]
 	{n}\: Righteous!
@@ -38,10 +43,7 @@
 	{n}\: Christmas is our busiest time of year, the amount of presents that come through here? You wouldn’t believe!
 	jump s6-jingleReject/
 
-- I don't know what to say
-	[i]I stare at him silently, my mind unable to form words.[/i]
-	{n}\: If you don't want to come, no worries! Totally okay!
-	jump s6-jingleReject/
+
 
 
 [end_timeline]

@@ -1,0 +1,106 @@
+[gd_scene load_steps=13 format=3 uid="uid://divtlrxbks8y5"]
+
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_e3kqw"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_2v7tq"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="6_5c7m3"]
+[ext_resource type="PackedScene" uid="uid://bgv7niotibvmv" path="res://styles/layouts/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="8_uccgr"]
+[ext_resource type="Shader" path="res://styles/layouts/grain/grain.gdshader" id="10_aywdc"]
+[ext_resource type="Texture2D" uid="uid://b3kdbqj8hix7f" path="res://art/UI/hot_bars.png" id="10_hnspm"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="10_licjr"]
+[ext_resource type="PackedScene" uid="uid://c0l7oe5wqmn41" path="res://styles/layouts/CenteredChoices/custom_centered_choices.tscn" id="12_2ueyl"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="14_wdd85"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="16_nx6ct"]
+
+[sub_resource type="GDScript" id="GDScript_ptd7i"]
+script/source = "@tool
+extends DialogicLayoutBase
+
+## The default layout base scene.
+
+@export var canvas_layer: int = 1
+@export var follow_viewport: bool = false
+
+@export_subgroup(\"Global\")
+@export var global_bg_color: Color = Color(0, 0, 0, 0.9)
+@export var global_font_color: Color = Color(\"white\")
+@export_file('*.ttf', '*.tres') var global_font: String = \"\"
+@export var global_font_size: int = 18
+
+
+func _apply_export_overrides() -> void:
+	# apply layer
+	set(&'layer', canvas_layer)
+	set(&'follow_viewport_enabled', follow_viewport)
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hm4wp"]
+shader = ExtResource("10_aywdc")
+shader_parameter/grain_amount = 0.063
+shader_parameter/grain_size = 1.0
+shader_parameter/animate = false
+
+[node name="Custom" type="CanvasLayer"]
+script = SubResource("GDScript_ptd7i")
+
+[node name="BackgroundLayer" parent="." instance=ExtResource("2_e3kqw")]
+apply_overrides_on_ready = true
+
+[node name="VN_PortraitLayer" parent="." instance=ExtResource("4_2v7tq")]
+apply_overrides_on_ready = true
+
+[node name="FullAdvanceInputLayer" parent="." instance=ExtResource("6_5c7m3")]
+apply_overrides_on_ready = true
+
+[node name="VN_TextboxLayer" parent="." instance=ExtResource("8_uccgr")]
+text_alignment = 1
+text_use_global_size = false
+text_size = 30
+text_use_global_color = false
+text_use_global_font = false
+box_color_use_global = false
+box_color_custom = Color(0, 0, 0, 0)
+box_size = Vector2(1000, 160)
+box_margin_bottom = 30
+box_animation_in = 0
+box_animation_out = 0
+next_indicator_enabled = false
+next_indicator_show_on_questions = false
+typing_sounds_enabled = false
+apply_overrides_on_ready = true
+
+[node name="Glossary" parent="." instance=ExtResource("10_licjr")]
+apply_overrides_on_ready = true
+
+[node name="VN_ChoiceLayer" parent="." instance=ExtResource("12_2ueyl")]
+visible = false
+mouse_force_pass_scroll_events = false
+font_size_use_global = false
+font_size_custom = 22
+apply_overrides_on_ready = true
+
+[node name="TextInputLayer" parent="." instance=ExtResource("14_wdd85")]
+apply_overrides_on_ready = true
+
+[node name="ExampleHistoryScene" parent="." instance=ExtResource("16_nx6ct")]
+font_use_global_size = true
+font_custom_size = 15
+font_use_global_fonts = true
+font_custom_normal = ""
+font_custom_bold = ""
+font_custom_italics = ""
+disabled = false
+apply_overrides_on_ready = true
+
+[node name="Grain" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_hm4wp")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bars" type="Sprite2D" parent="Grain"]
+z_as_relative = false
+texture = ExtResource("10_hnspm")
+centered = false
