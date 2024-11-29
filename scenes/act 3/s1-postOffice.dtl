@@ -119,6 +119,7 @@ join nico (cSad) left
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…
+join christine (front/work/neutral) pos=-y6.3 size=y6.9
 [music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 jump s2-rePostOffice/
 [end_timeline]
