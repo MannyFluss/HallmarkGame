@@ -1,10 +1,11 @@
 [music path="res://audio/music/sad christmas.mp3" fade="0.0" volume="0.0"]
 [background arg="res://art/backgrounds/Office.PNG" fade="0.0"]
-join christine (wHappy) right
+join christine (front/work/happy) center
 # Internal company meeting, no powerpoints since this is the 80s, maybe a poster 
 As you can see, the new state of the art model works like a charm!
 Simply by adjusting the settings, we can now control the dropping skill and claw strength of the crane.
 The power is in [i]your own hands[/i] to control the odds!
+join christine (front/work/neutral)
 [i][applause][/i]
 Furthermore, I’m delighted to announce an upcoming partnership with the beloved pizza chain Koko’s.
 Soon, you’ll be able to see MEGA branded claw machines in your local pizza shop, just in time for the holiday season!
