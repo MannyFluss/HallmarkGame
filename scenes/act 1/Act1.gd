@@ -28,6 +28,7 @@ func on_timeline_ended()->void:
 
 func _on_recieving_field_prize_obtained(name: String) -> void:
 	if name == "start_game":
-		print("sssss")
+		SceneSwitcher.DotEffectNoSceneSwitch()
+		await get_tree().create_timer(1.05).timeout
 		start_dialogic_timeline()
-		act_1_animator.play("start_game")
+		#act_1_animator.play("start_game")

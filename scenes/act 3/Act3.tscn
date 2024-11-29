@@ -1,19 +1,6 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=2 format=3 uid="uid://bxfwcwgjmyuuj"]
+[gd_scene load_steps=2 format=3 uid="uid://otyo58jhli15"]
 
 [ext_resource type="Script" path="res://scenes/act 3/act_3.gd" id="1_3h1vu"]
-=======
-[gd_scene load_steps=6 format=3 uid="uid://bxfwcwgjmyuuj"]
-
-[ext_resource type="Script" path="res://scenes/act 3/act_3.gd" id="1_3h1vu"]
-[ext_resource type="Texture2D" uid="uid://yw08da8kagc8" path="res://art/very important/LifeIsTerror.png" id="2_0tsre"]
-[ext_resource type="AudioStream" uid="uid://bsjhm34csfjx1" path="res://audio/music/Last_call_v2.mp3" id="2_cnydq"]
-[ext_resource type="Texture2D" uid="uid://bf67wc0lloiff" path="res://scenes/act 3/Scanned_Documents-1.png" id="4_olgcp"]
-
-[sub_resource type="Curve" id="Curve_bdhhn"]
-_data = [Vector2(0.14, 0), 0.0, 0.0, 0, 0, Vector2(0.536667, 0.808311), 0.980228, 0.980228, 0, 0, Vector2(0.893333, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -6.58898, 0.0, 0, 0]
-point_count = 4
->>>>>>> Stashed changes
 
 [node name="Act3" type="Node2D"]
 script = ExtResource("1_3h1vu")

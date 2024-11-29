@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://msxx6tecu1tg"
-path="res://.godot/imported/hallmarkRomantic_2.mp3-499cc28ffbff353849c9e072a0e885dc.mp3str"
+path="res://.godot/imported/hallmarkRomantic_2.mp3-a269680fde3de6ab1abc391f0049e7b1.mp3str"
 
 [deps]
 
-source_file="res://audio/music/hallmarkRomantic_2.mp3"
-dest_files=["res://.godot/imported/hallmarkRomantic_2.mp3-499cc28ffbff353849c9e072a0e885dc.mp3str"]
+source_file="res://Audio/Music/hallmarkRomantic_2.mp3"
+dest_files=["res://.godot/imported/hallmarkRomantic_2.mp3-a269680fde3de6ab1abc391f0049e7b1.mp3str"]
 
 [params]
 

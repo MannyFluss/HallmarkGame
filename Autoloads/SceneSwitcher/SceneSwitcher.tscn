@@ -46,6 +46,7 @@ _data = {
 }
 
 [node name="SceneSwitcher" type="CanvasLayer"]
+layer = 11
 script = ExtResource("1_7qgh1")
 
 [node name="Control" type="Control" parent="."]

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bc0swuoevutma"
-path="res://.godot/imported/CraneGame_1.mp3-0feb535de5f38ca2f765a0488bf7a7da.mp3str"
+path="res://.godot/imported/CraneGame_1.mp3-a44783f910bc089f1d4af888a4597f77.mp3str"
 
 [deps]
 
-source_file="res://audio/music/CraneGame_1.mp3"
-dest_files=["res://.godot/imported/CraneGame_1.mp3-0feb535de5f38ca2f765a0488bf7a7da.mp3str"]
+source_file="res://Audio/Music/CraneGame_1.mp3"
+dest_files=["res://.godot/imported/CraneGame_1.mp3-a44783f910bc089f1d4af888a4597f77.mp3str"]
 
 [params]
 

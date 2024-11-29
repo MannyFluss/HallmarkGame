@@ -92,13 +92,21 @@ position = Vector2(279, 215)
 scale = Vector2(0.6, 0.6)
 
 [node name="Crane" parent="CraneGame/Node2D" index="0"]
-enabled = true
+position = Vector2(555, 185)
+drop_length = 1.05
+clamp_by_deg = 15
 
 [node name="Ballz" type="Node2D" parent="CraneGame"]
 
 [node name="CranePrize" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(613, 507)
 prize_tracker_name = "start_game"
+
+[node name="RigidBody2D" parent="CraneGame/Ballz/CranePrize" index="0"]
+mass = 0.001
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] Start"
 
 [node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(786, 526)

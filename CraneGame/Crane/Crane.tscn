@@ -1,103 +1,38 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1muy2018uf5w"]
+[gd_scene load_steps=4 format=3 uid="uid://b1muy2018uf5w"]
 
 [ext_resource type="Script" path="res://CraneGame/Crane/crane.gd" id="1_jqea0"]
 [ext_resource type="Texture2D" uid="uid://klmht630exci" path="res://CraneGame/Crane/CrangeArm.png" id="2_2nlnq"]
-[ext_resource type="Texture2D" uid="uid://cr3rwe5rfmiaw" path="res://CraneGame/Crane/pixil-frame-0 (3).png" id="3_ta0bl"]
-
-[sub_resource type="Animation" id="Animation_7fubf"]
-resource_name = "Grab"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatableBody2D/RightSide:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(0.5, 2),
-"update": 0,
-"values": [-0.349066, -0.174533]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatableBody2D/LeftSide:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(0.5, 2),
-"update": 0,
-"values": [-2.79253, -2.96706]
-}
-
-[sub_resource type="Animation" id="Animation_ta74j"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatableBody2D/RightSide:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-0.349066]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatableBody2D/LeftSide:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-2.79253]
-}
-
-[sub_resource type="Animation" id="Animation_g34xo"]
-resource_name = "Release"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_d3jd6"]
-_data = {
-"Grab": SubResource("Animation_7fubf"),
-"RESET": SubResource("Animation_ta74j"),
-"Release": SubResource("Animation_g34xo")
-}
+[ext_resource type="Script" path="res://CraneGame/Crane/ezfix.gd" id="2_qe20g"]
 
 [node name="Crane" type="Node2D"]
 script = ExtResource("1_jqea0")
+enabled = true
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+[node name="Right" type="AnimatableBody2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_qe20g")
 
-[node name="RightSide" type="CollisionPolygon2D" parent="AnimatableBody2D"]
-rotation = -0.349066
+[node name="RightSide" type="CollisionPolygon2D" parent="Right"]
+rotation = -0.523599
 polygon = PackedVector2Array(1.7032, 18.7109, 31.2517, 60.3269, 0.476776, 121.49, 24.9952, 127.221, 61.156, 54.1843, 28.7919, -0.162378, 1.28171, -0.597672)
 
-[node name="CrangeArm" type="Sprite2D" parent="AnimatableBody2D/RightSide"]
+[node name="CrangeArm" type="Sprite2D" parent="Right/RightSide"]
 texture_filter = 1
 position = Vector2(32, 62)
 texture = ExtResource("2_2nlnq")
 
-[node name="LeftSide" type="CollisionPolygon2D" parent="AnimatableBody2D"]
-rotation = -2.79253
+[node name="Left" type="AnimatableBody2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_qe20g")
+
+[node name="LeftSide" type="CollisionPolygon2D" parent="Left"]
+rotation = -2.61799
 scale = Vector2(1, -1)
 polygon = PackedVector2Array(0.684034, -1.87939, 1.78962, 15.5498, 31.9359, 58.4474, 0.819206, 120.55, 23.4582, 125.597, 60.2165, 53.8421, 28.7919, -0.162477)
 
-[node name="CrangeArm2" type="Sprite2D" parent="AnimatableBody2D/LeftSide"]
+[node name="CrangeArm2" type="Sprite2D" parent="Left/LeftSide"]
 texture_filter = 1
 position = Vector2(32.7893, 61.9505)
 texture = ExtResource("2_2nlnq")
 
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
-position = Vector2(0, -8)
-rotation = 0.785398
-texture = ExtResource("3_ta0bl")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_d3jd6")
-}
+[node name="AvgPos" type="Node2D" parent="."]
