@@ -49,5 +49,6 @@ update nico left [animation="Heartbeat"]
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]
 [i]WHAT DO I SAY?!?!?![/i]
+# this is where we will do the camera zoom methinks
 jump s5-rePostOffice/
 [end_timeline]

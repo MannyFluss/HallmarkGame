@@ -3,7 +3,6 @@ extends Node2D
 @onready var letter_to_scroll: Node2D = $LetterToScroll
 
 @onready var favorite_song: TextEdit = %FavoriteSong
-@onready var childhood_meal: TextEdit = %ChildhoodMeal
 @onready var favorite_drink: TextEdit = %FavoriteDrink
 @onready var favorite_cookie: TextEdit = %FavoriteCookie
 @onready var what_i_want: TextEdit = %WhatIWant
@@ -79,4 +78,13 @@ func _on_button_pressed() -> void:
 func _on_submit_button_pressed() -> void:
 	SceneSwitcher.SwitchScene("res://scenes/act1.2/Act1_2.tscn")
 	
+	GlobalTracking.tracking_variables["your_first_name"] = first_name.text
+	GlobalTracking.tracking_variables["your_last_name"] = last_name.text
+	
+	GlobalTracking.tracking_variables["favorite_drink"] = favorite_drink.text
+	GlobalTracking.tracking_variables["favorite_song"] = favorite_song.text
+	GlobalTracking.tracking_variables["favorite_cookie"] = favorite_cookie.text
+	GlobalTracking.tracking_variables["what_i_want"] = what_i_want.text
+	
+
 	

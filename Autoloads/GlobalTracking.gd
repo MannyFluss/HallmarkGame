@@ -10,11 +10,15 @@ var tracking_variables = {
 	
 	"favorite_drink" : "hot chocolate",
 	"favorite_food" : "Spiral Ham",
-	"favorite_song": "yo mama",
-	"favorite_cookie" : "chocky chip",
-	"what_i_want" : "a new car",
+	"favorite_song": "Last Christmas I gave you my Fart",
+	"favorite_cookie" : "choclate chip",
+	"what_i_want" : "a new Xbox",
 	
 }
+
+
+
+
 #@onready var favorite_song: TextEdit = %FavoriteSong
 #@onready var childhood_meal: TextEdit = %ChildhoodMeal
 #@onready var favorite_drink: TextEdit = %FavoriteDrink

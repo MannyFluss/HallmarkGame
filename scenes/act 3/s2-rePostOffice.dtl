@@ -1,18 +1,4 @@
-- I really don't know what to say...
-	[music fade="1.0" volume="0.0"]
-	{mc}\: …
-	{n}\: It’s okay, you don’t have to believe me…
-	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
-	{mc}\: …
-	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
-	{mc}\: Just give me a little time.
-	{mc}\: I honestly don’t know what to believe… but I want to understand.
-	{n}\: Well, if you do believe me…
-	# #nico smiles
-	{n}\: I promise you won’t regret it!
-	# #fade to black
-	# GOOD ENDING
-- I believe you. | [if {santa.believe} == true]
+- I believe you. | [if {GlobalTracking.has_state("BelieveSanta")} == true]
 	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I can’t believe I’m saying this, but I believe you.
 	{n}\: You do?
@@ -25,7 +11,7 @@
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
 	# #fade to black
 	# GOOD ENDING
-- I love you. | [if {santa.love} == true]
+- I love you. | [if {GlobalTracking.has_state("AcceptSanta")} == true]
 	[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I love you, Nico.
 	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
@@ -42,7 +28,7 @@
 	{n}\: I promise you, you won’t regret it!
 	# #fade to black
 	# GOOD ENDING
-- I want Santa… | [if {santa.desire} == true]
+- I want Santa… | [if {GlobalTracking.has_state("FreakySanta")} == true]
 	[music path="res://audio/music/CraneGame_1.mp3" fade="1.0" volume="0.0"]
 	{n}\: What?
 	{mc}\: Make me your Mrs. Claus.
@@ -54,33 +40,20 @@
 	{n}\: Ever do it in a sleigh?
 	# #fade to black
 	# #GOOD ENGING
-- I'm calling the FUCKING POLICE! | [if {santa.police} == true]
+- I really don't know what to say...
 	[music fade="1.0" volume="0.0"]
-	leave christine
-	[wait time="1.0"]
-	[background arg="res://art/backgrounds/black.png" fade="1.0"]
-	leave nico [animation="Fade Out" length="1.0"]
-	[wait time="1.0"]
-	jump badEnd/
-	# BAD END
-- No, you're fucking BATSHIT! | [if {santa.no} == true]
-	[music fade="1.0" volume="0.0"]
-	leave christine
-	[wait time="1.0"]
-	[background arg="res://art/backgrounds/black.png" fade="1.0"]
-	leave nico [animation="Fade Out" length="1.0"]
-	[wait time="1.0"]
-	jump badEnd/
-	# BAD END
-- GO DIE YOU STALKER! | [if {santa.die} == true]
-	[music fade="1.0" volume="0.0"]
-	leave christine
-	[wait time="1.0"]
-	[background arg="res://art/backgrounds/black.png" fade="1.0"]
-	leave nico [animation="Fade Out" length="1.0"]
-	[wait time="1.0"]
-	jump badEnd/
-	# BAD END
+	{mc}\: …
+	{n}\: It’s okay, you don’t have to believe me…
+	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
+	{mc}\: …
+	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
+	{mc}\: Just give me a little time.
+	{mc}\: I honestly don’t know what to believe… but I want to understand.
+	{n}\: Well, if you do believe me…
+	# #nico smiles
+	{n}\: I promise you won’t regret it!
+	# #fade to black
+	# GOOD ENDING
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]

@@ -1,0 +1,231 @@
+[gd_scene load_steps=4 format=3 uid="uid://eeehade8cfd4"]
+
+[ext_resource type="Texture2D" uid="uid://b0inmbuatbvru" path="res://art/Logo/Blank.PNG" id="1_3eiep"]
+[ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="1_ah6ei"]
+[ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_cnw08"]
+
+[node name="CraneGameAcceptSanta" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1.99997, 63)
+scale = Vector2(0.567708, 0.585185)
+texture = ExtResource("1_3eiep")
+
+[node name="Node2D" parent="." instance=ExtResource("1_ah6ei")]
+position = Vector2(-603, -433)
+
+[node name="Crane" parent="Node2D" index="0"]
+position = Vector2(608, 162)
+drop_speed = 360
+drop_length = 1.4
+drag_strength = 3
+area_clamp_left = -105.0
+area_clamp_right = 305.0
+
+[node name="Sprite2D" parent="Node2D/RecievingField" index="1"]
+visible = false
+
+[node name="Balls" type="Node2D" parent="."]
+
+[node name="AcceptPrize" parent="Balls" instance=ExtResource("3_cnw08")]
+prize_tracker_name = "AcceptSanta"
+
+[node name="TopHalf" parent="Balls/AcceptPrize/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/AcceptPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] I Love You"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/AcceptPrize/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IBelieveYouPrize" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(266, 130)
+prize_tracker_name = "BelieveSanta"
+
+[node name="TopHalf" parent="Balls/IBelieveYouPrize/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IBelieveYouPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] Believe in you"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/IBelieveYouPrize/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IDKPrize" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(127, 25)
+prize_tracker_name = "IDKSanta"
+
+[node name="TopHalf" parent="Balls/IDKPrize/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IDKPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ???"
+
+[node name="BottomHalf" parent="Balls/IDKPrize/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="FreakPrize" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(39, 113)
+prize_tracker_name = "FreakySanta"
+
+[node name="TopHalf" parent="Balls/FreakPrize/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/FreakPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ;)"
+
+[node name="BottomHalf" parent="Balls/FreakPrize/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="AcceptPrize2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(98, -76)
+prize_tracker_name = "AcceptSanta"
+
+[node name="TopHalf" parent="Balls/AcceptPrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/AcceptPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] I Love You"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/AcceptPrize2/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IBelieveYouPrize2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(-51, 75)
+prize_tracker_name = "BelieveSanta"
+
+[node name="TopHalf" parent="Balls/IBelieveYouPrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IBelieveYouPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] Believe in you"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/IBelieveYouPrize2/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IDKPrize2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(203, 98)
+prize_tracker_name = "IDKSanta"
+
+[node name="TopHalf" parent="Balls/IDKPrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IDKPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ???"
+
+[node name="BottomHalf" parent="Balls/IDKPrize2/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IDKPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(228, -105)
+prize_tracker_name = "IDKSanta"
+
+[node name="TopHalf" parent="Balls/IDKPrize3/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IDKPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ???"
+
+[node name="BottomHalf" parent="Balls/IDKPrize3/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="FreakPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(-72, -49)
+prize_tracker_name = "FreakySanta"
+
+[node name="TopHalf" parent="Balls/FreakPrize3/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/FreakPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ;)"
+
+[node name="BottomHalf" parent="Balls/FreakPrize3/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="AcceptPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(269, 33)
+prize_tracker_name = "AcceptSanta"
+
+[node name="TopHalf" parent="Balls/AcceptPrize3/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/AcceptPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] I Love You"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/AcceptPrize3/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IBelieveYouPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(-96, 140)
+prize_tracker_name = "BelieveSanta"
+
+[node name="TopHalf" parent="Balls/IBelieveYouPrize3/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IBelieveYouPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 26
+text = "[center] Believe in you"
+scroll_active = false
+
+[node name="BottomHalf" parent="Balls/IBelieveYouPrize3/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="IDKPrize4" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(136, 112)
+prize_tracker_name = "IDKSanta"
+
+[node name="TopHalf" parent="Balls/IDKPrize4/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/IDKPrize4/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ???"
+
+[node name="BottomHalf" parent="Balls/IDKPrize4/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="FreakPrize2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(208, -27)
+prize_tracker_name = "FreakySanta"
+
+[node name="TopHalf" parent="Balls/FreakPrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
+
+[node name="Label" parent="Balls/FreakPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] ;)"
+
+[node name="BottomHalf" parent="Balls/FreakPrize2/RigidBody2D" index="2"]
+self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-105, -118)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(305, -113)
+
+[editable path="Node2D"]
+[editable path="Balls/AcceptPrize"]
+[editable path="Balls/IBelieveYouPrize"]
+[editable path="Balls/IDKPrize"]
+[editable path="Balls/FreakPrize"]
+[editable path="Balls/AcceptPrize2"]
+[editable path="Balls/IBelieveYouPrize2"]
+[editable path="Balls/IDKPrize2"]
+[editable path="Balls/IDKPrize3"]
+[editable path="Balls/FreakPrize3"]
+[editable path="Balls/AcceptPrize3"]
+[editable path="Balls/IBelieveYouPrize3"]
+[editable path="Balls/IDKPrize4"]
+[editable path="Balls/FreakPrize2"]

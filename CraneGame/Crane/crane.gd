@@ -12,6 +12,11 @@ var drop_length = 1.5
 @export
 var drag_strength = 1
 
+@export
+var area_clamp_left : float = -500
+
+@export
+var area_clamp_right : float = 500
 
 @export
 var clamp_length = .5
@@ -40,14 +45,21 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("action_left"):
 		right.velocity.x -= speed * delta
 		left.velocity.x -= speed * delta
+		if state == "default" and left.position.x < area_clamp_left:
+			right.velocity.x = 0
+			left.velocity.x = 0
 	elif Input.is_action_pressed("action_right"):
 		right.velocity.x += speed * delta
 		left.velocity.x += speed * delta
+		if state != "clamped" and right.position.x > area_clamp_right:
+			right.velocity.x = 0
+			left.velocity.x = 0
 	else:
 		right.velocity.x = lerpf(right.velocity.x,0.0,drag_strength * delta)
 		left.velocity.x = lerpf(left.velocity.x,0.0,drag_strength * delta)
 	
-	if Input.is_action_just_pressed("action_engage") and state == "default":
+	if (Input.is_action_just_pressed("action_engage") and state == "default" and 
+		area_clamp_left <= right.position.x and right.position.x <= area_clamp_right):
 		on_started_dropping()
 	if Input.is_action_just_pressed("action_engage") and state == "clamped":
 		on_started_releasing()
@@ -65,6 +77,9 @@ func _physics_process(delta: float) -> void:
 	
 	right.position += right.velocity * delta
 	left.position += left.velocity * delta
+	
+	
+	
 	
 	
 func on_started_releasing()->void:
