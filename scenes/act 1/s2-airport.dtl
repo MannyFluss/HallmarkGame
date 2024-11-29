@@ -42,6 +42,9 @@ ELF\: Donate $2.50 and write a letter to Santa! All proceeds go to families in n
 [i]Why not…[/i]
 
 [i]I give $5 to the strange elf man, grab one of the themed letter sheets, and sit down to write.[/i]
+do SceneSwitcher.SwitchScene("res://scenes/LetterToSanta/Letter.tscn")
+[end_timeline]
+[wait time="0.5"]
 
 # start letter game
 Dear Santa,
@@ -59,7 +62,6 @@ set {mc} = {name.first}.to_upper()
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine
-[wait time="1.0"]
 
 jump s3-home/
 

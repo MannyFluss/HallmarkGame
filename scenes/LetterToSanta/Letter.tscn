@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ct014ypitk3xt"]
+[gd_scene load_steps=10 format=3 uid="uid://ct014ypitk3xt"]
 
 [ext_resource type="Script" path="res://scenes/LetterToSanta/SantasLetter.gd" id="1_gxd5f"]
 [ext_resource type="Texture2D" uid="uid://70fgwlwdntir" path="res://scenes/LetterToSanta/Letter paper.PNG" id="2_o7eke"]
 [ext_resource type="Texture2D" uid="uid://cpwi08xvr1w0a" path="res://scenes/LetterToSanta/letterupdated.png" id="2_q8x45"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
+[ext_resource type="Texture2D" uid="uid://bijja44tb51p3" path="res://scenes/LetterToSanta/PMTA_arrow.png" id="5_ignxy"]
+[ext_resource type="Texture2D" uid="uid://g4hwqmj0lnws" path="res://scenes/LetterToSanta/image (1).png" id="6_e0ucf"]
+[ext_resource type="Texture2D" uid="uid://drjcvi228sob" path="res://scenes/LetterToSanta/image.png" id="7_ekdu2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bayl4"]
 
@@ -181,19 +184,32 @@ texture = ExtResource("2_o7eke")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
-[node name="ContinueButton" type="Button" parent="."]
-offset_left = 834.0
+[node name="ContinueButton" type="TextureButton" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 909.0
 offset_top = 988.0
-offset_right = 1124.0
+offset_right = 954.0
 offset_bottom = 1070.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("5_ignxy")
+texture_pressed = ExtResource("6_e0ucf")
+texture_hover = ExtResource("7_ekdu2")
 
-[node name="SubmitButton" type="Button" parent="."]
+[node name="SubmitButton" type="TextureButton" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 1643.0
-offset_top = 943.0
-offset_right = 1889.0
-offset_bottom = 1047.0
-text = "submit"
+offset_left = 1810.0
+offset_top = 1058.0
+offset_right = 1855.0
+offset_bottom = 1137.0
+rotation = -1.5708
+texture_normal = ExtResource("5_ignxy")
+texture_pressed = ExtResource("6_e0ucf")
+texture_hover = ExtResource("7_ekdu2")
 
 [connection signal="pressed" from="ContinueButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]
