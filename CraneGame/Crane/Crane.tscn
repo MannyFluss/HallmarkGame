@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1muy2018uf5w"]
+[gd_scene load_steps=6 format=3 uid="uid://b1muy2018uf5w"]
 
 [ext_resource type="Script" path="res://CraneGame/Crane/crane.gd" id="1_jqea0"]
 [ext_resource type="Texture2D" uid="uid://klmht630exci" path="res://CraneGame/Crane/CrangeArm.png" id="2_2nlnq"]
 [ext_resource type="Script" path="res://CraneGame/Crane/ezfix.gd" id="2_qe20g"]
+
+[sub_resource type="Gradient" id="Gradient_vlx4o"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7r8fk"]
+gradient = SubResource("Gradient_vlx4o")
 
 [node name="Crane" type="Node2D"]
 script = ExtResource("1_jqea0")
@@ -17,9 +24,16 @@ rotation = -0.523599
 polygon = PackedVector2Array(1.7032, 18.7109, 31.2517, 60.3269, 0.476776, 121.49, 24.9952, 127.221, 61.156, 54.1843, 28.7919, -0.162378, 1.28171, -0.597672)
 
 [node name="CrangeArm" type="Sprite2D" parent="Right/RightSide"]
+z_index = 2
 texture_filter = 1
 position = Vector2(32, 62)
 texture = ExtResource("2_2nlnq")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Right"]
+self_modulate = Color(0.404511, 0.404511, 0.404511, 1)
+position = Vector2(0, -300)
+scale = Vector2(0.40625, 9.46875)
+texture = SubResource("GradientTexture2D_7r8fk")
 
 [node name="Left" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
@@ -31,6 +45,7 @@ scale = Vector2(1, -1)
 polygon = PackedVector2Array(0.684034, -1.87939, 1.78962, 15.5498, 31.9359, 58.4474, 0.819206, 120.55, 23.4582, 125.597, 60.2165, 53.8421, 28.7919, -0.162477)
 
 [node name="CrangeArm2" type="Sprite2D" parent="Left/LeftSide"]
+z_index = 2
 texture_filter = 1
 position = Vector2(32.7893, 61.9505)
 texture = ExtResource("2_2nlnq")

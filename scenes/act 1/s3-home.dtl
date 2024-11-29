@@ -1,14 +1,13 @@
 [background arg="res://art/backgrounds/MomHouse.PNG" fade="1.0"]
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="2.0" volume="0.0"]
 join christine (wNeutral) left
-set {fav.cookie} = GlobalTracking.tracking_variables["favorite_cookie"] 
+set {fav.cookie} = GlobalTracking.tracking_variables["favorite_cookie"]
 set {gimme} = GlobalTracking.tracking_variables["what_i_want"]
 set {fav.drink} = GlobalTracking.tracking_variables["favorite_drink"]
 set {fav.song} = GlobalTracking.tracking_variables["favorite_song"]
-set {mc} = GlobalTracking.tracking_variables["your_first_name"]
 set {name.first} = GlobalTracking.tracking_variables["your_first_name"]
-set {n} = GlobalTracking.tracking_variables["your_last_name"]
 set {name.last} = GlobalTracking.tracking_variables["your_last_name"]
+set {mc} = {name.first}.to_upper()
 
 {mc}\: So this is the new place?
 [i]I look around at the cabin that my mother lovingly and meticulously decorated for the holidays.[/i]
@@ -47,3 +46,4 @@ join  center
 
 jump s4-postOffice/
 [end_timeline]
+set {mc} = {name.first}.to_upper()
