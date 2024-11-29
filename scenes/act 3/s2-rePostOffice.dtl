@@ -55,7 +55,7 @@ join christine (front/work/neutral) center
 	{n}\: Ever do it in a sleigh?
 	# #fade to black
 	# #GOOD ENGING
-- I'm calling the FUCKING POLICE! | [if {santa.police} == true]
+- I'm calling the FUCKING POLICE!! | [if {santa.police} == true]
 	[music fade="1.0" volume="0.0"]
 	leave christine
 	[wait time="1.0"]
