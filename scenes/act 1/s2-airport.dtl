@@ -40,6 +40,7 @@ ELF\: Donate $2.50 and write a letter to Santa! All proceeds go to families in n
 [i]Maybe... I should let myself believe in magic again, at least for a little while.[/i]
 [i]Letter to Santa…[/i]
 [i]Why not…[/i]
+[sound path="res://Audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
 
 [i]I give $5 to the strange elf man, grab one of the themed letter sheets, and sit down to write.[/i]
 do SceneSwitcher.SwitchScene("res://scenes/LetterToSanta/Letter.tscn")
