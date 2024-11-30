@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
 [ext_resource type="Texture2D" uid="uid://bqp2m3f7u2u7x" path="res://scenes/LetterToSanta/ArrowStroke.png" id="6_tjaux"]
 [ext_resource type="Texture2D" uid="uid://87edqsestmh7" path="res://scenes/LetterToSanta/Arrow.png" id="7_ujbc4"]
-[ext_resource type="AudioStream" uid="uid://dkiyw0nong86y" path="res://audio/music/austin_song_v2 (2).mp3" id="8_ac13l"]
+[ext_resource type="AudioStream" uid="uid://dkiyw0nong86y" path="res://Audio/Music/austin_song_v2 (2).mp3" id="8_ac13l"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yflob"]
 
@@ -201,8 +201,8 @@ offset_right = 954.0
 offset_bottom = 1070.0
 grow_horizontal = 2
 grow_vertical = 0
-texture_normal = ExtResource("6_tjaux")
-texture_pressed = ExtResource("7_ujbc4")
+texture_normal = ExtResource("7_ujbc4")
+texture_pressed = ExtResource("6_tjaux")
 
 [node name="SubmitButton" type="TextureButton" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -211,8 +211,8 @@ offset_top = 1039.0
 offset_right = 1840.0
 offset_bottom = 1258.0
 rotation = -1.5708
-texture_normal = ExtResource("6_tjaux")
-texture_pressed = ExtResource("7_ujbc4")
+texture_normal = ExtResource("7_ujbc4")
+texture_pressed = ExtResource("6_tjaux")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_ac13l")

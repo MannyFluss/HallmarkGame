@@ -39,6 +39,7 @@ shape = SubResource("RectangleShape2D_fi2lt")
 position = Vector2(299, 518)
 
 [node name="Sprite2D" type="Sprite2D" parent="RecievingField"]
+visible = false
 position = Vector2(1, 4)
 scale = Vector2(1.875, 1.9375)
 texture = ExtResource("4_gba21")
