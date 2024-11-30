@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lc0hsts3bokj"
+path="res://.godot/imported/screaming cop meme original video.mp3-b6a1629ad23026a79b15a68293be475d.mp3str"
+
+[deps]
+
+source_file="res://scenes/BadEnding/screaming cop meme original video.mp3"
+dest_files=["res://.godot/imported/screaming cop meme original video.mp3-b6a1629ad23026a79b15a68293be475d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

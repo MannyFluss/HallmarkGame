@@ -14,6 +14,9 @@ func SwitchScene(path : String)->void:
 	
 	animation_player.play_backwards("CircleTransition")
 	
+	
+func switchSceneNoanim(path : String):
+	get_tree().change_scene_to_file(path)
 #wait 1.05 sec
 func DotEffectNoSceneSwitch()->void:
 	animation_player.play("CircleTransition")

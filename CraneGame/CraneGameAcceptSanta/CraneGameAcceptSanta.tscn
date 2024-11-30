@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://eeehade8cfd4"]
+[gd_scene load_steps=9 format=3 uid="uid://eeehade8cfd4"]
 
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="1_ah6ei"]
 [ext_resource type="Script" path="res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.gd" id="1_aij0g"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_cnw08"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="4_u1ain"]
 [ext_resource type="Shader" path="res://scenes/LetterToSanta/Letter.gdshader" id="6_gxw4j"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_0um0e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n0vuw"]
 shader = ExtResource("6_gxw4j")
@@ -293,6 +294,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_0um0e")
+autoplay = true
 
 [connection signal="unclamped" from="Node2D/Crane" to="." method="_on_crane_unclamped"]
 

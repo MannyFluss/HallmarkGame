@@ -4,8 +4,14 @@
 [i]My parent's didn't understand why I couldn't stay for Christmas, but I didn't expect them to... I knew they wouldn't be able to understand...
 [i]Back in the big city, I thought I'd be able to leave everything behind.
 [i]Christmas morning, I woke up prepared to have a quiet morning, trying everything in my power to push [b]that man[/b] out of my memory.
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i]I looked to my alarm clock to check the time...
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i]And found a single torn notebook page lying there.
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i]Scrawled in messy handwriting, in dark bleeding black ink...
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i][b]Enjoy your coal, b-word - Santa <3
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
+do SceneSwitcher.switchSceneNoanim("res://scenes/BadEnding/BadEnding.tscn")
 [end_timeline]
