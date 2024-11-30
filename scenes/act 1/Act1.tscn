@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=13 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
 [ext_resource type="Texture2D" uid="uid://d2c8kkbdgy8vb" path="res://art/backgrounds/Tv.PNG" id="4_2bjrr"]
+[ext_resource type="FontFile" uid="uid://cvm88ul63mm1e" path="res://Fonts/upheavtt.ttf" id="5_pjyws"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
-[ext_resource type="AudioStream" uid="uid://chw7cqcd81jg3" path="res://Audio/Music/hallmarkGeneric.mp3" id="7_kqqj2"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_3f2vq"]
 [ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
 [ext_resource type="Texture2D" uid="uid://dib5difwvuv04" path="res://art/backgrounds/IMG_6499.PNG" id="7_r6ksp"]
 
@@ -141,7 +142,8 @@ prize_tracker_name = "credits"
 self_modulate = Color(0.579, 0.3225, 0.75, 1)
 
 [node name="Label" parent="CraneGame/Ballz/CranePrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 18
+theme_override_fonts/normal_font = ExtResource("5_pjyws")
+theme_override_font_sizes/normal_font_size = 14
 text = "[center]
 Credits"
 
@@ -164,7 +166,7 @@ scale = Vector2(0.247, 0.247)
 texture = ExtResource("7_ongo5")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_kqqj2")
+stream = ExtResource("7_3f2vq")
 autoplay = true
 
 [node name="Tv2" type="Sprite2D" parent="."]
