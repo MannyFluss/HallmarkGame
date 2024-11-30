@@ -1,4 +1,4 @@
-[background arg="res://art/backgrounds/MomHouse.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/momCozyHouse.png" fade="1.0"]
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="2.0" volume="0.0"]
 join christine (side/work/neutral) center
 set {fav.cookie} = GlobalTracking.tracking_variables["favorite_cookie"]
@@ -10,27 +10,36 @@ set {name.last} = GlobalTracking.tracking_variables["your_last_name"]
 set {mc} = {name.first}.to_upper()
 
 {mc}\: So this is the new place?
+jump test
 [i]I look around at the cabin that my mother lovingly and meticulously decorated for the holidays.[/i]
+join christine (34/work/neutral) center
 MOM\: Isn’t it wonderful? Your father and I are so happy we moved here.
 # #{mc}\: It sure is.
 # #MOM\: I know it may not seem like much compared to the big city, but your father and I are very happy here.
 # #MOM\: Everyone here is so friendly, and you can tell that they really love Christmas.
 # #{mc}\: Yeah I’ve never seen so many Christmas lights before. People here really go all out,huh?
-join christine (front/work/headshot/neutral) center
+update christine (34/work/sad)
 MOM\: You should explore the area, get to know the people in town!
 MOM\: Oh, wait! Before that!
+update christine (34/work/neutral)
 MOM\: Here, I have these presents for Uncle Manny.
 MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to the post office to deliver them.
 - Deliver the presents
 	{mc}\: You got it, Mom.
 	MOM\: Thank you darling!
+	join christine (front/work/headshot/neutral) center
 	MOM\: It’s so nice having you home for Christmas this year.
+	update christine (front/work/headshot/sad) center
 	MOM\: We really missed you last Christmas. That job’s taking up too much of your time, you know!
+	update christine (front/work/headshot/neutral)
 	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun!
 - Try to get out of it
+	update christine (34/work/angry)
 	{mc}\: I’ve been home for less than 10 minutes and you’re already putting me to work?
 	MOM\: And here I thought you loved work?
+	update christine (34/work/sad)
 	MOM\: So much so that you didn’t come to see your poor mother last Christmas.
+	join christine (front/work/headshot/sad) center
 	{mc}\: Fine, fine, I understand. I’m sorry, I’ll go deliver them.
 	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun!
 	# #{mc}\: Sure, Mom.
@@ -38,11 +47,12 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to th
 	# #MOM\: You should spend more time caring about your loved ones than that job, you know!
 
 MOM\: I gotta run some more errands, so I’ll see you later! Love you darling!
+label test
 {mc}\: Love you too.
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-join  center
+leave christine [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 
 jump s4-postOffice/
