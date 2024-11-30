@@ -5,6 +5,7 @@ leave nico
 [i]I hadn’t seen Nico since that night.[/i]
 [i]As Christmas has drawn closer, he’s gotten more and more busy at the post office.[/i]
 # #[i]But a part of me is worried he’s avoiding me…[/i]
+[sound path="res://Audio/SFX/Store Door Sound Effect.mp3" volume="6.0"]
 [i][door chime jingles]
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
 join christine (cHappy) center [animation="Fade In"]
@@ -50,6 +51,7 @@ update christine (cSad) center [length="3.0" fade="Fade Cross" fade_length="3.0"
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
 [i]I frantically search for a name that I recognize…[/i]
 [i]And I find my own.[/i]
+[sound path="res://Audio/SFX/eerie-scrape-220190.mp3" volume="-3.0"]
 {name.first} {name.last}
 [i]There’s a number in parentheses to the right of my name, and I quickly flip to the page.[/i]
 [i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases\:[/i]

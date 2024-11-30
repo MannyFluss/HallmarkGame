@@ -9,9 +9,9 @@ func _ready() -> void:
 	
 	fuck()
 
-
+var count_fuck = 0
 func fuck():
-	while true:
+	while count_fuck <= 15:
 		await get_tree().create_timer(1).timeout
 		var new = animated_sprite_2d.duplicate()
 		get_tree().current_scene.add_child(new)
@@ -19,5 +19,5 @@ func fuck():
 		get_tree().current_scene.add_child(new2) 
 		new2.play(.2)
 		new.position = Vector2(randf_range(0,1920),randf_range(0,1080))
-		
+		count_fuck += 1
 		
