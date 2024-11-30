@@ -9,10 +9,9 @@ var next_scene_path : String = ""
 const S_1_CORPORATE = preload("res://scenes/act 1/s1-corporate.dtl")
 
 func _ready() -> void:
+	$AudioStreamPlayer.play()
 	Dialogic.timeline_ended.connect(on_timeline_ended)
 	Dialogic.timeline_started.connect(on_timeline_started)
-	
-	
 	
 
 func start_dialogic_timeline()->void:
@@ -29,6 +28,11 @@ func on_timeline_ended()->void:
 func _on_recieving_field_prize_obtained(name: String) -> void:
 	if name == "start_game":
 		SceneSwitcher.DotEffectNoSceneSwitch()
+		
+		var tween : Tween = get_tree().create_tween()
+		tween.tween_property($AudioStreamPlayer,"volume_db",-60,1)
+	
+		
 		await get_tree().create_timer(1.05).timeout
 		start_dialogic_timeline()
 	if name == "credits":

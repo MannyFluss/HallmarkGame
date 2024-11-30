@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=12 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
 [ext_resource type="Texture2D" uid="uid://chovdg34dx24o" path="res://art/TV stuff/TvOutLine.PNG" id="4_ofwqp"]
 [ext_resource type="Texture2D" uid="uid://15mhvrb4taip" path="res://art/TV stuff/TvInLine.PNG" id="5_3onbl"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
+[ext_resource type="AudioStream" uid="uid://chw7cqcd81jg3" path="res://Audio/Music/hallmarkGeneric.mp3" id="7_kqqj2"]
 [ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
@@ -168,6 +169,9 @@ z_index = 1665
 position = Vector2(620, 450)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("7_ongo5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_kqqj2")
 
 [connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
 
