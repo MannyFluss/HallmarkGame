@@ -50,8 +50,9 @@ join nico pos=1x
 join christine center
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]
+label fuck
 [i]WHAT DO I SAY?!?!?![/i]
-join christine pos=y6.3 size=y7
-[wait_input]
-jump s5-rePostOffice/
+join christine (front/work/neutral) pos=-y6.3 size=y6.9
+do SceneSwitcher.SwitchScene("res://CraneGame/CraneGameDate/CraneGameAcceptDate.tscn")
+[wait time="0.1"]
 [end_timeline]

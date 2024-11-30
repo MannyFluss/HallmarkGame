@@ -13,7 +13,7 @@ join christine (front/work/neutral) center
 	{n}\: I promise you won’t regret it!
 	# #fade to black
 	# GOOD ENDING
-- I believe you. | [if {santa.believe} == true]
+- I believe you. | [if {GlobalTracking.has_state("BelieveSanta")} == true] [else="disable"]
 	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I can’t believe I’m saying this, but I believe you.
 	{n}\: You do?
@@ -26,7 +26,7 @@ join christine (front/work/neutral) center
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
 	# #fade to black
 	# GOOD ENDING
-- I love you. | [if {santa.love} == true]
+- I love you. | [if {GlobalTracking.has_state("AcceptSanta")} == true] [else="disable"]
 	[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 	{mc}\: I love you, Nico.
 	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
@@ -43,7 +43,7 @@ join christine (front/work/neutral) center
 	{n}\: I promise you, you won’t regret it!
 	# #fade to black
 	# GOOD ENDING
-- I want Santa… | [if {santa.desire} == true]
+- I want Santa… | [if {GlobalTracking.has_state("FreakySanta")} == true] [else="disable"]
 	[music path="res://audio/music/CraneGame_1.mp3" fade="1.0" volume="0.0"]
 	{n}\: What?
 	{mc}\: Make me your Mrs. Claus.
@@ -55,7 +55,7 @@ join christine (front/work/neutral) center
 	{n}\: Ever do it in a sleigh?
 	# #fade to black
 	# #GOOD ENGING
-- I'm calling the FUCKING POLICE!! | [if {santa.police} == true]
+- I'm calling the FUCKING POLICE!! | [if {GlobalTracking.has_state("CallPoliceSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
 	leave christine
 	[wait time="1.0"]
@@ -64,7 +64,7 @@ join christine (front/work/neutral) center
 	[wait time="1.0"]
 	jump badEnd/
 	# BAD END
-- No, you're fucking BATSHIT! | [if {santa.no} == true]
+- No, you're fucking BATSHIT! | [if GlobalTracking.has_state("BatshitSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
 	leave christine
 	[wait time="1.0"]
@@ -73,7 +73,7 @@ join christine (front/work/neutral) center
 	[wait time="1.0"]
 	jump badEnd/
 	# BAD END
-- GO DIE YOU STALKER! | [if {santa.die} == true]
+- GO DIE YOU STALKER! | [if GlobalTracking.has_state("StalkerSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
 	leave christine
 	[wait time="1.0"]

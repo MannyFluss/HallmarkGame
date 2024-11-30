@@ -1,11 +1,11 @@
 [gd_scene load_steps=19 format=3 uid="uid://c3baplxjwnyd4"]
 
 [ext_resource type="Script" path="res://scenes/DialogueSupplementalUI/SupplementalDialogueUI.gd" id="1_br8tu"]
-[ext_resource type="Texture2D" uid="uid://okb4rwp6vm32" path="res://art/sprites/christine/Christine_Front.png" id="2_8w2fy"]
-[ext_resource type="Texture2D" uid="uid://doudxd7v6qll1" path="res://art/sprites/christine/ChristineWorkLine.PNG" id="3_cmu80"]
+[ext_resource type="Texture2D" uid="uid://okb4rwp6vm32" path="res://art/sprites/christine/Xtra/Christine_Front.png" id="2_8w2fy"]
+[ext_resource type="Texture2D" uid="uid://doudxd7v6qll1" path="res://art/sprites/christine/Xtra/ChristineWorkLine.PNG" id="3_cmu80"]
 [ext_resource type="Texture2D" uid="uid://djd5w0cj2pcyx" path="res://art/sprites/UI/Black_bar.PNG" id="4_0r01c"]
-[ext_resource type="Texture2D" uid="uid://cx8rrsip8kdve" path="res://art/sprites/nico/Nico_Front.png" id="4_amfh3"]
-[ext_resource type="Texture2D" uid="uid://bb14tfl7ybyxb" path="res://art/sprites/nico/NicoWorkLine.PNG" id="5_886gh"]
+[ext_resource type="Texture2D" uid="uid://cx8rrsip8kdve" path="res://art/sprites/nico/Xtra/Nico_Front.png" id="4_amfh3"]
+[ext_resource type="Texture2D" uid="uid://bb14tfl7ybyxb" path="res://art/sprites/nico/Xtra/NicoWorkLine.PNG" id="5_886gh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4iq18"]
 animations = [{
