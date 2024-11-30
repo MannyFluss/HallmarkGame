@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=12 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
 [ext_resource type="AudioStream" uid="uid://chw7cqcd81jg3" path="res://Audio/Music/hallmarkGeneric.mp3" id="7_kqqj2"]
 [ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
+[ext_resource type="Texture2D" uid="uid://dib5difwvuv04" path="res://art/backgrounds/IMG_6499.PNG" id="7_r6ksp"]
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
 length = 0.001
@@ -120,9 +121,6 @@ position = Vector2(555, 185)
 drop_length = 1.08
 clamp_by_deg = 15
 
-[node name="Sprite2D" parent="CraneGame/Node2D/RecievingField" index="1"]
-visible = false
-
 [node name="Ballz" type="Node2D" parent="CraneGame"]
 
 [node name="CranePrize" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
@@ -161,12 +159,18 @@ libraries = {
 [node name="Credits" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 z_index = 1665
-position = Vector2(620, 450)
-scale = Vector2(0.45, 0.45)
+position = Vector2(617.25, 424.64)
+scale = Vector2(0.247, 0.247)
 texture = ExtResource("7_ongo5")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_kqqj2")
+autoplay = true
+
+[node name="Tv2" type="Sprite2D" parent="."]
+position = Vector2(613, 507)
+scale = Vector2(0.575, 0.575)
+texture = ExtResource("7_r6ksp")
 
 [connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
 

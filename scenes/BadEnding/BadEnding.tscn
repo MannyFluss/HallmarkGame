@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://b3nvtvkbwfvcw"]
+[gd_scene load_steps=36 format=3 uid="uid://b3nvtvkbwfvcw"]
 
 [ext_resource type="Script" path="res://scenes/BadEnding/bad_ending.gd" id="1_rgen1"]
 [ext_resource type="Texture2D" uid="uid://cl23au3adky3k" path="res://scenes/BadEnding/360_F_238626408_lqnabFrNzVdoAVKmkcFw4KNNCWkmQGl1.jpg" id="2_hgtvr"]
@@ -284,7 +284,15 @@ _data = {
 "new_animation": SubResource("Animation_dkrbq")
 }
 
+[sub_resource type="Gradient" id="Gradient_5saxr"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.36, 0.36, 0.36, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4sxwj"]
+gradient = SubResource("Gradient_5saxr")
+
 [node name="BadEnding" type="Node2D"]
+position = Vector2(1, 0)
 script = ExtResource("1_rgen1")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -358,3 +366,9 @@ pitch_scale = 0.78
 [node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_epsrh")
 autoplay = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(965, 594)
+scale = Vector2(31.1563, 19.5625)
+texture = SubResource("GradientTexture2D_4sxwj")

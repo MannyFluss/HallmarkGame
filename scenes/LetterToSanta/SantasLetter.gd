@@ -85,13 +85,13 @@ func _on_submit_button_pressed() -> void:
 	
 	SceneSwitcher.SwitchScene("res://scenes/act1.2/Act1_2.tscn")
 	
-	GlobalTracking.tracking_variables["your_first_name"] = first_name.text
-	GlobalTracking.tracking_variables["your_last_name"] = last_name.text
+	GlobalTracking.tracking_variables["your_first_name"] = first_name.text.strip_escapes()
+	GlobalTracking.tracking_variables["your_last_name"] = last_name.text.strip_escapes()
 	
-	GlobalTracking.tracking_variables["favorite_drink"] = favorite_drink.text
-	GlobalTracking.tracking_variables["favorite_song"] = favorite_song.text
-	GlobalTracking.tracking_variables["favorite_cookie"] = favorite_cookie.text
-	GlobalTracking.tracking_variables["what_i_want"] = what_i_want.text
+	GlobalTracking.tracking_variables["favorite_drink"] = favorite_drink.text.strip_escapes()
+	GlobalTracking.tracking_variables["favorite_song"] = favorite_song.text.strip_escapes()
+	GlobalTracking.tracking_variables["favorite_cookie"] = favorite_cookie.text.strip_escapes()
+	GlobalTracking.tracking_variables["what_i_want"] = what_i_want.text.strip_escapes()
 	
 
 	

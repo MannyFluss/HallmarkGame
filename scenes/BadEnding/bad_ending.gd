@@ -6,8 +6,11 @@ extends Node2D
 
 
 func _ready() -> void:
-	
 	fuck()
+	
+	await get_tree().create_timer(15).timeout
+	$AudioStreamPlayer5.stop()
+	Dialogic.start("res://scenes/credits/outro.dtl")
 
 var count_fuck = 0
 func fuck():
