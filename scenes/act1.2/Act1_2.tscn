@@ -1,6 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://crmbq8kypactf"]
+[gd_scene load_steps=4 format=3 uid="uid://crmbq8kypactf"]
 
 [ext_resource type="Script" path="res://scenes/act1.2/act_1_2.gd" id="1_li4ru"]
+[ext_resource type="Texture2D" uid="uid://tvlsxq854l2y" path="res://art/paralax/SadParallaxTop.PNG" id="2_jce3g"]
+[ext_resource type="Texture2D" uid="uid://cllgw5sikoqxb" path="res://art/paralax/SadParallaxBottom.PNG" id="2_w0k86"]
 
 [node name="Act12" type="Node2D"]
 script = ExtResource("1_li4ru")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = 128
+visible = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground/ParallaxLayer2"]
+autoscroll = Vector2(0, 1000)
+
+[node name="SadParallaxBottom2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/Parallax2D"]
+position = Vector2(960, 643)
+rotation = 1.5708
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_w0k86")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground/ParallaxLayer"]
+autoscroll = Vector2(0, 1000)
+
+[node name="SadParallaxBottom" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer/Parallax2D2"]
+position = Vector2(960, 643)
+rotation = 1.5708
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_jce3g")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 51
