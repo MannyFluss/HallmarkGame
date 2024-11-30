@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://dt22sse7847ty"]
+
+[ext_resource type="Script" path="res://scenes/ThumbnailIntro/thumbnail_intro.gd" id="1_au0ue"]
+[ext_resource type="Texture2D" uid="uid://rdto5qifyn83" path="res://scenes/ThumbnailIntro/Blank.PNG" id="1_duv72"]
+[ext_resource type="Texture2D" uid="uid://dklu0j1ybkxnw" path="res://scenes/ThumbnailIntro/Presents.PNG" id="2_2xybq"]
+[ext_resource type="Texture2D" uid="uid://cbnba7cimhkhj" path="res://scenes/ThumbnailIntro/LOGO.png" id="2_311j7"]
+
+[sub_resource type="Animation" id="Animation_43xn5"]
+resource_name = "fuck"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presents:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.36667, 3.56667, 4.63333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("IFellInLove:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0666667, 1.36667, 2.33333, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_tn1at"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presents:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("IFellInLove:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ody4m"]
+_data = {
+"RESET": SubResource("Animation_tn1at"),
+"fuck": SubResource("Animation_43xn5")
+}
+
+[node name="ThumbnailIntro" type="Node2D"]
+script = ExtResource("1_au0ue")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_duv72")
+
+[node name="IFellInLove" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+texture = ExtResource("2_2xybq")
+
+[node name="Presents" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.445, 0.445)
+texture = ExtResource("2_311j7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ody4m")
+}
