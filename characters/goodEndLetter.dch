@@ -10,20 +10,20 @@
 "style": "",
 "suffix": ""
 },
-"default_portrait": "credits",
+"default_portrait": "letter",
 "description": "",
-"display_name": "credits",
+"display_name": "goodEndLetter",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"credits": {
+"letter": {
 "export_overrides": {
-"image": "\"res://art/Credits/Scroll.PNG\""
+"image": "\"res://art/backgrounds/Screenshot 2024-11-29 at 6.09.16 PM.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1.0,
+"scale": 0.6,
 "scene": ""
 }
 },

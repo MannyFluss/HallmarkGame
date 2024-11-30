@@ -1,9 +1,11 @@
 [background arg="res://art/backgrounds/Airport.PNG" fade="1.0"]
-join christine (wNeutral) center
+join christine (front/work/neutral) center
 # at the aiport
 [i]The airport is bustling with noise as people prepare to fly home for the holidays.[/i]
 [i]I still can’t understand why my parents decided to move to some random small town.
+update christine (front/work/sad)
 [i]Ever since they moved up north a couple years ago, I haven’t had a chance to visit.
+join christine (front/work/headshot/sad) center
 [i]Work has just been so crazy. And sometimes I begin to question if it’s even worth it.
 # #[i]Honestly, I can’t remember the last time I was able to just rest out in the past few years.
 # #[i]Let alone even begin to think about Christmas.
@@ -11,18 +13,23 @@ join christine (wNeutral) center
 # #[i]I have no idea what they’ll even have in stock in their little dinky town.
 [i][sighs][/i]
 [i]Maybe disconnecting will be for the best.
+update christine (front/work/headshot/neutral)
 [i]Getting away from the city just might be the reset I need.
 
 LITTLE CHILD\: Mommy! Mommy! I want to write a letter to Santa!
+join christine (34/work/neutral) center
 [i]I look up and spot a festive gingerbread themed workstation in front of the gate across from mine.[/i]
 [i]There’s a guy dressed in a badly made elf costume encouraging people to participate.[/i]
 ELF\: Donate $2.50 and write a letter to Santa! All proceeds go to families in need this winter!
+update christine (34/work/sad)
 
 [i]Letter to Santa, huh…[/i]
+update christine (34/work/neutral)
 [i]I remember when I was a kid, I would write to Santa every year.[/i]
 # [i]Even with my impossible requests, I always ended up with a present that I loved or something that I needed.[/i]
 # #[i]Even if I couldn’t quite appreciate it at the time.[/i]
 [i]One year, I remember asking Santa for a friend.
+join christine (front/work/headshot/neutral) center
 [i]I was never quite good at making friends. To be honest, I’m still not very good.[/i]
 [i]But that Christmas, Santa gave me a comic book.[/i]
 # #[i]It was some series set in a medieval kingdom ruled by a cruel frog king.[/i]
@@ -31,15 +38,21 @@ ELF\: Donate $2.50 and write a letter to Santa! All proceeds go to families in n
 # #[i]She told me that was her favorite series, and we ended up talking for that whole hour.[/i]
 # fix this
 [i]And when I brought it to school when we got back from break, someone recognized it and talked to me.
+join christine (34/work/neutral) center
 [i]That’s how I made my first friend.
 
 # #[i]Honestly, regardless of the gifts, I just remember how much I loved writing the letter in the first place.[/i]
 # #[i]I used to be so diligent in my letter writing.[/i]
+update christine (34/work/sad)
 [i]I can’t remember why or how, but one day I stopped writing to Santa.[/i]
 [i]Maybe I wanted to grow up too fast.[/i]
+update christine (34/work/neutral)
 [i]Maybe... I should let myself believe in magic again, at least for a little while.[/i]
+join christine (front/work/headshot/neutral) center
 [i]Letter to Santa…[/i]
+update christine (front/work/headshot/happy)
 [i]Why not…[/i]
+update christine (front/work/headshot/neutral)
 
 [i]I give $5 to the strange elf man, grab one of the themed letter sheets, and sit down to write.[/i]
 do SceneSwitcher.SwitchScene("res://scenes/LetterToSanta/Letter.tscn")

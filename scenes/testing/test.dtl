@@ -1,5 +1,5 @@
 [background arg="res://art/backgrounds/DateMontage.PNG" fade="0.0"]
-join christine center
+join christine (front/work/headshot/neutral) center
 [wait_input]
 join christine pos=y6.48 size=y7.2
 [wait_input]

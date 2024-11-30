@@ -1,6 +1,6 @@
 [background arg="res://art/backgrounds/MomHouse.PNG" fade="1.0"]
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="2.0" volume="0.0"]
-join christine (wNeutral) left
+join christine (side/work/neutral) center
 set {fav.cookie} = GlobalTracking.tracking_variables["favorite_cookie"]
 set {gimme} = GlobalTracking.tracking_variables["what_i_want"]
 set {fav.drink} = GlobalTracking.tracking_variables["favorite_drink"]
@@ -16,6 +16,7 @@ MOM\: Isn’t it wonderful? Your father and I are so happy we moved here.
 # #MOM\: I know it may not seem like much compared to the big city, but your father and I are very happy here.
 # #MOM\: Everyone here is so friendly, and you can tell that they really love Christmas.
 # #{mc}\: Yeah I’ve never seen so many Christmas lights before. People here really go all out,huh?
+join christine (front/work/headshot/neutral) center
 MOM\: You should explore the area, get to know the people in town!
 MOM\: Oh, wait! Before that!
 MOM\: Here, I have these presents for Uncle Manny.
@@ -46,4 +47,3 @@ join  center
 
 jump s4-postOffice/
 [end_timeline]
-set {mc} = {name.first}.to_upper()

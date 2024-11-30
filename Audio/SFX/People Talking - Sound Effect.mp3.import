@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dht424daiqk01"
-path="res://.godot/imported/People Talking - Sound Effect.mp3-1d71fb58b9a738e641b237d8c773e0bf.mp3str"
+path="res://.godot/imported/People Talking - Sound Effect.mp3-11e4dc9f6c5241203802563850ad437b.mp3str"
 
 [deps]
 
-source_file="res://Audio/SFX/People Talking - Sound Effect.mp3"
-dest_files=["res://.godot/imported/People Talking - Sound Effect.mp3-1d71fb58b9a738e641b237d8c773e0bf.mp3str"]
+source_file="res://audio/SFX/People Talking - Sound Effect.mp3"
+dest_files=["res://.godot/imported/People Talking - Sound Effect.mp3-11e4dc9f6c5241203802563850ad437b.mp3str"]
 
 [params]
 
