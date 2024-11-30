@@ -1,13 +1,18 @@
-[gd_scene load_steps=13 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=18 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
+[ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="3_w5pme"]
 [ext_resource type="Texture2D" uid="uid://d2c8kkbdgy8vb" path="res://art/backgrounds/Tv.PNG" id="4_2bjrr"]
-[ext_resource type="FontFile" uid="uid://cvm88ul63mm1e" path="res://Fonts/upheavtt.ttf" id="5_pjyws"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
+[ext_resource type="Texture2D" uid="uid://cx5rb2uvvrukc" path="res://Ballz/Ball3.PNG" id="6_ljaxv"]
+[ext_resource type="Texture2D" uid="uid://c20i2df8e88vd" path="res://Ballz/Ball5.PNG" id="6_luu6f"]
 [ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_3f2vq"]
 [ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
 [ext_resource type="Texture2D" uid="uid://dib5difwvuv04" path="res://art/backgrounds/IMG_6499.PNG" id="7_r6ksp"]
+[ext_resource type="Texture2D" uid="uid://luxncrsa7yaq" path="res://Ballz/Ball8.PNG" id="7_xiieh"]
+[ext_resource type="Texture2D" uid="uid://dhj1hmtneumh0" path="res://Ballz/Ball6.PNG" id="9_83307"]
+[ext_resource type="Texture2D" uid="uid://0edltxs52bc4" path="res://Ballz/Ball7.PNG" id="10_xmkkw"]
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
 length = 0.001
@@ -111,6 +116,16 @@ position = Vector2(613, 507)
 scale = Vector2(0.575, 0.575)
 texture = ExtResource("4_2bjrr")
 
+[node name="Background2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(601, 438)
+scale = Vector2(0.369792, 0.4)
+texture = ExtResource("3_w5pme")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(426, 129)
+scale = Vector2(0.575, 0.575)
+
 [node name="CraneGame" type="Node2D" parent="."]
 
 [node name="Node2D" parent="CraneGame" instance=ExtResource("3_ttx68")]
@@ -134,21 +149,88 @@ mass = 0.001
 [node name="Label" parent="CraneGame/Ballz/CranePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Start"
 
+[node name="CranePrize6" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(596, 437)
+prize_tracker_name = "start_game"
+
+[node name="RigidBody2D" parent="CraneGame/Ballz/CranePrize6" index="0"]
+mass = 0.001
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize6/RigidBody2D" index="1"]
+texture = ExtResource("6_ljaxv")
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize6/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] Start"
+
+[node name="CranePrize7" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(664, 449)
+prize_tracker_name = "start_game"
+
+[node name="RigidBody2D" parent="CraneGame/Ballz/CranePrize7" index="0"]
+mass = 0.001
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize7/RigidBody2D" index="1"]
+texture = ExtResource("7_xiieh")
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize7/RigidBody2D/TopHalf/MarginContainer" index="0"]
+text = "[center] Start"
+
 [node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(786, 526)
 prize_tracker_name = "credits"
 
-[node name="TopHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="1"]
+texture = ExtResource("6_luu6f")
+
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.579, 0.3225, 0.75, 1)
 
 [node name="Label" parent="CraneGame/Ballz/CranePrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_fonts/normal_font = ExtResource("5_pjyws")
 theme_override_font_sizes/normal_font_size = 14
 text = "[center]
 Credits"
 
-[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="2"]
-self_modulate = Color(0.7, 0, 0.0116665, 1)
+[node name="CranePrize3" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(709, 549)
+prize_tracker_name = "credits"
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize3/RigidBody2D" index="1"]
+texture = ExtResource("9_83307")
+
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize3/RigidBody2D" index="2"]
+self_modulate = Color(0.579, 0.3225, 0.75, 1)
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 14
+text = "[center]
+Credits"
+
+[node name="CranePrize4" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(794, 447)
+prize_tracker_name = "credits"
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize4/RigidBody2D" index="1"]
+texture = ExtResource("10_xmkkw")
+
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize4/RigidBody2D" index="2"]
+self_modulate = Color(0.579, 0.3225, 0.75, 1)
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize4/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 14
+text = "[center]
+Credits"
+
+[node name="CranePrize5" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
+position = Vector2(733, 469)
+prize_tracker_name = "credits"
+
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize5/RigidBody2D" index="2"]
+self_modulate = Color(0.579, 0.3225, 0.75, 1)
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize5/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 14
+text = "[center]
+Credits"
 
 [node name="Marker" type="Node2D" parent="."]
 position = Vector2(620, 450)
@@ -178,4 +260,9 @@ texture = ExtResource("7_r6ksp")
 
 [editable path="CraneGame/Node2D"]
 [editable path="CraneGame/Ballz/CranePrize"]
+[editable path="CraneGame/Ballz/CranePrize6"]
+[editable path="CraneGame/Ballz/CranePrize7"]
 [editable path="CraneGame/Ballz/CranePrize2"]
+[editable path="CraneGame/Ballz/CranePrize3"]
+[editable path="CraneGame/Ballz/CranePrize4"]
+[editable path="CraneGame/Ballz/CranePrize5"]

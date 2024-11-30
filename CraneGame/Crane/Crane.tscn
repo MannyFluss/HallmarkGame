@@ -3,13 +3,8 @@
 [ext_resource type="Script" path="res://CraneGame/Crane/crane.gd" id="1_jqea0"]
 [ext_resource type="Texture2D" uid="uid://klmht630exci" path="res://CraneGame/Crane/CrangeArm.png" id="2_2nlnq"]
 [ext_resource type="Script" path="res://CraneGame/Crane/ezfix.gd" id="2_qe20g"]
-
-[sub_resource type="Gradient" id="Gradient_vlx4o"]
-offsets = PackedFloat32Array(1)
-colors = PackedColorArray(1, 1, 1, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_7r8fk"]
-gradient = SubResource("Gradient_vlx4o")
+[ext_resource type="Texture2D" uid="uid://b8b0m02rjokkx" path="res://CraneGame/Crane/Chain.PNG" id="4_skbuv"]
+[ext_resource type="Texture2D" uid="uid://b8vlkbylxny38" path="res://CraneGame/Crane/Claw.PNG" id="5_7tghm"]
 
 [node name="Crane" type="Node2D"]
 script = ExtResource("1_jqea0")
@@ -18,6 +13,11 @@ enabled = true
 [node name="Right" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_qe20g")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Right"]
+position = Vector2(0.999985, -374)
+scale = Vector2(1, 1)
+texture = ExtResource("4_skbuv")
 
 [node name="RightSide" type="CollisionPolygon2D" parent="Right"]
 rotation = -0.523599
@@ -29,11 +29,13 @@ texture_filter = 1
 position = Vector2(32, 62)
 texture = ExtResource("2_2nlnq")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Right"]
-self_modulate = Color(0.404511, 0.404511, 0.404511, 1)
-position = Vector2(0, -300)
-scale = Vector2(0.40625, 9.46875)
-texture = SubResource("GradientTexture2D_7r8fk")
+[node name="CrangeArm3" type="Sprite2D" parent="Right/RightSide"]
+z_index = 2
+texture_filter = 1
+position = Vector2(80.895, -228.114)
+rotation = -2.79253
+scale = Vector2(0.635, -0.635)
+texture = ExtResource("5_7tghm")
 
 [node name="Left" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
@@ -47,7 +49,10 @@ polygon = PackedVector2Array(0.684034, -1.87939, 1.78962, 15.5498, 31.9359, 58.4
 [node name="CrangeArm2" type="Sprite2D" parent="Left/LeftSide"]
 z_index = 2
 texture_filter = 1
-position = Vector2(32.7893, 61.9505)
-texture = ExtResource("2_2nlnq")
+position = Vector2(81.7618, -227.614)
+rotation = 0.349066
+scale = Vector2(0.635, 0.635)
+texture = ExtResource("5_7tghm")
+flip_h = true
 
 [node name="AvgPos" type="Node2D" parent="."]
