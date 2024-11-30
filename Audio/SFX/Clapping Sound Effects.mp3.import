@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://fnk6lxvopcm7"
-path="res://.godot/imported/Clapping Sound Effects.mp3-a9e5aded7ca88f03af06d7cdcddc7ced.mp3str"
+path="res://.godot/imported/Clapping Sound Effects.mp3-c40e062ee67b5ffa9b777934ae383e5a.mp3str"
 
 [deps]
 
-source_file="res://Audio/SFX/Clapping Sound Effects.mp3"
-dest_files=["res://.godot/imported/Clapping Sound Effects.mp3-a9e5aded7ca88f03af06d7cdcddc7ced.mp3str"]
+source_file="res://audio/SFX/Clapping Sound Effects.mp3"
+dest_files=["res://.godot/imported/Clapping Sound Effects.mp3-c40e062ee67b5ffa9b777934ae383e5a.mp3str"]
 
 [params]
 
