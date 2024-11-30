@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ciojjsh0xvxjw"
-path="res://.godot/imported/jingle-intro-outro-corporate-theme-15767.mp3-631fe856fe20b3a516bb8d8104530d04.mp3str"
+path="res://.godot/imported/jingle-intro-outro-corporate-theme-15767.mp3-54936cf5256dc69315af08b537cdaf5b.mp3str"
 
 [deps]
 
-source_file="res://audio/SFX/jingle-intro-outro-corporate-theme-15767.mp3"
-dest_files=["res://.godot/imported/jingle-intro-outro-corporate-theme-15767.mp3-631fe856fe20b3a516bb8d8104530d04.mp3str"]
+source_file="res://Audio/SFX/jingle-intro-outro-corporate-theme-15767.mp3"
+dest_files=["res://.godot/imported/jingle-intro-outro-corporate-theme-15767.mp3-54936cf5256dc69315af08b537cdaf5b.mp3str"]
 
 [params]
 

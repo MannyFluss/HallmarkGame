@@ -8,20 +8,20 @@ join nico (front/work/neutral) center
 	{n}\: If you don't want to come, no worries! Totally okay!
 	jump s6-jingleReject/
 
-- ...Sure, why not? | [if {jingle.yes} == true] [else="disable"]
+- ...Sure, why not? | [if {GlobalTracking.has_state("Sure?Date")} == true] [else="disable"]
 	join nico (front/work/headshot/neutral) center
 	[i]Maybe mom is right, I should try to have some holiday spirit.[/i]
 	update nico (front/work/headshot/happy) [animation="Bounce"]
 	{n}\: Righteous!
 	jump s6-jingleAccept/
 
-- No, I'm busy | [if {jingle.no} == true] [else="disable"]
+- No, I'm busy | [if {GlobalTracking.has_state("NoBusyDate")} == true] [else="disable"]
 	join nico (front/work/headshot/neutral) center
 	[i]There’s no way I’m going to some random market with a stranger in the cold.[/i]
 	{n}\: No worries! Totally okay!
 	jump s6-jingleReject/
 
-- Oooh, you want me so bad | [if {jingle.freaky} == true] [else="disable"]
+- Oooh, you want me so bad | [if GlobalTracking.has_state("FreakyDate") == true] [else="disable"]
 	join nico (front/work/headshot/blush) center
 	{n}\: Oh!
 	[i]Why did I say that out loud?[/i]
@@ -34,7 +34,7 @@ join nico (front/work/neutral) center
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 
-- I'M GAY!!! | [if {jingle.gay} == true] [else="disable"]
+- I'M GAY!!! | [if GlobalTracking.has_state("ImGayDate") == true] [else="disable"]
 	join nico (front/work/headshot/happy) center
 	{n}\: Nice! [pause=0.5]Though maybe I’m giving you the wrong impression, haha!
 	update nico (front/work/headshot/neutral)
@@ -43,7 +43,7 @@ join nico (front/work/neutral) center
 	{n}\: No worries! Totally okay!
 	jump s6-jingleReject/
 
-- Are you asking me on a date? | [if {jingle.date} == true] [else="disable"]
+- Are you asking me on a date? | [if GlobalTracking.has_state("Date?Date") == true] [else="disable"]
 	join nico (front/work/headshot/shocked) center
 	{n}\: Ah! Sorry, that’s not what I had in mind!
 	{n}\: Maybe I gave you the wrong impression, sorry about that!
@@ -53,7 +53,7 @@ join nico (front/work/neutral) center
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 
-- I can't, I have to work | [if {jingle.work} == true] [else="disable"]
+- I can't, I have to work | [if GlobalTracking.has_state("GotWorkDate") == true] [else="disable"]
 	join nico (front/work/headshot/neutral) center
 	[i]I feel a twinge of guilt as I lie to him.[/i]
 	[i]But there’s no way I’m going to some random market with a stranger in the cold.[/i]

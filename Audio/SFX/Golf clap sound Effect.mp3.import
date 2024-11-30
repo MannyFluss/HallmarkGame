@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bhvlfq01rotgy"
-path="res://.godot/imported/Golf clap sound Effect.mp3-113d279d9744f5c16aef38c682ec192c.mp3str"
+path="res://.godot/imported/Golf clap sound Effect.mp3-4eb2a7f0173253e160cec69918a7021f.mp3str"
 
 [deps]
 
-source_file="res://audio/SFX/Golf clap sound Effect.mp3"
-dest_files=["res://.godot/imported/Golf clap sound Effect.mp3-113d279d9744f5c16aef38c682ec192c.mp3str"]
+source_file="res://Audio/SFX/Golf clap sound Effect.mp3"
+dest_files=["res://.godot/imported/Golf clap sound Effect.mp3-4eb2a7f0173253e160cec69918a7021f.mp3str"]
 
 [params]
 
