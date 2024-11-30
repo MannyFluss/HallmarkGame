@@ -1,3 +1,4 @@
+[music path="res://audio/music/sad christmas.mp3" fade="2.0" volume="0.0"]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine
 leave nico
@@ -53,7 +54,7 @@ update christine (cSad) center [length="3.0" fade="Fade Cross" fade_length="3.0"
 [i]There’s a number in parentheses to the right of my name, and I quickly flip to the page.[/i]
 [i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases\:[/i]
 {name.first} {name.last}\:
-Favorite food\: {fav.food}, favorite drink\: {fav.drink}...
+Favorite cookie\: {fav.cookie}, favorite drink\: {fav.drink}...
 Favorite Christmas song\: {fav.song}...
 The list continues on…
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
@@ -86,6 +87,7 @@ join christine (cAngry) left
 {n}\: I-
 {n}\: [i][sighs]
 [wait_input]
+[music fade="0.5" volume="0.0"]
 {n}\: I’m Santa Claus.
 [wait_input]
 join christine leftmost
@@ -99,6 +101,7 @@ leave christine
 leave nico
 # she leaves
 # #change bg
+[music path="res://audio/music/sad christmas.mp3" fade="0.5" volume="0.0"]
 [background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
 
 [wait time="1.0"]
@@ -111,7 +114,6 @@ join nico (cSad) left
 {n}\: [i]That’s[/i] why I know so much about you!
 {n}\: That’s why I have this book!
 {n}\: And… I need you to know that I’m only telling you this because you mean so much to me.
-[music fade="1.0" volume="0.0"]
 {n}\: I didn’t- I didn’t expect to feel this way about you.
 {n}\: I knew you were going through a rough time, and I just wanted to bring you some holiday cheer when we first met.
 {n}\: But somewhere along the way…
@@ -119,6 +121,7 @@ join nico (cSad) left
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
 {mc}\: Nico…
+[i]WHAT SHOULD I SAY???
 join christine (front/work/neutral) pos=-y6.3 size=y6.9
 do SceneSwitcher.SwitchScene("res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.tscn")
 [wait time="0.1"]

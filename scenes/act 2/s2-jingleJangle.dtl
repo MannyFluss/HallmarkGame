@@ -39,6 +39,7 @@ leave nico [animation="Slide Out Left" length="2.0"]
 [i][b][THUD]
 GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 [i]Nico is struggling to get up, his cup of {fav.drink} spilling out into a puddle next to him.[/i]
+[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 [i]What should I do?[/i]
 - Help Nico
 	join christine right
@@ -51,13 +52,11 @@ GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 	{n}\: My drink…
 	{mc}\: This is unacceptable…
 	[i]I turn around and spot the man who ran into Nico.[i]
-	[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 	{mc}\: Hey!
 	join christine center [z_index="200"]
 
 - Confront the guy who ran into him
 	join christine center
-	[music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
 	{mc}\: Hey!
 {mc}\: What’s your damage, man?
 
@@ -88,8 +87,7 @@ join nico (cHappy) right
 {n}\: …and thank you for standing up for me.
 # RETHINK
 {n}\: No one’s ever actually stuck up for me like that before…
-{mc}\: What?? I find that hard to believe.
-{mc}\: I find that hard to believe. It seems like everyone here loves you.
+{mc}\: What?? I find that hard to believe. It seems like everyone here loves you.
 {n}\: Not that guy apparently.
 {mc}\: Whatever, you know what I mean.
 {mc}\: But how has no one ever done that for you before?

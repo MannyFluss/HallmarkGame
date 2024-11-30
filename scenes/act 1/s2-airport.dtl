@@ -47,16 +47,6 @@ do SceneSwitcher.SwitchScene("res://scenes/LetterToSanta/Letter.tscn")
 [wait time="0.5"]
 
 # start letter game
-Dear Santa,
-[text_input text="During the holidays, I love to listen to" var="fav.song" default="Last Christmas"]
-[text_input text="I love to drink" var="fav.drink" default="hot chocolate"]
-[text_input text="I love to eat my favorite cookies," var="fav.cookie" default="chocolate chip"]
-[text_input text="And my favorite meal is" var="fav.food" default="cream corn"]
-[text_input text="This Christmas, I want" var="gimme" default="a Koko"]
-But what I really want is a sense of purpose.
-Sincerely,
-[text_input text="First name:" var="name.first"]
-[text_input text="Last name:" var="name.last"]
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
