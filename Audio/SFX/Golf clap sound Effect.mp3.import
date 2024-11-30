@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhvlfq01rotgy"
+path="res://.godot/imported/Golf clap sound Effect.mp3-4eb2a7f0173253e160cec69918a7021f.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/Golf clap sound Effect.mp3"
+dest_files=["res://.godot/imported/Golf clap sound Effect.mp3-4eb2a7f0173253e160cec69918a7021f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
