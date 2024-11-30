@@ -1,4 +1,4 @@
-[background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/Date1.PNG" fade="1.0"]
 join christine (cHappy) left [animation="Fade In Up" length="1.0"]
 join nico (cHappy) right
 [i]Light snow falls around us as we take our regular nighttime stroll.

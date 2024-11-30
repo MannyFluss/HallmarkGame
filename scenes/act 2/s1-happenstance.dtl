@@ -1,4 +1,4 @@
-[background arg="res://art/backgrounds/JingleBeforeNico.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/JingleJangle Cafe.PNG" fade="1.0"]
 join christine (front/casual/headshot/sad) center
 
 [i]Although I told that mailman I wouldn’t go, I somehow ended up at the Jingle Jangle.[/i]
@@ -10,22 +10,32 @@ update christine (34/casual/sad) pos=x0.48y0.65 size=y0.8 [animation="Heartbeat"
 [i]When I accidentally run headfirst into someone and launch them across the marketplace![i]
 [i][crowd gasps][/i]
 {mc}\: Oh my god! I’m so sorry!!
-join christine (34/casual/sad) pos=x0.8
+join christine (34/casual/sad) pos=x0.75
 [i]I rush over to pick them up off the ground.[/i]
 join christine (34/casual/sad) pos=x0.42
-join nico (back/casual) right [animation="Slide In Up" length="2.0"]
+join nico (back/casual) right [animation="Fade In Up" length="1.5"]
 {mc}\: Nico?
 # #nico appears
 # {mc}\: What are you doing here…
 {n}\: Ow...
-join nico (cNeutral) center
+leave christine [animation="Fade Out"]
+join nico (front/casual/headshot/shocked) center
 {n}\: {name.first}? You made it! And here I thought the Jingle Jangle “wasn’t your style?”
+join nico (34/casual/happy) center [animation="Fade In"]
+join christine (back/casual) center [animation="Fade In"]
 {mc}\: My parents dragged me out. Anyways, I was on my way back home. Sorry again for running into you.
 {n}\: Don’t worry about it, I’m a chill guy.
 {n}\: But since you’re already here, you might as well enjoy it!
+leave christine [animation="Instant Out" length="0.0"]
+leave nico [animation="Instant Out" length="0.0"]
+join christine (34/casual/sad) pos=x0.42y0.65 size=y0.8 [animation="Fade In" fade="Fade Cross"]
+join nico (back/casual) right [animation="Fade In" z_index="10" fade="Fade Cross"]
 {mc}\: I highly doubt I will enjoy this.
 {n}\: Trust me.
+leave nico [animation="Fade Out"]
+join christine (34/casual/sad) center
 {mc}\: …
+update christine (34/casual/neutral)
 {mc}\: Alright.
 jump s2-jingleJangle/
 [end_timeline]

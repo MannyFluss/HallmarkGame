@@ -11,6 +11,8 @@ NICO\: I love you Manny The Gecko...
 # SAVED POSE: christine and nico staring at each other
 join christine (34/work/sad) pos=x0.42y0.65 size=y0.8
 join nico (back/work) center [z_index="10"]
-
+# SAVED POSE: c and n pt 2
+join nico (34/work/happy) center [animation="Fade In"]
+join christine (back/work) center [animation="Fade In"]
 [wait time="1.0"]
 [wait_input]
