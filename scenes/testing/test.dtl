@@ -9,7 +9,7 @@ join christine pos=y6.48 size=y7.2
 [wait_input]
 NICO\: I love you Manny The Gecko...
 # SAVED POSE: christine and nico staring at each other
-join christine (34/work/sad) pos=x0.42y0.65 size=y0.8
+join christine (34/work/sad) pos=x0.48y0.55 size=y0.7
 join nico (back/work) center [z_index="10"]
 # SAVED POSE: c and n pt 2
 join nico (34/work/happy) center [animation="Fade In"]

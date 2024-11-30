@@ -3,7 +3,7 @@ join christine (front/casual/headshot/neutral) center
 
 [i]I arrived early to the Jingle Jangle since my parents dragged me to join them. I should have known they were planning on going.[/i]
 [i]After watching my parents and their friends become tipsy off of spiked eggnog, I realized it was time to meet Nico.[/i]
-update christine (side/casual/sad) pos=x0.5y0.95 size=y1.2 [animation="Fade In"]
+update christine (side/casual/sad) pos=x0.5y0.95 size=y0.95 [animation="Fade In"]
 [i]I meandered toward the assemblage of lights that surrounded the town’s gaudy unlit Christmas tree...[/i]
 leave christine [animation="Fade Out"]
 join nico (back/casual) center
@@ -19,7 +19,7 @@ join nico (front/casual/headshot/neutral) center
 # #[i]For some reason, I begin to think about my childhood nights, my family sitting around a warm fireplace, and the smell of {fav.drink}.[/i]
 update nico (front/casual/headshot/happy)
 {n}\: Oh, hey {name.first}! I was worried you got lost on the way here. The snowy roads can be hard to navigate in the dark.
-join christine (34/casual/sad) pos=x0.42y0.65 size=y0.8 [animation="Fade In" z_index="-1" fade="Fade Cross"]
+join christine (34/casual/sad) pos=x0.48y0.55 size=y0.7 [animation="Fade In" z_index="-1" fade="Fade Cross"]
 join nico (back/casual) right [animation="Fade In" z_index="10" fade="Fade Cross"]
 {mc}\: It really wasn’t that bad.
 {n}\: Well, I’m glad you survived and that you made it here!

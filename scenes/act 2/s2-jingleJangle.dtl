@@ -1,3 +1,5 @@
+jump end of jingle
+
 join christine (front/casual/neutral) pos=x0.35
 join nico (front/casual/neutral) pos=x0.65
 [i]An awkward air settles between us, but it’s interrupted by a bell tolling in the distance.[/i]
@@ -74,97 +76,148 @@ leave nico [animation="Slide Out Left" length="2.0"]
 # #NICO GETS KNOCKED OFF THE SCREEN
 [sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i][b][THUD]
+update christine (front/casual/sad)
 GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 [i]Nico is struggling to get up, his cup of {fav.drink} spilling out into a puddle next to him.[/i]
 [music path="res://audio/music/CraneGame_1.mp3" fade="0.0" volume="0.0"]
+join christine (front/casual/headshot/sad) center
 [i]What should I do?[/i]
 - Help Nico
-	join christine right
+	join christine (34/casual/sad) center
+	join christine (34/casual/sad) pos=x0.75
 	[i]I run over to Nico’s side, offering him my hand and pulling him up off the dirt.
-	join christine left [z_index="200"]
-	join nico (cSad) right [z_index="-1"]
+	join christine (34/casual/sad) pos=x0.42 [z_index="20"]
+	join nico (back/casual) pos=x0.67y1.05 size=y1.2 [animation="Fade In Up" length="1.0"]
 	{mc}\: Are you alright?
+	leave christine [animation="Fade Out"]
+	join nico (side/casual/happy) pos=x0.55y1.15 size=y1.2 [animation="Fade In"]
 	{n}\: Haha, well. I guess I could be better.
+	update nico (side/casual/sad)
 	[i]He gazes at the growing puddle of {fav.drink} on the ground.
+	join nico (side/casual/sad) pos=x0.55y1.7 size=y1.8
 	{n}\: My drink…
 	{mc}\: This is unacceptable…
 	[i]I turn around and spot the man who ran into Nico.[i]
+	leave nico
+	join christine (front/casual/angry) center [z_index="200"]
+	join nico (front/casual/sad) right [z_index="-10"]
 	{mc}\: Hey!
-	join christine center [z_index="200"]
 
 - Confront the guy who ran into him
-	join christine center
+	join christine (front/casual/angry) center
 	{mc}\: Hey!
 {mc}\: What’s your damage, man?
+update christine (front/casual/neutral)
 
 [i]He slowly turns towards me, a look of disbelief written on his face.[/i]
 "BIFF"\: You talking to me?
+leave nico
+join christine (front/casual/headshot/angry) center
 {mc}\: Yeah, I am.
 {mc}\: You ran into my friend and completely obliterated his drink.
+join christine (34/casual/angry) center
 {mc}\: You need to apologize.
 “BIFF”\: [i][laughs]
 “BIFF”\: Whatever...
+join christine (side/casual/angry) center
 {mc}\: Do you think you can just bully people however you please?
 BYSTANDER 1\: Did he just run into Nico?
 BYSTANDER 2\: Oh my god! His {fav.drink}!!
+join christine (34/casual/angry) center
 {mc}\: Like I said, apologize, [b][i]now.
 "BIFF"\: Take a chill pill lady.
+update christine (front/casual/headshot/angry) [animation="Heartbeat" length="0.6" repeat="3"]
 {mc}\: [b][i]Eat[pause=0.5] my[pause=0.5] shorts.
+update christine (front/casual/headshot/neutral)
 [i]Completely torn apart by this devastating blow I’ve just dealt him, tears begin to well in his eyes.
 “BIFF”\: Fine, fine, I’m sorry! Happy now? Just leave me alone!
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="3.0" volume="0.0"]
 [i]He runs away defeated, slips on the puddle of spilled {fav.drink}, and face plants into the snow.
 # call back to Alex lol
-join christine left
-join nico (cHappy) right
+join christine (34/casual/angry) pos=x0.42y0.55 size=y0.7
+join nico (back/casual) pos=x0.65 size=y1.05
 label end of jingle
 
 [i]I turn to Nico.
 {mc}\: What’s [i]his[/i] problem? Here, I can buy you another.
+update christine (34/casual/neutral)
 {n}\: It’s alright don’t worry about it, but thank you.
+leave christine
+join nico (front/casual/headshot/blush) center
 {n}\: …and thank you for standing up for me.
+
 # RETHINK
 {n}\: No one’s ever actually stuck up for me like that before…
+update nico (back/casual) pos=x0.65 size=y1.05 [z_index="20"]
+join christine (34/casual/sad) pos=x0.42y0.55 size=y0.7 [z_index="-10"]
+
 {mc}\: What?? I find that hard to believe. It seems like everyone here loves you.
 {n}\: Not that guy apparently.
+update christine (34/casual/neutral)
 {mc}\: Whatever, you know what I mean.
+update christine (34/casual/sad)
 {mc}\: But how has no one ever done that for you before?
+update christine (back/casual) center [animation="Instant In" z_index="20"]
+update nico (34/casual/happy) center [animation="Instant In" z_index="-10"]
 {n}\: Though I'm friendly with the people here, I honestly mostly stick to myself.
 {mc}\: Well, no one should be talking to you like that.
 # #{n}\: Oh uh… thanks…
 # #{mc}\: No problem…
 
 # #[i]Again an awkward lull settles over us, but it doesn’t last long.
+join nico (front/casual/headshot/neutral) pos=x0.65 [z_index="-10"]
+join christine (front/casual/headshot/neutral) pos=x0.35y1.1 [z_index="20"]
 [i]As Nico and I begin to explore the market together, he tells me stories about the history of this town.
+update christine (front/casual/headshot/happy)
+update nico (front/casual/headshot/neutral)
 [i]At first I didn’t say much, but as the night drags on, I could feel myself opening up, allowing myself to smile, to laugh.
 [i]His joy and enthusiasm were infectious, even to my cold city girl heart.
+leave nico
+leave christine
 [i]A snowball fight breaks out among the kids, and Nico decides to join in.
 [i]He throws a snowball at me. I throw one back.
 [wait_input]
+join christine (34/casual/sad) pos=x0.42y1.05 [z_index="-10"]
+join nico (back/casual) pos=x0.67y1.1 size=y1.2 [z_index="20"]
 {mc}\: Ah! Is it already this late? I really should be going back.
+update nico [animation="Bounce" length="0.2"]
 {n}\: Before you go, I forgot to give you something! I got this for you earlier.
 [i]He hands me a small paper bag.
+update christine (34/casual/blush)
 [i]Inside the bag were cookies, {fav.cookie}.
 {mc}\: How did you…. These are my favorite cookies.
+join christine (back/casual) center [z_index="20"]
+join nico (34/casual/happy) center [z_index="-10"]
 {n}\: I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
+update christine [animation="Heartbeat" length="0.3"]
 {mc}\: Oh, shut up…
 {mc}\: Well, thank you regardless. This was fun…
 {n}\: See! I told you that you wouldn’t regret it!
+update nico [animation="Bounce"]
 {n}\: Get home safe!
 leave nico
+join christine (34/casual/neutral) center
 [i]Nico waves energetically as I walk away, and I give him a small wave in return.
+update christine (34/casual/happy)
 [i]I smile to myself, already reminiscing about the memories I made tonight…
 [music fade="3.0" volume="0.0"]
+update christine (34/casual/neutral)
 [i]But for whatever reason, I can’t help but also feel a bit…
+update christine (34/casual/sad)
 [i]Sad? [pause=0.5]Disappointed?
 [i]Why?
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {n}\: Wait, {name.first}!
-join nico center
+leave christine
+join nico (front/casual/blush) center
 [i]I turn around, and Nico is right behind me, face flushed and out of breath.
+join nico (front/casual/headshot/blush) center
 {n}\: So... if you end up liking those cookies, you’ve got to check out the bakery in town!
 {n}\: Those cookies are good, but fresh? Absolutely phenomenal!
+update nico (front/casual/headshot/shocked) [animation="Bounce"]
 {n}\: Would you want to go together tomorrow… I mean only if you want to! I don’t want you to feel-
+leave nico
+join christine (34/casual/happy) center
 {mc}\: I’d love to.
 
 # fade to black
