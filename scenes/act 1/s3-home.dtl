@@ -10,7 +10,6 @@ set {name.last} = GlobalTracking.tracking_variables["your_last_name"]
 set {mc} = {name.first}.to_upper()
 
 {mc}\: So this is the new place?
-jump test
 [i]I look around at the cabin that my mother lovingly and meticulously decorated for the holidays.[/i]
 join christine (34/work/neutral) center
 MOM\: Isn’t it wonderful? Your father and I are so happy we moved here.
@@ -47,7 +46,6 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to th
 	# #MOM\: You should spend more time caring about your loved ones than that job, you know!
 
 MOM\: I gotta run some more errands, so I’ll see you later! Love you darling!
-label test
 {mc}\: Love you too.
 
 # fade to black

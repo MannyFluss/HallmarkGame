@@ -23,7 +23,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "34/casual/happy": {
@@ -46,11 +46,11 @@
 },
 "34/chill": {
 "export_overrides": {
-"image": "\"res://art/sprites/nico/34/N_Chill_C_34.PNG\""
+"image": "\"res://art/sprites/nico/34/casual/N_Chill_C_34.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(200, 1000),
+"scale": 2.0,
 "scene": ""
 },
 "34/work/blush": {
@@ -58,8 +58,8 @@
 "image": "\"res://art/sprites/nico/34/work/N_Blush_W_34.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(300, 700),
+"scale": 1.7,
 "scene": ""
 },
 "34/work/happy": {
@@ -67,8 +67,8 @@
 "image": "\"res://art/sprites/nico/34/work/N_Happy_W_34.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(300, 700),
+"scale": 1.7,
 "scene": ""
 },
 "34/work/sad": {
@@ -76,8 +76,8 @@
 "image": "\"res://art/sprites/nico/34/work/N_Sad_W_34.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(300, 700),
+"scale": 1.7,
 "scene": ""
 },
 "back/casual": {
@@ -177,6 +177,60 @@
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
+"scene": ""
+},
+"front/work/headshot/blush": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Blush_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/blush2": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Blush2_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/happy": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Happy_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/neutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Neutral_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/sad": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Sad_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/shocked": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/work/N_Shocked_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 1030),
+"scale": 2.0,
 "scene": ""
 },
 "front/work/neutral": {
