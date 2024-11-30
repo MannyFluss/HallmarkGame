@@ -1,11 +1,16 @@
 [background arg="res://art/backgrounds/DateMontage.PNG" fade="0.0"]
-join christine center
+# christine and nico staring at each other
+join christine (34/work/sad) pos=x0.42y0.65 size=y0.8
+join nico (back/work) center [z_index="10"]
+I want Santa...
 [wait_input]
 join christine pos=y6.48 size=y7.2
 [wait_input]
-join christine (cAngry) rightmost
 [wait_input]
-join nico (headshot) center
 NICO\: I love you Manny The Gecko...
+# SAVED POSE: christine and nico staring at each other
+join christine (34/work/sad) pos=x0.42y0.65 size=y0.8
+join nico (back/work) center [z_index="10"]
+
 [wait time="1.0"]
 [wait_input]

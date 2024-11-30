@@ -35,7 +35,7 @@ func _apply_export_overrides() -> void:
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hm4wp"]
 shader = ExtResource("10_aywdc")
-shader_parameter/grain_amount = 0.063
+shader_parameter/grain_amount = 0.052
 shader_parameter/grain_size = 1.0
 shader_parameter/animate = false
 

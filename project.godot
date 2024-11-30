@@ -26,10 +26,12 @@ SceneSwitcher="*res://Autoloads/SceneSwitcher/SceneSwitcher.tscn"
 directories/dch_directory={
 "christine": "res://characters/christine.dch",
 "credits": "res://characters/credits.dch",
+"goodEndLetter": "res://characters/goodEndLetter.dch",
 "nico": "res://characters/nico.dch"
 }
 directories/dtl_directory={
 "badEnd": "res://scenes/act 3/badEnd.dtl",
+"goodEnd": "res://scenes/act 3/goodEnd.dtl",
 "intro": "res://scenes/credits/intro.dtl",
 "outro": "res://scenes/credits/outro.dtl",
 "s1-corporate": "res://scenes/act 1/s1-corporate.dtl",
@@ -106,6 +108,8 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 portraits/position_suggestion_names="leftmost, left, center, right, rightmost"
+animations/join_default="Fade In"
+animations/leave_default="Fade Out"
 
 [display]
 

@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
 [ext_resource type="Texture2D" uid="uid://bqp2m3f7u2u7x" path="res://scenes/LetterToSanta/ArrowStroke.png" id="6_tjaux"]
 [ext_resource type="Texture2D" uid="uid://87edqsestmh7" path="res://scenes/LetterToSanta/Arrow.png" id="7_ujbc4"]
-[ext_resource type="AudioStream" uid="uid://dkiyw0nong86y" path="res://Audio/Music/austin_song_v2 (2).mp3" id="8_ac13l"]
+[ext_resource type="AudioStream" uid="uid://dkiyw0nong86y" path="res://audio/music/austin_song_v2 (2).mp3" id="8_ac13l"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yflob"]
 

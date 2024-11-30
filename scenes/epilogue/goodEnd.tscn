@@ -16,20 +16,20 @@ texture = ExtResource("1_hiwww")
 
 [node name="letter" type="Sprite2D" parent="."]
 position = Vector2(966, 532)
-rotation = 1.53419
+rotation = 1.5708
 scale = Vector2(0.417413, 0.453088)
 texture = ExtResource("2_mmr66")
 
 [node name="Letter to girlie" type="RichTextLabel" parent="letter"]
 anchors_preset = -1
-anchor_left = -7.79629e-05
-anchor_top = -0.150199
-anchor_right = -0.200762
-anchor_bottom = -0.150199
-offset_left = -558.037
-offset_top = 1235.79
-offset_right = 1684.96
-offset_bottom = 2772.79
+anchor_left = -0.314808
+anchor_top = -0.150063
+anchor_right = -0.314808
+anchor_bottom = -0.150063
+offset_left = -149.865
+offset_top = 1308.25
+offset_right = 2093.13
+offset_bottom = 2845.25
 rotation = -1.5708
 theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -55,10 +55,10 @@ anchor_left = 7.04229e-05
 anchor_top = -1.52588e-05
 anchor_right = 0.649485
 anchor_bottom = 0.296471
-offset_left = 605.856
-offset_top = 510.042
-offset_right = 1182.86
-offset_bottom = 764.042
+offset_left = 467.019
+offset_top = 478.977
+offset_right = 1044.02
+offset_bottom = 732.977
 rotation = -1.5708
 theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)

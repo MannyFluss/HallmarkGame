@@ -17,13 +17,94 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"34/placeholder": {
+"34/casual/angry": {
 "export_overrides": {
-"image": "\"res://art/sprites/christine/34/C_PlaceHolder_C_34.PNG\""
+"image": "\"res://art/sprites/christine/34/casual/C_Angry_C_34.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-200, 900),
+"scale": 2.0,
+"scene": ""
+},
+"34/casual/blush": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/casual/C_Blush_C_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 900),
+"scale": 1.0,
+"scene": ""
+},
+"34/casual/happy": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/casual/C_Happy_C_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 900),
+"scale": 1.0,
+"scene": ""
+},
+"34/casual/neutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/casual/C_Neutral_C_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 900),
+"scale": 2.0,
+"scene": ""
+},
+"34/casual/sad": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/casual/C_Sad_C_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 900),
+"scale": 1.0,
+"scene": ""
+},
+"34/work/angry": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/work/C_Angry_W_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 950),
+"scale": 2.0,
+"scene": ""
+},
+"34/work/blush": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/work/C_Blush_W_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 950),
+"scale": 2.0,
+"scene": ""
+},
+"34/work/happy": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/work/C_Happy_W_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 950),
+"scale": 2.0,
+"scene": ""
+},
+"34/work/neutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/work/C_Neutral_W_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 950),
+"scale": 2.0,
+"scene": ""
+},
+"34/work/sad": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/34/work/C_Sad_W_34.PNG\""
+},
+"mirror": false,
+"offset": Vector2(-200, 950),
+"scale": 2.0,
 "scene": ""
 },
 "back/casual": {
@@ -40,8 +121,8 @@
 "image": "\"res://art/sprites/christine/back/C_Neutral_W_B.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-330, 100),
+"scale": 1.2,
 "scene": ""
 },
 "front/casual/angry": {
@@ -50,7 +131,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "front/casual/blush": {
@@ -59,7 +140,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 2.0,
 "scene": ""
 },
 "front/casual/happy": {
@@ -86,7 +167,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "front/work/angry": {
@@ -95,7 +176,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 2.0,
 "scene": ""
 },
 "front/work/blush": {
@@ -104,7 +185,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "front/work/happy": {
@@ -113,7 +194,52 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
+"scene": ""
+},
+"front/work/headshot/angry": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/front/work/C_Angry_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 950),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/blush": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/front/work/C_Blush_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 950),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/happy": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/front/work/C_Happy_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 950),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/neutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/front/work/C_Neutral_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 950),
+"scale": 2.0,
+"scene": ""
+},
+"front/work/headshot/sad": {
+"export_overrides": {
+"image": "\"res://art/sprites/christine/front/work/C_Sad_W_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 950),
+"scale": 2.0,
 "scene": ""
 },
 "front/work/neutral": {
@@ -122,7 +248,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "front/work/sad": {
@@ -131,7 +257,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "side/casual/angry": {
@@ -184,8 +310,8 @@
 "image": "\"res://art/sprites/christine/side/work/C_Angry_W_S.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-150, 100),
+"scale": 1.3,
 "scene": ""
 },
 "side/work/blush": {
@@ -193,8 +319,8 @@
 "image": "\"res://art/sprites/christine/side/work/C_Blush_W_S.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-150, 100),
+"scale": 1.3,
 "scene": ""
 },
 "side/work/happy": {
@@ -202,8 +328,8 @@
 "image": "\"res://art/sprites/christine/side/work/C_Happy_W_S.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-150, 100),
+"scale": 1.3,
 "scene": ""
 },
 "side/work/neutral": {
@@ -211,8 +337,8 @@
 "image": "\"res://art/sprites/christine/side/work/C_Neutral_W_S.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-150, 100),
+"scale": 1.3,
 "scene": ""
 },
 "side/work/sad": {
@@ -220,8 +346,8 @@
 "image": "\"res://art/sprites/christine/side/work/C_Sad_W_S.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-150, 100),
+"scale": 1.3,
 "scene": ""
 },
 "sketch": {
@@ -230,7 +356,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.3,
 "scene": ""
 }
 },

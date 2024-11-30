@@ -1,56 +1,87 @@
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
-join christine (wNeutral) right [animation="Fade In" length="1.0"]
+join christine (side/work/sad) center [animation="Fade In" length="1.0"]
 
 [i][door chime jingles][/i]
 [i]I quickly opened the door to the post office, grateful to finally escape the frigid winter air.[/i]
+update christine (side/work/neutral)
 [i]As I stepped inside, I was enveloped in the faint smell of sweet cinnamon and pine, and the warmth from a fire crackling in the fireplace.[/i]
+join christine (front/work/headshot/neutral) center
 [i]I looked around and suddenly felt like I just walked into someone’s home.[/i]
 [i]There were thick rugs layed on the floor, a miniature Christmas village displayed on the fireplace mantle, and garlands strung up along the corners of the room.[/i]
+update christine (front/work/headshot/sad)
 [i]The post office was completely empty, and I started to fear that I actually did break into some poor grandma’s house.[/i]
+join christine (34/work/sad) center
 {mc}\: Hello? Anyone there?
+update christine (34/work/neutral)
 MAN’S VOICE\: Coming!
 [i]I busied myself looking at some stamps on the counter until the mailman arrived.[/i]
 [music fade="3.0" volume="0.0"]
+update christine (34/work/blush)
+[wait time="1.0"]
 [i]But I felt my heart skip as I looked up and locked eyes with his [br] [b]icy[pause=0.5] blue [pause=0.5]orbs.[/b]
+[wait time="0.5"]
+leave christine
 # #swoop in nico
+join nico (front/work/neutral) center
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
-join nico (wNeutral) left
-join christine (wBlush) right
 # #make her blush
 {mc}\: …
+join nico (front/work/headshot/neutral) center
+[wait_input]
 MAILMAN\: Can I help you?
 [wait_input]
+leave nico [animation="Instant Out" length="0.0"]
+join christine (34/work/angry) center [animation="Instant In"]
 [music fade="0.1" volume="0.0"]
 {mc}\: No!
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
+join christine (front/work/headshot/blush) center
 {mc}\: I mean- yes! I mean, I had some packages to deliver.
 {mc}\: Do I just drop them off here?
+leave christine [animation="Fade Out"]
+join nico (front/work/headshot/neutral) center [animation="Fade In"]
 MAILMAN\: Haha! Yup! This is the only post office for the next 50 miles.
+update nico (front/work/headshot/happy) center [animation="Instant In"]
 MAILMAN\: So how are you liking it here? Have you explored the town square yet?
+leave nico [animation="Fade Out"]
+join christine (34/work/sad) center [animation="Fade In"]
 {mc}\: Ah… Is it that easy to tell I’m not from around here?
 MAILMAN\: You say that like it’s a bad thing!
 # he says haha every 5 seconds because he’s just a chill guy
+leave christine
+join nico (34/work/happy) center [animation="Fade In"]
+join christine (back/work) center [animation="Fade In"]
 {n}\: I’m Nico by the way!
-join christine (wNeutral) right
 {mc}\: I’m {name.first}.
+leave christine [animation="Fade Out"]
+join nico (front/work/headshot/shocked) center
 {n}\: {name.first} {name.last}?
 # he is shocked
 {mc}\: How do you know that?
+update nico (front/work/headshot/neutral)
 {n}\: You’re part of the {name.last} family, right? Your folks are so nice.
+update nico (front/work/headshot/happy)
 {n}\: Your mother was telling me her daughter was visiting this year. I hear you’re a big shot in the city.
+join nico (back/work) center [animation="Fade In" z_index="10"]
+join christine (34/work/sad) pos=x0.42y0.65 size=y0.8 [animation="Fade In"]
 {mc}\: She said that? Oh my god…
+update christine (34/work/neutral)
 {n}\: Well, while you’re here, you should make sure to enjoy yourself!
+update nico center [animation="Bounce" mirrored="false"]
 {n}\: There’s the Jingle Jangle Christmas Twinkle Sparkle Tree Lighting Ceremony and Market tonight. You should go!
+update christine (34/work/sad)
 {mc}\: I don’t know, those kinds of things aren’t really my style.
-update nico left [animation="Heartbeat"]
+update nico pos=x0.35 [animation="Heartbeat" z_index="10"]
 {n}\: What?!
+leave christine [animation="Fade Out"]
+join nico (front/work/headshot/shocked) center
 {n}\: Even if you don’t celebrate Christmas, it’s still a good time, I swear!
+update nico (front/work/headshot/happy)
 {n}\: How about we go together?
-join nico pos=1x
-join christine center
+leave nico
+join christine (front/work/blush) center
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]
-label fuck
 [i]WHAT DO I SAY?!?!?![/i]
 join christine (front/work/neutral) pos=-y6.3 size=y6.9
 do SceneSwitcher.SwitchScene("res://CraneGame/CraneGameDate/CraneGameAcceptDate.tscn")

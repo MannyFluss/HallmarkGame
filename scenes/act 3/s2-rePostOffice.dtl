@@ -11,6 +11,9 @@ join christine (front/work/neutral) center
 	{n}\: Well, if you do believe me…
 	# #nico smiles
 	{n}\: I promise you won’t regret it!
+	[background arg="res://art/backgrounds/black.png" fade="1.0"]
+	leave --All-- [animation="Fade Out" length="1.0"]
+	jump goodEnd/
 	# #fade to black
 	# GOOD ENDING
 - I believe you. | [if {GlobalTracking.has_state("BelieveSanta")} == true] [else="disable"]
