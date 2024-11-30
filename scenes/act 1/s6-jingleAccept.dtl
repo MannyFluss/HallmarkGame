@@ -1,17 +1,23 @@
+update nico (front/work/headshot/happy)
 {n}\: I’ll meet you at the base of the Jingle Jangle tree!
+update nico (front/work/headshot/neutral)
 {n}\: It’s right in the center of the market and the tree is MASSIVE, extremely hard to miss!
 {mc}\: Well, I’ll see you there, I guess.
+join nico (34/work/happy) center
+join christine (back/work) center [z_index="10"]
 {n}\: Yep! See you tonight! Looking forward to it!
 {n}\: The Jingle Jangle is one of my favorite festivities! Though they’re all kind of tied for first on my list!
 {n}\: There's no way you won't have fun! I swear you won’t regret it!
 {mc}\: Well, I’ve got to be heading back now.
-{n}\: Merry Christmas! Have a great night!
+leave christine
+update nico center [animation="Bounce"]
+{n}\: Get back safe! Merry Christmas! Have a great night!
 leave nico
 {mc}\: [i]What did I get myself into…[/i]
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-leave christine [animation="Fade Out"]
+leave christine [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 
 jump s1-together/

@@ -1,18 +1,19 @@
 [background arg="res://art/backgrounds/JingleBeforeNico.PNG" fade="1.0"]
-join christine (cNeutral) center [animation="Fade In"]
+join christine (front/casual/headshot/sad) center
 
 [i]Although I told that mailman I wouldn’t go, I somehow ended up at the Jingle Jangle.[/i]
 [i]After watching my parents and their friends become tipsy off of spiked eggnog, I decided I had enough and headed home.[/i]
+update christine (side/casual/sad) pos=x0.5y0.95 size=y1.2 [animation="Fade In"]
 [i]It was a bit lonely walking through the bustling market on my own, surrounded by happy families and loving couples.[/i]
 [i]I keep my head down to block them out and quicken my pace…[/i]
-update christine center [animation="Heartbeat"]
+update christine (34/casual/sad) pos=x0.48y0.65 size=y0.8 [animation="Heartbeat"]
 [i]When I accidentally run headfirst into someone and launch them across the marketplace![i]
 [i][crowd gasps][/i]
 {mc}\: Oh my god! I’m so sorry!!
-join christine right
+join christine (34/casual/sad) pos=x0.8
 [i]I rush over to pick them up off the ground.[/i]
-join christine left
-join nico (cShocked) right
+join christine (34/casual/sad) pos=x0.42
+join nico (back/casual) right [animation="Slide In Up" length="2.0"]
 {mc}\: Nico?
 # #nico appears
 # {mc}\: What are you doing here…

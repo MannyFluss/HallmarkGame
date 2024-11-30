@@ -80,6 +80,15 @@
 "scale": 1.7,
 "scene": ""
 },
+"back/bigBack": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/back/N_Neutral_C_B.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "back/casual": {
 "export_overrides": {
 "image": "\"res://art/sprites/nico/back/N_Neutral_C_B.PNG\""

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bpkf028godte0"
-path="res://.godot/imported/vine-boom.mp3-ee7471a87a048e14ec57a486cd093814.mp3str"
+path="res://.godot/imported/vine-boom.mp3-33d10155f685b2d3b28a20b3b95d0985.mp3str"
 
 [deps]
 
-source_file="res://Audio/SFX/vine-boom.mp3"
-dest_files=["res://.godot/imported/vine-boom.mp3-ee7471a87a048e14ec57a486cd093814.mp3str"]
+source_file="res://audio/SFX/vine-boom.mp3"
+dest_files=["res://.godot/imported/vine-boom.mp3-33d10155f685b2d3b28a20b3b95d0985.mp3str"]
 
 [params]
 

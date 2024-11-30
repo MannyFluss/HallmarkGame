@@ -31,7 +31,7 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to th
 	update christine (front/work/headshot/sad) center
 	MOM\: We really missed you last Christmas. That job’s taking up too much of your time, you know!
 	update christine (front/work/headshot/neutral)
-	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun!
+	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun! You need more Christmas spirit!
 - Try to get out of it
 	update christine (34/work/angry)
 	{mc}\: I’ve been home for less than 10 minutes and you’re already putting me to work?
@@ -40,12 +40,10 @@ MOM\: I forgot Hanukkah started earlier this year, so I need you to go now to th
 	MOM\: So much so that you didn’t come to see your poor mother last Christmas.
 	join christine (front/work/headshot/sad) center
 	{mc}\: Fine, fine, I understand. I’m sorry, I’ll go deliver them.
-	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun!
+	MOM\: The post office is in the town square, but while you’re out there, walk around, have some fun! You need more Christmas spirit!
 	# #{mc}\: Sure, Mom.
 	# #MOM\: Oh, have some Christmas spirit!
 	# #MOM\: You should spend more time caring about your loved ones than that job, you know!
-MOM\: You've got to get more holiday cheer.
-
 MOM\: I gotta run some more errands, so I’ll see you later! Love you darling!
 {mc}\: Love you too.
 
