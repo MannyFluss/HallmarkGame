@@ -31,4 +31,8 @@ func _on_recieving_field_prize_obtained(name: String) -> void:
 		SceneSwitcher.DotEffectNoSceneSwitch()
 		await get_tree().create_timer(1.05).timeout
 		start_dialogic_timeline()
+	if name == "credits":
+		pass
+		$Act1Animator.play("creditgs")
+		
 		#act_1_animator.play("start_game")

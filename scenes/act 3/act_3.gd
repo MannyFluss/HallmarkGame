@@ -10,15 +10,13 @@ var santa_speed = .01
 var bad = false
 
 func _ready() -> void:
-	bad_ending()
+	Dialogic.start("res://scenes/act 3/s1-postOffice.dtl")
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
-	if bad:
-		santa_bad.scale += Vector2(santa_speed*delta,santa_speed*delta)
+
 	pass
 
 

@@ -32,6 +32,10 @@ var clamp_by_deg = 20
 
 @onready var avg_pos : Node2D = $AvgPos
 
+var times_unclamped = 0
+
+signal unclamped(times : int)
+
 var state = "default"
 
 signal reached_height
@@ -62,6 +66,8 @@ func _physics_process(delta: float) -> void:
 		area_clamp_left <= right.position.x and right.position.x <= area_clamp_right):
 		on_started_dropping()
 	if Input.is_action_just_pressed("action_engage") and state == "clamped":
+		times_unclamped += 1
+		unclamped.emit(times_unclamped)
 		on_started_releasing()
 		
 	if state == "dropping":

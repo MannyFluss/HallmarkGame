@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=11 format=3 uid="uid://bk7xalrii2xrj"]
 
-[ext_resource type="PackedScene" uid="uid://c3baplxjwnyd4" path="res://scenes/DialogueSupplementalUI/SupplementalDialolgueUI.tscn" id="1_h4vv0"]
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
 [ext_resource type="Texture2D" uid="uid://chovdg34dx24o" path="res://art/TV stuff/TvOutLine.PNG" id="4_ofwqp"]
 [ext_resource type="Texture2D" uid="uid://15mhvrb4taip" path="res://art/TV stuff/TvInLine.PNG" id="5_3onbl"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
+[ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
 length = 0.001
@@ -32,6 +32,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(620, 450)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Credits:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_18umf"]
@@ -61,17 +73,32 @@ tracks/1/keys = {
 "values": [Vector2(620, 450), Vector2(960, 540)]
 }
 
+[sub_resource type="Animation" id="Animation_xbl7j"]
+resource_name = "creditgs"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Credits:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 7.03333, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dlfy3"]
 _data = {
 "RESET": SubResource("Animation_h7mxn"),
+"creditgs": SubResource("Animation_xbl7j"),
 "start_game": SubResource("Animation_18umf")
 }
 
 [node name="Act1" type="Node2D"]
 script = ExtResource("1_wci6r")
 next_scene_path = "res://scenes/LetterToSanta/Letter.tscn"
-
-[node name="SupplementalDialolgueUi" parent="." instance=ExtResource("1_h4vv0")]
 
 [node name="TV" type="Node2D" parent="."]
 position = Vector2(960, 541)
@@ -93,7 +120,7 @@ scale = Vector2(0.6, 0.6)
 
 [node name="Crane" parent="CraneGame/Node2D" index="0"]
 position = Vector2(555, 185)
-drop_length = 1.05
+drop_length = 1.08
 clamp_by_deg = 15
 
 [node name="Ballz" type="Node2D" parent="CraneGame"]
@@ -110,6 +137,18 @@ text = "[center] Start"
 
 [node name="CranePrize2" parent="CraneGame/Ballz" instance=ExtResource("6_ip5yg")]
 position = Vector2(786, 526)
+prize_tracker_name = "credits"
+
+[node name="TopHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.579, 0.3225, 0.75, 1)
+
+[node name="Label" parent="CraneGame/Ballz/CranePrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 18
+text = "[center]
+Credits"
+
+[node name="BottomHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="2"]
+self_modulate = Color(0.7, 0, 0.0116665, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(620, 450)
@@ -123,7 +162,15 @@ libraries = {
 "": SubResource("AnimationLibrary_dlfy3")
 }
 
+[node name="Credits" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1665
+position = Vector2(620, 450)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_ongo5")
+
 [connection signal="prize_obtained" from="CraneGame/Node2D/RecievingField" to="." method="_on_recieving_field_prize_obtained"]
 
 [editable path="CraneGame/Node2D"]
 [editable path="CraneGame/Ballz/CranePrize"]
+[editable path="CraneGame/Ballz/CranePrize2"]

@@ -50,7 +50,9 @@ update nico left [animation="Heartbeat"]
 join christine center
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]
+label fuck
 [i]WHAT DO I SAY?!?!?![/i]
 join christine (front/work/neutral) pos=-y6.3 size=y6.9
-jump s5-rePostOffice/
+do SceneSwitcher.SwitchScene("res://CraneGame/CraneGameDate/CraneGameAcceptDate.tscn")
+[wait time="0.1"]
 [end_timeline]

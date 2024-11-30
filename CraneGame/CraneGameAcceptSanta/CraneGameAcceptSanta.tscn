@@ -1,15 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://eeehade8cfd4"]
+[gd_scene load_steps=6 format=3 uid="uid://eeehade8cfd4"]
 
-[ext_resource type="Texture2D" uid="uid://b0inmbuatbvru" path="res://art/Logo/Blank.PNG" id="1_3eiep"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="1_ah6ei"]
+[ext_resource type="Script" path="res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.gd" id="1_aij0g"]
+[ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="2_atlm8"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_cnw08"]
+[ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="4_u1ain"]
 
 [node name="CraneGameAcceptSanta" type="Node2D"]
+script = ExtResource("1_aij0g")
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+zoom = Vector2(1.82, 1.82)
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(1.99997, 63)
 scale = Vector2(0.567708, 0.585185)
-texture = ExtResource("1_3eiep")
+
+[node name="Background2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(3, 17)
+scale = Vector2(0.580208, 0.585185)
+texture = ExtResource("2_atlm8")
 
 [node name="Node2D" parent="." instance=ExtResource("1_ah6ei")]
 position = Vector2(-603, -433)
@@ -17,7 +28,7 @@ position = Vector2(-603, -433)
 [node name="Crane" parent="Node2D" index="0"]
 position = Vector2(608, 162)
 drop_speed = 360
-drop_length = 1.3
+drop_length = 1.35
 drag_strength = 3
 area_clamp_left = -105.0
 area_clamp_right = 305.0
@@ -60,17 +71,6 @@ scroll_active = false
 [node name="BottomHalf" parent="Balls/IBelieveYouPrize3/RigidBody2D" index="2"]
 self_modulate = Color(0.282038, 0.429712, 0.201671, 1)
 
-[node name="IBelieveYouPrize4" parent="Balls" instance=ExtResource("3_cnw08")]
-position = Vector2(-62, -61)
-prize_tracker_name = "BelieveSanta"
-
-[node name="Label" parent="Balls/IBelieveYouPrize4/RigidBody2D/TopHalf/MarginContainer" index="0"]
-text = "[center] trust santa"
-scroll_active = false
-
-[node name="BottomHalf" parent="Balls/IBelieveYouPrize4/RigidBody2D" index="2"]
-self_modulate = Color(0.282038, 0.429712, 0.201671, 1)
-
 [node name="AcceptPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
 position = Vector2(269, 33)
 prize_tracker_name = "AcceptSanta"
@@ -101,22 +101,6 @@ U"
 scroll_active = false
 
 [node name="BottomHalf" parent="Balls/AcceptPrize4/RigidBody2D" index="2"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
-
-[node name="AcceptPrize5" parent="Balls" instance=ExtResource("3_cnw08")]
-position = Vector2(19, -1)
-prize_tracker_name = "AcceptSanta"
-
-[node name="TopHalf" parent="Balls/AcceptPrize5/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.356863, 0.321569, 1)
-
-[node name="Label" parent="Balls/AcceptPrize5/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 26
-text = "[center] I <3
-U"
-scroll_active = false
-
-[node name="BottomHalf" parent="Balls/AcceptPrize5/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.698039, 0.882353, 1)
 
 [node name="AcceptPrize6" parent="Balls" instance=ExtResource("3_cnw08")]
@@ -161,31 +145,91 @@ text = "[center] ok u freaky"
 [node name="BottomHalf" parent="Balls/FreakPrize4/RigidBody2D" index="2"]
 self_modulate = Color(1, 0, 0, 1)
 
-[node name="FreakPrize5" parent="Balls" instance=ExtResource("3_cnw08")]
-position = Vector2(-108, 24)
-prize_tracker_name = "FreakySanta"
+[node name="CallPolice" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(-22, 7)
+prize_tracker_name = "CallPoliceSanta"
 
-[node name="TopHalf" parent="Balls/FreakPrize5/RigidBody2D" index="1"]
-self_modulate = Color(0.478431, 0, 0, 1)
+[node name="TopHalf" parent="Balls/CallPolice/RigidBody2D" index="1"]
+self_modulate = Color(0.18, 0, 0, 1)
 
-[node name="Label" parent="Balls/FreakPrize5/RigidBody2D/TopHalf/MarginContainer" index="0"]
-text = "[center] ok u freaky"
+[node name="Label" parent="Balls/CallPolice/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center]
+POLICE HELP"
 
-[node name="BottomHalf" parent="Balls/FreakPrize5/RigidBody2D" index="2"]
-self_modulate = Color(1, 0, 0, 1)
+[node name="BottomHalf" parent="Balls/CallPolice/RigidBody2D" index="2"]
+self_modulate = Color(0.0999999, 0, 1, 1)
 
-[node name="FreakPrize6" parent="Balls" instance=ExtResource("3_cnw08")]
-position = Vector2(107, 25)
-prize_tracker_name = "FreakySanta"
+[node name="CallPolice2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(45, 117)
+prize_tracker_name = "CallPoliceSanta"
 
-[node name="TopHalf" parent="Balls/FreakPrize6/RigidBody2D" index="1"]
-self_modulate = Color(0.478431, 0, 0, 1)
+[node name="TopHalf" parent="Balls/CallPolice2/RigidBody2D" index="1"]
+self_modulate = Color(0.18, 0, 0, 1)
 
-[node name="Label" parent="Balls/FreakPrize6/RigidBody2D/TopHalf/MarginContainer" index="0"]
-text = "[center] ok u freaky"
+[node name="Label" parent="Balls/CallPolice2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center]
+POLICE HELP"
 
-[node name="BottomHalf" parent="Balls/FreakPrize6/RigidBody2D" index="2"]
-self_modulate = Color(1, 0, 0, 1)
+[node name="BottomHalf" parent="Balls/CallPolice2/RigidBody2D" index="2"]
+self_modulate = Color(0.0999999, 0, 1, 1)
+
+[node name="InsanePrize" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(86, 30)
+prize_tracker_name = "BatshitSanta"
+
+[node name="TopHalf" parent="Balls/InsanePrize/RigidBody2D" index="1"]
+self_modulate = Color(0.233334, 0, 1, 1)
+
+[node name="Label" parent="Balls/InsanePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center] you are batshit insane"
+
+[node name="BottomHalf" parent="Balls/InsanePrize/RigidBody2D" index="2"]
+self_modulate = Color(1, 0, 0.6, 1)
+
+[node name="InsanePrize2" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(141, 133)
+prize_tracker_name = "BatshitSanta"
+
+[node name="TopHalf" parent="Balls/InsanePrize2/RigidBody2D" index="1"]
+self_modulate = Color(0.233334, 0, 1, 1)
+
+[node name="Label" parent="Balls/InsanePrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center] you are batshit insane"
+
+[node name="BottomHalf" parent="Balls/InsanePrize2/RigidBody2D" index="2"]
+self_modulate = Color(1, 0, 0.6, 1)
+
+[node name="InsanePrize3" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(176, -109)
+prize_tracker_name = "StalkerSanta"
+
+[node name="TopHalf" parent="Balls/InsanePrize3/RigidBody2D" index="1"]
+self_modulate = Color(1, 0.483333, 0, 1)
+
+[node name="Label" parent="Balls/InsanePrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center] die you stalker"
+
+[node name="BottomHalf" parent="Balls/InsanePrize3/RigidBody2D" index="2"]
+self_modulate = Color(1, 0.54, 0.816, 1)
+
+[node name="InsanePrize4" parent="Balls" instance=ExtResource("3_cnw08")]
+position = Vector2(-86, -70)
+prize_tracker_name = "StalkerSanta"
+
+[node name="TopHalf" parent="Balls/InsanePrize4/RigidBody2D" index="1"]
+self_modulate = Color(1, 0.483333, 0, 1)
+
+[node name="Label" parent="Balls/InsanePrize4/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center] die you stalker"
+
+[node name="BottomHalf" parent="Balls/InsanePrize4/RigidBody2D" index="2"]
+self_modulate = Color(1, 0.54, 0.816, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -195,17 +239,29 @@ position = Vector2(-105, -118)
 [node name="Marker2D2" type="Marker2D" parent="."]
 position = Vector2(305, -113)
 
+[node name="Attempts Text" type="RichTextLabel" parent="."]
+offset_left = 357.0
+offset_top = -193.0
+offset_right = 528.0
+offset_bottom = -113.0
+theme_override_fonts/normal_font = ExtResource("4_u1ain")
+text = "Attempts Left: 3"
+
+[connection signal="unclamped" from="Node2D/Crane" to="." method="_on_crane_unclamped"]
+
 [editable path="Node2D"]
 [editable path="Node2D/Crane"]
 [editable path="Balls/IBelieveYouPrize"]
 [editable path="Balls/IBelieveYouPrize2"]
 [editable path="Balls/IBelieveYouPrize3"]
-[editable path="Balls/IBelieveYouPrize4"]
 [editable path="Balls/AcceptPrize3"]
 [editable path="Balls/AcceptPrize4"]
-[editable path="Balls/AcceptPrize5"]
 [editable path="Balls/AcceptPrize6"]
 [editable path="Balls/FreakPrize2"]
 [editable path="Balls/FreakPrize4"]
-[editable path="Balls/FreakPrize5"]
-[editable path="Balls/FreakPrize6"]
+[editable path="Balls/CallPolice"]
+[editable path="Balls/CallPolice2"]
+[editable path="Balls/InsanePrize"]
+[editable path="Balls/InsanePrize2"]
+[editable path="Balls/InsanePrize3"]
+[editable path="Balls/InsanePrize4"]

@@ -1,16 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://crmbq8kypactf"]
+[gd_scene load_steps=2 format=3 uid="uid://crmbq8kypactf"]
 
 [ext_resource type="Script" path="res://scenes/act1.2/act_1_2.gd" id="1_li4ru"]
-[ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="2_4771c"]
 
 [node name="Act12" type="Node2D"]
 script = ExtResource("1_li4ru")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 128
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-z_index = 4096
-position = Vector2(960, 540)
-scale = Vector2(10.8906, 5.875)
-texture = ExtResource("2_4771c")
