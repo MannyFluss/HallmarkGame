@@ -101,6 +101,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Bars" type="Sprite2D" parent="Grain"]
+z_index = 60
 z_as_relative = false
 texture = ExtResource("10_hnspm")
 centered = false
