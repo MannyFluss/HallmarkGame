@@ -15,3 +15,5 @@
 [sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 do SceneSwitcher.switchSceneNoanim("res://scenes/BadEnding/BadEnding.tscn")
 [end_timeline]
+leave nico
+update nico (front/casual/shocked) rightmost

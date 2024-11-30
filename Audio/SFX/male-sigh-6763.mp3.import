@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dhttvf4j3mmcg"
-path="res://.godot/imported/male-sigh-6763.mp3-61c9a6d473cc62b50c228993e53a71aa.mp3str"
+path="res://.godot/imported/male-sigh-6763.mp3-46da498e2976f4233e94fa424ab5a55f.mp3str"
 
 [deps]
 
-source_file="res://audio/SFX/male-sigh-6763.mp3"
-dest_files=["res://.godot/imported/male-sigh-6763.mp3-61c9a6d473cc62b50c228993e53a71aa.mp3str"]
+source_file="res://Audio/SFX/male-sigh-6763.mp3"
+dest_files=["res://.godot/imported/male-sigh-6763.mp3-46da498e2976f4233e94fa424ab5a55f.mp3str"]
 
 [params]
 
