@@ -8,41 +8,55 @@ join nico (front/work/neutral) center
 	jump s6-jingleReject/
 
 - ...Sure, why not? | [if {jingle.yes} == true] [else="disable"]
-	[i]Maybe mom is right, I should try to have some holiday spirit[/i]
+	join nico (front/work/headshot/neutral) center
+	[i]Maybe mom is right, I should try to have some holiday spirit.[/i]
+	update nico (front/work/headshot/happy) [animation="Bounce"]
 	{n}\: Righteous!
 	jump s6-jingleAccept/
 
 - No, I'm busy | [if {jingle.no} == true] [else="disable"]
+	join nico (front/work/headshot/neutral) center
 	[i]There’s no way I’m going to some random market with a stranger in the cold.[/i]
 	{n}\: No worries! Totally okay!
 	jump s6-jingleReject/
 
 - Oooh, you want me so bad | [if {jingle.freaky} == true] [else="disable"]
+	join nico (front/work/headshot/blush) center
 	{n}\: Oh!
 	[i]Why did I say that out loud?[/i]
 	{n}\: Umm…
+	update nico
 	{n}\: Sorry! [pause=0.3]Maybe I’m giving you the wrong impression.
+	update nico [animation="Bounce"]
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
+	update nico (front/work/headshot/neutral)
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 
 - I'M GAY!!! | [if {jingle.gay} == true] [else="disable"]
+	join nico (front/work/headshot/happy) center
 	{n}\: Nice! [pause=0.5]Though maybe I’m giving you the wrong impression, haha!
+	update nico (front/work/headshot/neutral)
 	{n}\: I wasn’t trying to hit on you, sorry about that.
 	{mc}\: Yeah I just… I can’t.
 	{n}\: No worries! Totally okay!
 	jump s6-jingleReject/
 
 - Are you asking me on a date? | [if {jingle.date} == true] [else="disable"]
+	join nico (front/work/headshot/shocked) center
 	{n}\: Ah! Sorry, that’s not what I had in mind!
+	update nico (front/work/headshot/happy)
 	{n}\: Maybe I gave you the wrong impression haha, sorry about that!
+	update nico (front/work/headshot/neutral)
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 
 - I can't, I have to work | [if {jingle.work} == true] [else="disable"]
+	join nico (front/work/headshot/neutral) center
 	[i]I feel a twinge of guilt as I lie to him.[/i]
 	[i]But there’s no way I’m going to some random market with a stranger in the cold.[/i]
+	update nico (front/work/headshot/happy)
 	{n}\: During the holidays? That’s gnarly, but I know what that’s like!
 	{n}\: Christmas is our busiest time of year, the amount of presents that come through here? You wouldn’t believe!
 	jump s6-jingleReject/
