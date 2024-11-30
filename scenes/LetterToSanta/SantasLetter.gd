@@ -16,6 +16,8 @@ signal continue_typing
 @onready
 var letter_text = all_of_the_text.text
 
+@onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
+
 @onready
 var init_position_letter : Vector2 = $LetterToScroll/Letter.position
 
@@ -31,6 +33,8 @@ var typing = true
 var times_stopped_typing = 0
 
 func _ready() -> void:
+	audio_stream_player.play()
+	
 	all_of_the_text.text = ""
 	for letter in letter_text:
 		await get_tree().create_timer(randf_range(.01/2,.05/2)).timeout
@@ -76,6 +80,9 @@ func _on_button_pressed() -> void:
 	continue_typing.emit()
 
 func _on_submit_button_pressed() -> void:
+	var tween : Tween = get_tree().create_tween()
+	tween.tween_property($AudioStreamPlayer,"volume_db",-60,1)
+	
 	SceneSwitcher.SwitchScene("res://scenes/act1.2/Act1_2.tscn")
 	
 	GlobalTracking.tracking_variables["your_first_name"] = first_name.text

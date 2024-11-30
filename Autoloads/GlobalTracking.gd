@@ -18,7 +18,6 @@ var tracking_variables = {
 
 
 
-
 #@onready var favorite_song: TextEdit = %FavoriteSong
 #@onready var childhood_meal: TextEdit = %ChildhoodMeal
 #@onready var favorite_drink: TextEdit = %FavoriteDrink
