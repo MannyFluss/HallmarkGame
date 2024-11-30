@@ -25,9 +25,9 @@ join nico (front/work/neutral) center
 	{n}\: Oh!
 	[i]Why did I say that out loud?[/i]
 	{n}\: Umm…
-	update nico
+	update nico (front/work/headshot/neutral)
 	{n}\: Sorry! [pause=0.3]Maybe I’m giving you the wrong impression.
-	update nico [animation="Bounce"]
+	update nico (front/work/headshot/happy)
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
 	update nico (front/work/headshot/neutral)
 	{n}\: But we should still go!
@@ -45,10 +45,10 @@ join nico (front/work/neutral) center
 - Are you asking me on a date? | [if {jingle.date} == true] [else="disable"]
 	join nico (front/work/headshot/shocked) center
 	{n}\: Ah! Sorry, that’s not what I had in mind!
+	{n}\: Maybe I gave you the wrong impression, sorry about that!
 	update nico (front/work/headshot/happy)
-	{n}\: Maybe I gave you the wrong impression haha, sorry about that!
-	update nico (front/work/headshot/neutral)
 	{n}\: I haven’t been on a date in like a thousand years, haha! Dating isn’t really my priority.
+	update nico (front/work/headshot/neutral)
 	{n}\: But we should still go!
 	jump s6-jingleAccept/
 

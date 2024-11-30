@@ -1,13 +1,19 @@
+update nico (front/work/headshot/neutral)
 {n}\: If you do change your mind, I know you won’t regret it!
+update nico (front/work/headshot/happy)
 {n}\: The Jingle Jangle is one of my favorite festivities here, though they’re all kind of tied for first on my list!
+join nico (34/work/happy) center
+join christine (back/work) center [z_index="10"]
 {mc}\: Well, I’ve got to be heading back now.
+leave christine
+update nico center [animation="Bounce"]
 {n}\: Get back safe! Merry Christmas! Have a great night!
 leave nico
 {mc}\: [i]I can’t help but feel like maybe I shouldn’t have been so quick to say no…[/i]
 
 # fade to black
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
-leave christine [animation="Fade Out"]
+leave christine [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 
 jump s1-happenstance/
