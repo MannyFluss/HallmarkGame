@@ -46,7 +46,7 @@ update nico left [animation="Heartbeat"]
 {n}\: What?!
 {n}\: Even if you don’t celebrate Christmas, it’s still a good time, I swear!
 {n}\: How about we go together?
-
+join nico pos=1x
 join christine center
 [i]What?![i]
 [i]Is he asking me out on a date?!?[/i]

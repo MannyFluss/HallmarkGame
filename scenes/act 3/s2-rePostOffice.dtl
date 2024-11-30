@@ -87,5 +87,6 @@ join christine (front/work/neutral) center
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine [animation="Fade Out"]
 leave nico [animation="Fade Out"]
+jump outro/
 [wait time="1.0"]
 [end_timeline]

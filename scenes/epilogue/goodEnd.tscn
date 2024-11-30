@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://crf0pru8ia0qf"]
+
+[ext_resource type="Texture2D" uid="uid://cmtb5qq2px6ij" path="res://art/backgrounds/wood.PNG" id="1_hiwww"]
+[ext_resource type="Texture2D" uid="uid://cpwi08xvr1w0a" path="res://scenes/LetterToSanta/letterupdated.png" id="2_mmr66"]
+[ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_83njm"]
+[ext_resource type="Script" path="res://scenes/epilogue/name.gd" id="3_82100"]
+[ext_resource type="FontFile" uid="uid://ch4sqo1xf2g2q" path="res://Fonts/Kingslanding.otf" id="4_ax1dt"]
+
+[node name="GoodEnd" type="Node2D"]
+
+[node name="woodbg" type="Sprite2D" parent="."]
+modulate = Color(0.448263, 0.385667, 0.312568, 1)
+position = Vector2(978.5, 620.438)
+scale = Vector2(1.22969, 1.21192)
+texture = ExtResource("1_hiwww")
+
+[node name="letter" type="Sprite2D" parent="."]
+position = Vector2(966, 532)
+rotation = 1.53419
+scale = Vector2(0.417413, 0.453088)
+texture = ExtResource("2_mmr66")
+
+[node name="Letter to girlie" type="RichTextLabel" parent="letter"]
+anchors_preset = -1
+anchor_left = -7.79629e-05
+anchor_top = -0.150199
+anchor_right = -0.200762
+anchor_bottom = -0.150199
+offset_left = -558.037
+offset_top = 1235.79
+offset_right = 1684.96
+offset_bottom = 2772.79
+rotation = -1.5708
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_83njm")
+theme_override_font_sizes/normal_font_size = 65
+bbcode_enabled = true
+text = "
+
+I’m forever grateful we met that fateful day in December, and I’m even more grateful that you believed in me. 
+
+It warms my heart to see you finally so fulfilled, becoming the impressive toymaker you always dreamed you’d become. My workshop’s never been so bright, and I’ve never been so happy. You never cease to amaze me with your wit, strength, and heart.
+
+Thank you for being my Mrs. Claus. Cold winter nights are warm now with you around.
+
+Merry Christmas! I love you always,
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Signature" type="RichTextLabel" parent="letter"]
+anchors_preset = -1
+anchor_left = 7.04229e-05
+anchor_top = -1.52588e-05
+anchor_right = 0.649485
+anchor_bottom = 0.296471
+offset_left = 605.856
+offset_top = 510.042
+offset_right = 1182.86
+offset_bottom = 764.042
+rotation = -1.5708
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_ax1dt")
+theme_override_font_sizes/normal_font_size = 250
+text = "Nicolas Claus
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Name" type="RichTextLabel" parent="letter"]
+offset_left = -539.031
+offset_top = 973.323
+offset_right = 37.9693
+offset_bottom = 1227.32
+rotation = -1.5708
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_83njm")
+theme_override_font_sizes/normal_font_size = 65
+text = "Dear Christine,
+
+"
+script = ExtResource("3_82100")
+metadata/_edit_use_anchors_ = true
