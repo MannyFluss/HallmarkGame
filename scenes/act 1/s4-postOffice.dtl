@@ -1,5 +1,6 @@
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
 join christine (side/work/sad) center [animation="Fade In" length="1.0"]
+[sound path="res://audio/SFX/Store Door Sound Effect.mp3" volume="0.0"]
 
 [i][door chime jingles][/i]
 [i]I quickly opened the door to the post office, grateful to finally escape the frigid winter air.[/i]

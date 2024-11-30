@@ -28,14 +28,14 @@ join christine (back/casual) center [animation="Fade In"]
 {n}\: But since you’re already here, you might as well enjoy it!
 leave christine [animation="Instant Out" length="0.0"]
 leave nico [animation="Instant Out" length="0.0"]
-join christine (34/casual/sad) pos=x0.42y0.65 size=y0.8 [animation="Fade In" fade="Fade Cross"]
-join nico (back/casual) right [animation="Fade In" z_index="10" fade="Fade Cross"]
+join christine (34/casual/sad) pos=x0.42y0.65 size=y0.8 [animation="Fade In" length="1.0" fade="Fade Cross"]
+join nico (back/casual) right [animation="Fade In" length="1.0" z_index="10" fade="Fade Cross"]
 {mc}\: I highly doubt I will enjoy this.
 {n}\: Trust me.
 leave nico [animation="Fade Out"]
-join christine (34/casual/sad) center
+join christine (34/casual/blush) center
 {mc}\: …
-update christine (34/casual/neutral)
+update christine (34/casual/blush)
 {mc}\: Alright.
 jump s2-jingleJangle/
 [end_timeline]

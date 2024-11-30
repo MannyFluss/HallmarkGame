@@ -1,40 +1,74 @@
-join christine left [z_index="200"]
-join nico right
+join christine (front/casual/neutral) pos=x0.35
+join nico (front/casual/neutral) pos=x0.65
 [i]An awkward air settles between us, but it’s interrupted by a bell tolling in the distance.[/i]
-[background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/jjtreeDark.jpeg" fade="1.0"]
+[wait time="1.0"]
 [music fade="3.0" volume="0.0"]
 [i]Background conversations fade away, and we all look towards the tree as the lights turn on, one by one.[/i]
-[wait_input]
+[background arg="res://art/backgrounds/JingleJangleChristmasTree.PNG" fade="3.0" transition="Simple Fade"]
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
+update christine (front/casual/blush) [length="3.0" fade="Fade Cross" fade_length="1.5"]
+update nico (front/casual/happy) [length="3.0" fade="Fade Cross" fade_length="1.5"]
+[wait time="3.0"]
+[wait_input]
 [i]Although I like to think I’m all grown-up, I have to admit that I couldn’t help but feel a bit of childlike wonder.[/i]
+leave nico [animation="Fade Out"]
+join christine (side/casual/happy) center
 [i]Even though there are so many people in the big city, it’s easy to feel alone.[/i]
 [i]But here, it really feels like there’s a community.
 [i]Every single person in this town gathered in the piercing cold to watch a couple of lights turn on... together.[/i]
 [wait_input]
+join christine (34/casual/blush) center
 [i]And I couldn’t help but notice how cinematically Nico’s glasses reflected the lights.[/i]
 [i]It looked as if his eyes were filled with a million glittering stars.[/i]
-[wait_input]
 
-# fix it
+leave christine
+join nico (34/casual/happy) pos=x0.35
+
 [i]The ceremony ends as the tree topper light begins to glow, and Nico seems to as well.[/i]
+[sound path="res://audio/SFX/Golf clap sound Effect.mp3" volume="0.0"]
+
 [i][applause][i]
+leave nico
+
+# ## JINGLE CAFE
+label Jingle Cafe
 [background arg="res://art/backgrounds/JingleJangle Cafe.PNG" fade="1.0"]
+join christine (front/casual/neutral) pos=x0.35 [animation="Fade In"]
+join nico (front/casual/neutral) pos=x0.65 [animation="Fade In"]
 [i]The crowd begins to disperse and Nico and I make our way over to the coffee booth.
 BARISTA\: Nico! How’ve you been?
+update nico (front/casual/happy)
 {n}\: I’ve been great! But you know how busy this season can get for me, haha. How are you?
+update nico (front/casual/neutral)
 BARISTA\: I’ve been good! And don’t worry about the drink man, it’s on me.
+update nico (front/casual/happy)
 {n}\: C'mon, I couldn’t do that to you. I’ll pay, I insist.
+update nico (front/casual/neutral)
 BARISTA\: No, [i]I[/i] insist.
+update christine (front/casual/blush)
+join nico (front/casual/happy) pos=x0.6 [z_index="20"]
 {n}\: In that case, I’ll pay for her drink then.
 {n}\: Two cups of {fav.drink} please.
 [sound path="res://Audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
+leave christine [animation="Fade Out"]
+leave nico [animation="Fade Out"]
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
+join christine (34/casual/blush) center
 {mc}\: You didn’t have to do that… but thank you.
 [sound path="res://Audio/SFX/drink-sip-and-swallow-6974.mp3" volume="0.0"]
+join christine (front/casual/neutral) pos=x0.35
+join nico (front/casual/neutral) pos=x0.65
 [i]We begin to explore the market together, drinks in hand, and I take a sip out of mine.
+update christine (front/casual/blush)
 {mc}\: Wow! That’s amazing…
+update christine (front/casual/happy)
 {mc}\: You know, {fav.drink} is actually my favorite.
+update nico (front/casual/happy)
 {n}\: Really? Mine too!
+
+# ## FIGHT
+label fight
 [music fade="0.0" volume="0.0"]
 leave nico [animation="Slide Out Left" length="2.0"]
 # #NICO GETS KNOCKED OFF THE SCREEN
@@ -83,6 +117,7 @@ BYSTANDER 2\: Oh my god! His {fav.drink}!!
 # call back to Alex lol
 join christine left
 join nico (cHappy) right
+label end of jingle
 
 [i]I turn to Nico.
 {mc}\: What’s [i]his[/i] problem? Here, I can buy you another.
