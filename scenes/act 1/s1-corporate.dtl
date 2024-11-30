@@ -5,7 +5,8 @@ join christine (front/work/happy) center
 As you can see, the new state of the art model works like a charm!
 Simply by adjusting the settings, we can now control the dropping skill and claw strength of the crane.
 The power is in [i]your own hands[/i] to control the odds!
-join christine (front/work/neutral)
+join christine (front/work/neutral) center
+[sound path="res://Audio/SFX/Golf clap sound Effect.mp3" volume="6.0"]
 [i][applause][/i]
 Furthermore, I’m delighted to announce an upcoming partnership with the beloved pizza chain Koko’s.
 Soon, you’ll be able to see MEGA branded claw machines in your local pizza shop, just in time for the holiday season!
@@ -13,6 +14,7 @@ And for a limited time, we’ll be featuring custom holiday stuffed animals mode
 Kids will be lining up around the block to get a chance for their very own Koko!
 This partnership is expected to drive overall revenue through increasing the number of players playing, the time spent playing, and the capital users are willing to invest.
 We estimate that by the end of this fiscal year, we will see a 150% growth in our profits.
+[sound path="res://Audio/SFX/Clapping Sound Effects.mp3" volume="0.0"]
 [i][loud applause][/i]
 MR. FLUSS\: Wonderful job yet again!
 MISS MONICA\: The shareholders are going to love this.
@@ -29,6 +31,7 @@ No, he makes a great point. Thank you for your question.
 - It's like the lottery
 	But I’d like to ask you a question in return.
 	When you buy a lottery ticket, are you genuinely expecting to win?
+	[sound path="res://Audio/SFX/People Talking - Sound Effect.mp3" volume="-6.0"]
 	[i][inquisitive muttering][/i]
 	No! You’re buying it for the fantasy.
 	To be able to spend a week where you can imagine what your life would be like if you had that much money.
@@ -40,6 +43,7 @@ No, he makes a great point. Thank you for your question.
 	However, if you put in enough time, sweat, and dedication, it’ll eventually pay off!
 	It’s not like these machines are [i]impossible![/i]
 	MR. FLUSS\: Just rigged!
+	[sound path="res://Audio/SFX/laugh-105488.mp3" volume="0.0"]
 	[i][laughter][/i]
 
 MR. STONE\: Well! We’re at time! Let’s go for lunch.
