@@ -27,8 +27,10 @@ BARISTA\: I’ve been good! And don’t worry about the drink man, it’s on me.
 BARISTA\: No, [i]I[/i] insist.
 {n}\: In that case, I’ll pay for her drink then.
 {n}\: Two cups of {fav.drink} please.
+[sound path="res://Audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
 {mc}\: You didn’t have to do that… but thank you.
+[sound path="res://Audio/SFX/drink-sip-and-swallow-6974.mp3" volume="0.0"]
 [i]We begin to explore the market together, drinks in hand, and I take a sip out of mine.
 {mc}\: Wow! That’s amazing…
 {mc}\: You know, {fav.drink} is actually my favorite.
@@ -36,6 +38,7 @@ BARISTA\: No, [i]I[/i] insist.
 [music fade="0.0" volume="0.0"]
 leave nico [animation="Slide Out Left" length="2.0"]
 # #NICO GETS KNOCKED OFF THE SCREEN
+[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
 [i][b][THUD]
 GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
 [i]Nico is struggling to get up, his cup of {fav.drink} spilling out into a puddle next to him.[/i]

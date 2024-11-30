@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bk7xalrii2xrj"]
+[gd_scene load_steps=11 format=3 uid="uid://bk7xalrii2xrj"]
 
 [ext_resource type="Script" path="res://scenes/act 1/Act1.gd" id="1_wci6r"]
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="3_ttx68"]
-[ext_resource type="Texture2D" uid="uid://chovdg34dx24o" path="res://art/TV stuff/TvOutLine.PNG" id="4_ofwqp"]
-[ext_resource type="Texture2D" uid="uid://15mhvrb4taip" path="res://art/TV stuff/TvInLine.PNG" id="5_3onbl"]
+[ext_resource type="Texture2D" uid="uid://d2c8kkbdgy8vb" path="res://art/backgrounds/Tv.PNG" id="4_2bjrr"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
 [ext_resource type="AudioStream" uid="uid://chw7cqcd81jg3" path="res://Audio/Music/hallmarkGeneric.mp3" id="7_kqqj2"]
 [ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
@@ -12,27 +11,27 @@
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/enabled = false
+tracks/0/path = NodePath("Camera2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2.48, 2.48)]
+"values": [Vector2(620, 450)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:position")
+tracks/1/enabled = false
+tracks/1/path = NodePath("Camera2D:zoom")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 0,
-"values": [Vector2(620, 450)]
+"values": []
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -45,33 +44,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_18umf"]
-resource_name = "start_game"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:zoom")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(2.48, 2.48), Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(620, 450), Vector2(960, 540)]
 }
 
 [sub_resource type="Animation" id="Animation_xbl7j"]
@@ -90,6 +62,33 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_18umf"]
+resource_name = "start_game"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(620, 450), Vector2(960, 540)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2.48, 2.48), Vector2(1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dlfy3"]
 _data = {
 "RESET": SubResource("Animation_h7mxn"),
@@ -101,17 +100,14 @@ _data = {
 script = ExtResource("1_wci6r")
 next_scene_path = "res://scenes/LetterToSanta/Letter.tscn"
 
-[node name="TV" type="Node2D" parent="."]
-position = Vector2(960, 541)
-metadata/_edit_lock_ = true
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(615, 499)
+zoom = Vector2(2, 2)
 
-[node name="Outline" type="Sprite2D" parent="TV"]
-texture = ExtResource("4_ofwqp")
-
-[node name="Inline" type="Sprite2D" parent="TV"]
-position = Vector2(-339, 6)
-scale = Vector2(0.646875, 0.65)
-texture = ExtResource("5_3onbl")
+[node name="Tv" type="Sprite2D" parent="."]
+position = Vector2(613, 507)
+scale = Vector2(0.575, 0.575)
+texture = ExtResource("4_2bjrr")
 
 [node name="CraneGame" type="Node2D" parent="."]
 
@@ -123,6 +119,9 @@ scale = Vector2(0.6, 0.6)
 position = Vector2(555, 185)
 drop_length = 1.08
 clamp_by_deg = 15
+
+[node name="Sprite2D" parent="CraneGame/Node2D/RecievingField" index="1"]
+visible = false
 
 [node name="Ballz" type="Node2D" parent="CraneGame"]
 
@@ -150,10 +149,6 @@ Credits"
 
 [node name="BottomHalf" parent="CraneGame/Ballz/CranePrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.7, 0, 0.0116665, 1)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(620, 450)
-zoom = Vector2(2.48, 2.48)
 
 [node name="Marker" type="Node2D" parent="."]
 position = Vector2(620, 450)

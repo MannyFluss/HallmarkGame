@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmpfqif7gbmx2"
+path="res://.godot/imported/Noo nooo NOOOO (ORIGINAL MEME SOUND EFFECT).mp3-5e7480502f8039612bc71ce698995f93.mp3str"
+
+[deps]
+
+source_file="res://scenes/BadEnding/Noo nooo NOOOO (ORIGINAL MEME SOUND EFFECT).mp3"
+dest_files=["res://.godot/imported/Noo nooo NOOOO (ORIGINAL MEME SOUND EFFECT).mp3-5e7480502f8039612bc71ce698995f93.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

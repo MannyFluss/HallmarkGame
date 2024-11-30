@@ -1,10 +1,36 @@
-[gd_scene load_steps=6 format=3 uid="uid://eeehade8cfd4"]
+[gd_scene load_steps=9 format=3 uid="uid://eeehade8cfd4"]
 
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="1_ah6ei"]
 [ext_resource type="Script" path="res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.gd" id="1_aij0g"]
 [ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="2_atlm8"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_cnw08"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="4_u1ain"]
+[ext_resource type="Shader" path="res://scenes/LetterToSanta/Letter.gdshader" id="6_gxw4j"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_0um0e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n0vuw"]
+shader = ExtResource("6_gxw4j")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.154
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.313
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = true
+shader_parameter/roll = false
+shader_parameter/roll_speed = 7.72
+shader_parameter/roll_size = 43.667
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.00300005
+shader_parameter/brightness = 1.34
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 1.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
 
 [node name="CraneGameAcceptSanta" type="Node2D"]
 script = ExtResource("1_aij0g")
@@ -246,6 +272,32 @@ offset_right = 528.0
 offset_bottom = -113.0
 theme_override_fonts/normal_font = ExtResource("4_u1ain")
 text = "Attempts Left: 3"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+material = SubResource("ShaderMaterial_n0vuw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_0um0e")
+autoplay = true
 
 [connection signal="unclamped" from="Node2D/Crane" to="." method="_on_crane_unclamped"]
 

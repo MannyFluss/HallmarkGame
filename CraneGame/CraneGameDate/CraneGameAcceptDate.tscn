@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://vxwuxbye8dob"]
+[gd_scene load_steps=11 format=3 uid="uid://vxwuxbye8dob"]
 
 [ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="1_1mewv"]
 [ext_resource type="Script" path="res://CraneGame/CraneGameDate/CraneGameAcceptDate.gd" id="1_rludt"]
@@ -6,7 +6,33 @@
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_yl31y"]
 [ext_resource type="Texture2D" uid="uid://cyle1e3a88qon" path="res://art/sprites/christine/front/casual/C_Blush_C_F.PNG" id="4_a3cu3"]
 [ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="4_ylhie"]
+[ext_resource type="Shader" path="res://scenes/LetterToSanta/Letter.gdshader" id="7_its67"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="7_ra7ai"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="9_ncxq7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oq7s5"]
+shader = ExtResource("7_its67")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.154
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.313
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = true
+shader_parameter/roll = false
+shader_parameter/roll_speed = 7.72
+shader_parameter/roll_size = 43.667
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.00300005
+shader_parameter/brightness = 1.34
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 1.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
 
 [node name="CraneGameAcceptSanta" type="Node2D"]
 script = ExtResource("1_rludt")
@@ -231,6 +257,28 @@ position = Vector2(2, -76)
 scale = Vector2(10, 5)
 texture = ExtResource("4_ylhie")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="Sprite2D"]
+
+[node name="Control" type="Control" parent="Sprite2D/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D/CanvasLayer/Control"]
+material = SubResource("ShaderMaterial_oq7s5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
 [node name="Camera2D2" type="Camera2D" parent="."]
 
 [node name="Attempts Text" type="RichTextLabel" parent="."]
@@ -240,6 +288,10 @@ offset_right = 489.0
 offset_bottom = -194.0
 theme_override_fonts/normal_font = ExtResource("7_ra7ai")
 text = "Attempts Left: 3"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ncxq7")
+autoplay = true
 
 [connection signal="unclamped" from="Node2D/Crane" to="." method="_on_crane_unclamped"]
 

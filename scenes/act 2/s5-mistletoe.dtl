@@ -13,6 +13,7 @@ join nico (cHappy) right
 {mc}\: Lately I’ve just been so unfulfilled. My life is just my career, and my career is just “how can we best exploit children and take all their money.”
 {mc}\: Honestly, all I really want to do is… No, it’s stupid.
 {n}\: What?! You can’t just stop now! Tell me!
+[sound path="res://Audio/SFX/male-sigh-6763.mp3" volume="0.0"]
 {mc}\: [i][sighs]
 {mc}\: I really just want to be a toymaker.
 {n}\: !
@@ -22,6 +23,7 @@ join nico (cHappy) right
 {mc}\: You know, I naively thought that claw machines could be the bridge to take me there, since they’re made for kids.
 {mc}\: But the claw machine industry… it’s so corrupt…
 {mc}\: Maybe I should’ve asked Santa for a job instead!
+[sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
 {n}\: [i][laughs]
 {n}\: Let’s say Santa just gave you full control of the workshop, what’s the first thing you’re making?
 {mc}\: Hmmm, let’s see…
@@ -54,6 +56,7 @@ join nico (cHappy) right
 [i]On the front of the tape it reads, "for {name.first}" with two badly drawn snowmen holding hands.
 [i]He taped the song list to the otherside, and my breath catches when I read the first track.
 {mc}\: [i]{fav.song}[/i]?! That’s my favorite Christmas song!
+[sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
 {n}\: [i][laughs][/i]
 {n}\: That’s why I added it.
 {n}\: I know you’re planning to go back to the big city soon, so when you’re there, you can listen to this tape and remember your time here.
