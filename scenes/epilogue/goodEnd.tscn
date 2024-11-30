@@ -22,7 +22,7 @@ texture = ExtResource("2_mmr66")
 
 [node name="Letter to girlie" type="RichTextLabel" parent="letter"]
 anchors_preset = -1
-anchor_left = -0.200552
+anchor_left = -0.314808
 anchor_top = -0.150063
 anchor_right = -0.314808
 anchor_bottom = -0.150063

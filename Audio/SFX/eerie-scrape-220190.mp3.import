@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c5c52i1aqslgt"
-path="res://.godot/imported/eerie-scrape-220190.mp3-a78b6a9e0ba2b91bc3224066b893d86a.mp3str"
+path="res://.godot/imported/eerie-scrape-220190.mp3-04b4b20499fb8027c01e3c36a056fa89.mp3str"
 
 [deps]
 
-source_file="res://Audio/SFX/eerie-scrape-220190.mp3"
-dest_files=["res://.godot/imported/eerie-scrape-220190.mp3-a78b6a9e0ba2b91bc3224066b893d86a.mp3str"]
+source_file="res://audio/SFX/eerie-scrape-220190.mp3"
+dest_files=["res://.godot/imported/eerie-scrape-220190.mp3-04b4b20499fb8027c01e3c36a056fa89.mp3str"]
 
 [params]
 

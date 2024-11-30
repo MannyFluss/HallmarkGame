@@ -94,8 +94,8 @@
 "image": "\"res://art/sprites/nico/back/N_Neutral_W_B.PNG\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(350, 80),
+"scale": 1.1,
 "scene": ""
 },
 "front/casual/blush": {

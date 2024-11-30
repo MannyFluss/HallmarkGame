@@ -1,7 +1,8 @@
 # add music
-join christine (front/work/neutral) center
-join nico center
+[music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
+join nico (front/work/neutral) center
 - I don't know what to say | [else="disable"]
+	join nico (front/work/headshot/neutral) center
 	[i]I stare at him silently, my mind unable to form words.[/i]
 	{n}\: If you don't want to come, no worries! Totally okay!
 	jump s6-jingleReject/

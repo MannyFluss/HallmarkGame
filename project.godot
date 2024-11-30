@@ -108,6 +108,8 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 portraits/position_suggestion_names="leftmost, left, center, right, rightmost"
+animations/join_default="Fade In"
+animations/leave_default="Fade Out"
 
 [display]
 

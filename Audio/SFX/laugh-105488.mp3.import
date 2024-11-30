@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://kiyxw45df7kp"
-path="res://.godot/imported/laugh-105488.mp3-fe9f3476d5399f5340b1ab0ce23536ea.mp3str"
+path="res://.godot/imported/laugh-105488.mp3-bf3ff2db21793ecd7cfdf5b83742001d.mp3str"
 
 [deps]
 
-source_file="res://Audio/SFX/laugh-105488.mp3"
-dest_files=["res://.godot/imported/laugh-105488.mp3-fe9f3476d5399f5340b1ab0ce23536ea.mp3str"]
+source_file="res://audio/SFX/laugh-105488.mp3"
+dest_files=["res://.godot/imported/laugh-105488.mp3-bf3ff2db21793ecd7cfdf5b83742001d.mp3str"]
 
 [params]
 
