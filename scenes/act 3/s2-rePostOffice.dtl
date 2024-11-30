@@ -27,6 +27,7 @@ join christine (front/work/neutral) center
 	{n}\: {name.first}...
 	{n}\: Thank you.
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
+	jump goodEnd/
 	# #fade to black
 	# GOOD ENDING
 - I love you. | [if {GlobalTracking.has_state("AcceptSanta")} == true] [else="disable"]
@@ -44,6 +45,7 @@ join christine (front/work/neutral) center
 	join nico center
 	[i]Nico takes my hand in his.[/i]
 	{n}\: I promise you, you won’t regret it!
+	jump goodEnd/
 	# #fade to black
 	# GOOD ENDING
 - I want Santa… | [if {GlobalTracking.has_state("FreakySanta")} == true] [else="disable"]
@@ -56,6 +58,7 @@ join christine (front/work/neutral) center
 	{mc}\: Are you looking for a tree topper? Because I’ve been told I’m a star on top.
 	# nico is shocked! (hold for pause)
 	{n}\: Ever do it in a sleigh?
+	jump goodEnd/
 	# #fade to black
 	# #GOOD ENGING
 - I'm calling the FUCKING POLICE!! | [if {GlobalTracking.has_state("CallPoliceSanta")} == true] [else="disable"]

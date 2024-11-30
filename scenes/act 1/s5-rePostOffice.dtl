@@ -1,5 +1,6 @@
 # add music
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="0.0" volume="0.0"]
+[background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="0.0"]
 join nico (front/work/neutral) center
 - I don't know what to say | [else="disable"]
 	join nico (front/work/headshot/neutral) center

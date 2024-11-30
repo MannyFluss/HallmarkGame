@@ -62,12 +62,12 @@ variables={
 },
 "gimme": "a new coat",
 "jingle": {
-"date": true,
-"freaky": true,
-"gay": true,
-"no": true,
-"work": true,
-"yes": true
+"date": false,
+"freaky": false,
+"gay": false,
+"no": false,
+"work": false,
+"yes": false
 },
 "mc": "CHRISTINE",
 "n": "NICO",
@@ -76,12 +76,12 @@ variables={
 "last": "Evergreen"
 },
 "santa": {
-"believe": true,
-"desire": true,
-"die": true,
-"love": true,
-"no": true,
-"police": true
+"believe": false,
+"desire": false,
+"die": false,
+"love": false,
+"no": false,
+"police": false
 }
 }
 layout/style_list=["res://styles/subtitles.tres"]

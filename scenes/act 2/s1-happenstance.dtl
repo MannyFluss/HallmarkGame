@@ -1,8 +1,9 @@
 [background arg="res://art/backgrounds/JingleBeforeNico.PNG" fade="1.0"]
-join christine (cNeutral) center [animation="Fade In"]
+join christine (front/casual/neutral) center
 
 [i]Although I told that mailman I wouldn’t go, I somehow ended up at the Jingle Jangle.[/i]
 [i]After watching my parents and their friends become tipsy off of spiked eggnog, I decided I had enough and headed home.[/i]
+join christine (front/casual/sad) center
 [i]It was a bit lonely walking through the bustling market on my own, surrounded by happy families and loving couples.[/i]
 [i]I keep my head down to block them out and quicken my pace…[/i]
 update christine center [animation="Heartbeat"]

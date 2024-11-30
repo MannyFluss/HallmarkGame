@@ -9,6 +9,7 @@ join credits pos=y1 [animation="Slide In Down" length="45.0"]
 [wait time="45.0"]
 leave credits [animation="Fade Out" length="3.0"]
 [background arg="res://art/backgrounds/black.png" fade="3.0"]
+[wait_input]
 Thanks for playing!
 [wait_input]
 See you next time!
@@ -18,5 +19,5 @@ No really, please leave...
 luv u tho <3
 [wait_input]
 label bye bye
-<I want Santa.../my favorite drink is milk/Koko forever/go play potion promotion ;)/toasty time?/Mr. Fornite?/u are trapped in a loop/Nico's just a chill guy>
+<I want Santa.../my favorite drink is milk/Koko forever/go play potion promotion ;)/toasty time?/Mr. Fornite?/u are trapped in a loop/Nico's just a chill guy/jingle.freaky = yes>
 jump bye bye
