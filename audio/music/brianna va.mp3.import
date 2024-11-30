@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddpfci6owow50"
+path="res://.godot/imported/brianna va.mp3-2341b991d079f74be256234b64d544eb.mp3str"
+
+[deps]
+
+source_file="res://audio/music/brianna va.mp3"
+dest_files=["res://.godot/imported/brianna va.mp3-2341b991d079f74be256234b64d544eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

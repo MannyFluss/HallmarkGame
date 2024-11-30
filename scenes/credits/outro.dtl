@@ -1,0 +1,9 @@
+[background arg="res://art/backgrounds/black.png" fade="0.0"]
+[wait time="0.5"]
+[music path="res://audio/music/brianna va.mp3" fade="0.0" volume="0.0"]
+
+
+join credits pos=x0.5-y5 size=y5 [animation="Fade In" length="2.0"]
+[wait_input]
+join credits pos=y1 [animation="Slide In Down" length="30.0"]
+[wait_input]

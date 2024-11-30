@@ -25,11 +25,13 @@ SceneSwitcher="*res://Autoloads/SceneSwitcher/SceneSwitcher.tscn"
 
 directories/dch_directory={
 "christine": "res://characters/christine.dch",
+"credits": "res://characters/credits.dch",
 "nico": "res://characters/nico.dch"
 }
 directories/dtl_directory={
 "badEnd": "res://scenes/act 3/badEnd.dtl",
 "intro": "res://scenes/credits/intro.dtl",
+"outro": "res://scenes/credits/outro.dtl",
 "s1-corporate": "res://scenes/act 1/s1-corporate.dtl",
 "s1-happenstance": "res://scenes/act 2/s1-happenstance.dtl",
 "s1-postOffice": "res://scenes/act 3/s1-postOffice.dtl",
