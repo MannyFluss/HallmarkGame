@@ -1,4 +1,3 @@
-jump end of jingle
 
 join christine (front/casual/neutral) pos=x0.35
 join nico (front/casual/neutral) pos=x0.65
@@ -186,10 +185,9 @@ update nico [animation="Bounce" length="0.2"]
 update christine (34/casual/blush)
 [i]Inside the bag were cookies, {fav.cookie}.
 {mc}\: How did you…. These are my favorite cookies.
-join christine (back/casual) center [z_index="20"]
-join nico (34/casual/happy) center [z_index="-10"]
+update christine (back/casual) center [z_index="20"]
+update nico (34/casual/happy) center [z_index="-10"]
 {n}\: I saw you eyeing them earlier. You had a [i]very[/i] intense expression.
-update christine [animation="Heartbeat" length="0.3"]
 {mc}\: Oh, shut up…
 {mc}\: Well, thank you regardless. This was fun…
 {n}\: See! I told you that you wouldn’t regret it!
@@ -210,8 +208,9 @@ update christine (34/casual/sad)
 {n}\: Wait, {name.first}!
 leave christine
 join nico (front/casual/blush) center
-[i]I turn around, and Nico is right behind me, face flushed and out of breath.
+[wait time="0.5"]
 join nico (front/casual/headshot/blush) center
+[i]I turn around, and Nico is right behind me, face flushed and out of breath.
 {n}\: So... if you end up liking those cookies, you’ve got to check out the bakery in town!
 {n}\: Those cookies are good, but fresh? Absolutely phenomenal!
 update nico (front/casual/headshot/shocked) [animation="Bounce"]

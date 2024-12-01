@@ -1,69 +1,119 @@
-join christine (front/work/neutral) center
+[music path="res://audio/music/sad christmas.mp3" fade="0.0" volume="0.0"]
+[background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="0.0"]
+
+leave christine
+join nico (front/work/sad) center
 - I really don't know what to say...
 	[music fade="1.0" volume="0.0"]
 	{mc}\: …
+	join nico (front/work/headshot/sad) center
 	{n}\: It’s okay, you don’t have to believe me…
 	{n}\: I just want you to know that I care about you, and I wouldn’t want to do anything to hurt you.
+	join christine (34/casual/sad) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+	join nico (back/work) pos=x0.5y1.1 size=y1.2 [length="0.0" z_index="20"]
 	{mc}\: …
 	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
+	update christine (34/casual/neutral)
 	{mc}\: Just give me a little time.
+	update christine (34/casual/blush)
 	{mc}\: I honestly don’t know what to believe… but I want to understand.
+	update christine (back/casual) center
+	update nico (34/work/happy) center
 	{n}\: Well, if you do believe me…
-	# #nico smiles
+	update nico (34/work/blush)
 	{n}\: I promise you won’t regret it!
 	[background arg="res://art/backgrounds/black.png" fade="1.0"]
+	[wait time="1.0"]
 	leave --All-- [animation="Fade Out" length="1.0"]
+	[wait time="1.5"]
 	jump goodEnd/
 	# #fade to black
 	# GOOD ENDING
-- I believe you. | [if {GlobalTracking.has_state("BelieveSanta")} == true] [else="disable"]
+- I believe you.
+	# #| [if {GlobalTracking.has_state("BelieveSanta")} == true] [else="disable"]
 	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
+	join nico (front/work/headshot/sad) center
 	{mc}\: I can’t believe I’m saying this, but I believe you.
+	update nico (front/work/headshot/shocked)
 	{n}\: You do?
+	join christine (34/casual/sad) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+	join nico (back/work) pos=x0.5y1.1 size=y1.2 [length="0.0" z_index="20"]
 	{mc}\: After spending this week with you, how could I not?
+	update christine (34/casual/happy)
 	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
+	update christine (34/casual/blush)
 	{mc}\: And I’m so grateful to you for helping life feel magical again, for the first time in forever.
+	update christine (34/casual/sad)
 	{mc}\: I honestly can’t believe you’d lie to me like this.
+	update christine (back/casual) center
+	update nico (34/work/sad) center
 	{n}\: {name.first}...
+	update nico (34/work/blush) center
 	{n}\: Thank you.
+	update christine [animation="Bounce"]
 	{mc}\: Now, you’ve [b]got[/b] to tell me the logistics of this whole Santa thing.
+	[background arg="res://art/backgrounds/black.png" fade="1.0"]
+	[wait time="1.0"]
+	leave --All-- [animation="Fade Out" length="1.0"]
+	[wait time="1.5"]
 	jump goodEnd/
-	# #fade to black
-	# GOOD ENDING
-- I love you. | [if {GlobalTracking.has_state("AcceptSanta")} == true] [else="disable"]
+- I love you.
+	# #| [if {GlobalTracking.has_state("AcceptSanta")} == true] [else="disable"]
 	[music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
+	join christine (34/casual/blush) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+	join nico (back/work) pos=x0.5y1.1 size=y1.2 [length="0.0" z_index="20"]
 	{mc}\: I love you, Nico.
+	update christine (34/casual/angry)
 	{mc}\: You sound crazy right now. And I feel like I’m crazy for believing you!
+	update christine (34/casual/blush) 
 	{mc}\: But I love you and I want to be with you…
+
 	{n}\: {name.first}...
+	update christine (34/casual/neutral) 
 	{mc}\: You’re like the warmest and kindest and most open person I’ve ever met.
+	update christine (34/casual/happy) 
 	{mc}\: You make life feel magical again, for what feels like the first time in forever.
+	update christine (34/casual/blush) 
 	{mc}\: So... I’ll trust you.
 	# #nico smiles
+	join christine (side/casual/blush) pos=x0.4y1 size=y0.8
+	join nico (side/work/blush) right
 	{n}\: {name.first}... I want to be with you forever…
 	{n}\: I’m sorry for ever making you doubt me, but I promise you I will be faithful and true to you for the rest of my life.
-	join nico center
+	join nico (side/work/blush) pos=x0.6
 	[i]Nico takes my hand in his.[/i]
 	{n}\: I promise you, you won’t regret it!
+	[background arg="res://art/backgrounds/black.png" fade="1.0"]
+	[wait time="1.0"]
+	leave --All-- [animation="Fade Out" length="1.0"]
+	[wait time="1.5"]
 	jump goodEnd/
-	# #fade to black
-	# GOOD ENDING
 - I want Santa… | [if {GlobalTracking.has_state("FreakySanta")} == true] [else="disable"]
-	[music path="res://audio/music/CraneGame_1.mp3" fade="1.0" volume="0.0"]
+	[music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
+	join nico (front/work/headshot/shocked) center
 	{n}\: What?
+	update nico (front/work/headshot/blush)
 	{mc}\: Make me your Mrs. Claus.
-	update christine [animation="Heartbeat"]
+	join christine (34/casual/angry) pos=x0.42y1.05 [animation="Heartbeat" z_index="-10"]
+	update nico (back/work) pos=x0.5y1.1 size=y1.2 [z_index="20"]
 	{mc}\: NOW!
+	update nico [animation="Bounce"]
 	{n}\: Yes, ma’am!
+	update christine (34/casual/happy)
 	{mc}\: Are you looking for a tree topper? Because I’ve been told I’m a star on top.
-	# nico is shocked! (hold for pause)
+	leave christine [animation="Instant Out" length="0.0"]
+	update nico (front/casual/headshot/shocked) center
+	[wait_input]
+	update nico (front/casual/headshot/blush 2) center
 	{n}\: Ever do it in a sleigh?
+	[background arg="res://art/backgrounds/black.png" fade="1.0"]
+	leave nico [animation="Fade Out" length="1.0"]
+	[wait time="1.0"]
 	jump goodEnd/
 	# #fade to black
 	# #GOOD ENGING
 - I'm calling the FUCKING POLICE!! | [if {GlobalTracking.has_state("CallPoliceSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
-	leave christine
 	[wait time="1.0"]
 	[background arg="res://art/backgrounds/black.png" fade="1.0"]
 	leave nico [animation="Fade Out" length="1.0"]
@@ -72,7 +122,6 @@ join christine (front/work/neutral) center
 	# BAD END
 - No, you're fucking BATSHIT! | [if GlobalTracking.has_state("BatshitSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
-	leave christine
 	[wait time="1.0"]
 	[background arg="res://art/backgrounds/black.png" fade="1.0"]
 	leave nico [animation="Fade Out" length="1.0"]
@@ -81,7 +130,6 @@ join christine (front/work/neutral) center
 	# BAD END
 - GO DIE YOU STALKER! | [if GlobalTracking.has_state("StalkerSanta")} == true] [else="disable"]
 	[music fade="1.0" volume="0.0"]
-	leave christine
 	[wait time="1.0"]
 	[background arg="res://art/backgrounds/black.png" fade="1.0"]
 	leave nico [animation="Fade Out" length="1.0"]

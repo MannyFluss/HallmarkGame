@@ -1,7 +1,11 @@
-[background arg="res://art/backgrounds/wood.PNG" fade="0.0"]
+[background arg="res://art/backgrounds/black.png" fade="0.0"]
+[wait time="2.0"]
+[background arg="res://art/backgrounds/wood.PNG" fade="2.0"]
 join goodEndLetter pos=x0.5y0.85 rot=-4 [animation="Slide In Up" length="3.0"]
+[wait time="3.0"]
 [wait_input]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave goodEndLetter [animation="Fade Out" length="1.0"]
+[music fade="1.0" volume="0.0"]
 [wait time="1.0"]
 jump outro/

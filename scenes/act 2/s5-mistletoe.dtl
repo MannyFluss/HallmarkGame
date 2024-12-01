@@ -1,6 +1,6 @@
 [background arg="res://art/backgrounds/Date1.PNG" fade="1.0"]
-join christine (cHappy) left [animation="Fade In Up" length="1.0"]
-join nico (cHappy) right
+join christine (front/casual/happy) pos=x0.35
+join nico (front/casual/neutral) pos=x0.65
 [i]Light snow falls around us as we take our regular nighttime stroll.
 {mc}\: You know, I actually wrote a letter to Santa this year.
 {n}\: Whaaaaat? Really?
