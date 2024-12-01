@@ -1,5 +1,6 @@
-[music path="res://audio/music/sad christmas.mp3" fade="0.0" volume="0.0"]
-[background arg="res://art/backgrounds/Office.PNG" fade="0.0"]
+jump intro/
+label start game
+[background arg="res://art/backgrounds/Office.PNG" fade="1.0"]
 join christine (34/work/happy) center
 # Internal company meeting, no powerpoints since this is the 80s, maybe a poster 
 As you can see, the new state of the art model works like a charm!

@@ -84,7 +84,7 @@ variables={
 "police": false
 }
 }
-layout/style_list=["res://styles/subtitles.tres"]
+layout/style_list=["res://styles/subtitles.tres", "res://styles/vhs.tres"]
 layout/default_style="res://styles/subtitles.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
