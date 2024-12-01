@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dxlaeykh7405c"
-path="res://.godot/imported/WE_LIKE_TO_PARTY.mp3-935d3a219a17bf009d9a84db9532e965.mp3str"
+path="res://.godot/imported/WE_LIKE_TO_PARTY.mp3-8c219874b09b707942cd2477c7211da1.mp3str"
 
 [deps]
 
-source_file="res://audio/SFX/WE_LIKE_TO_PARTY.mp3"
-dest_files=["res://.godot/imported/WE_LIKE_TO_PARTY.mp3-935d3a219a17bf009d9a84db9532e965.mp3str"]
+source_file="res://Audio/SFX/WE_LIKE_TO_PARTY.mp3"
+dest_files=["res://.godot/imported/WE_LIKE_TO_PARTY.mp3-8c219874b09b707942cd2477c7211da1.mp3str"]
 
 [params]
 

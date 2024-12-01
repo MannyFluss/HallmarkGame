@@ -1,12 +1,18 @@
-[gd_scene load_steps=9 format=3 uid="uid://eeehade8cfd4"]
+[gd_scene load_steps=15 format=3 uid="uid://eeehade8cfd4"]
 
 [ext_resource type="PackedScene" uid="uid://4sqynr8q87bi" path="res://CraneGame/TestingScene/TestingScene.tscn" id="1_ah6ei"]
 [ext_resource type="Script" path="res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.gd" id="1_aij0g"]
 [ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="2_atlm8"]
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_cnw08"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="4_u1ain"]
+[ext_resource type="Texture2D" uid="uid://luxncrsa7yaq" path="res://Ballz/Ball8.PNG" id="5_epul2"]
+[ext_resource type="Texture2D" uid="uid://byjir4n6l6jts" path="res://Ballz/Ball4.PNG" id="6_er2nk"]
 [ext_resource type="Shader" path="res://scenes/LetterToSanta/Letter.gdshader" id="6_gxw4j"]
-[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://audio/music/CraneGame_1.mp3" id="7_0um0e"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_0um0e"]
+[ext_resource type="Texture2D" uid="uid://dhj1hmtneumh0" path="res://Ballz/Ball6.PNG" id="7_gjnmh"]
+[ext_resource type="Texture2D" uid="uid://c20i2df8e88vd" path="res://Ballz/Ball5.PNG" id="8_wg5qp"]
+[ext_resource type="Texture2D" uid="uid://cx5rb2uvvrukc" path="res://Ballz/Ball3.PNG" id="9_2tn22"]
+[ext_resource type="Texture2D" uid="uid://0edltxs52bc4" path="res://Ballz/Ball7.PNG" id="10_b7j3s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n0vuw"]
 shader = ExtResource("6_gxw4j")
@@ -66,7 +72,7 @@ position = Vector2(266, 130)
 prize_tracker_name = "BelieveSanta"
 
 [node name="BottomHalf" parent="Balls/IBelieveYouPrize/RigidBody2D" index="1"]
-self_modulate = Color(0.282038, 0.429712, 0.201671, 1)
+texture = ExtResource("5_epul2")
 
 [node name="Label" parent="Balls/IBelieveYouPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] trust santa"
@@ -76,9 +82,6 @@ scroll_active = false
 position = Vector2(274, -34)
 prize_tracker_name = "BelieveSanta"
 
-[node name="BottomHalf" parent="Balls/IBelieveYouPrize2/RigidBody2D" index="1"]
-self_modulate = Color(0.282038, 0.429712, 0.201671, 1)
-
 [node name="Label" parent="Balls/IBelieveYouPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] trust santa"
 scroll_active = false
@@ -86,9 +89,6 @@ scroll_active = false
 [node name="IBelieveYouPrize3" parent="Balls" instance=ExtResource("3_cnw08")]
 position = Vector2(-55, 104)
 prize_tracker_name = "BelieveSanta"
-
-[node name="BottomHalf" parent="Balls/IBelieveYouPrize3/RigidBody2D" index="1"]
-self_modulate = Color(0.282038, 0.429712, 0.201671, 1)
 
 [node name="Label" parent="Balls/IBelieveYouPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] trust santa"
@@ -99,7 +99,7 @@ position = Vector2(269, 33)
 prize_tracker_name = "AcceptSanta"
 
 [node name="BottomHalf" parent="Balls/AcceptPrize3/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
+texture = ExtResource("6_er2nk")
 
 [node name="TopHalf" parent="Balls/AcceptPrize3/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
@@ -115,7 +115,7 @@ position = Vector2(103, -67)
 prize_tracker_name = "AcceptSanta"
 
 [node name="BottomHalf" parent="Balls/AcceptPrize4/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
+texture = ExtResource("7_gjnmh")
 
 [node name="TopHalf" parent="Balls/AcceptPrize4/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
@@ -131,7 +131,7 @@ position = Vector2(17, -109)
 prize_tracker_name = "AcceptSanta"
 
 [node name="BottomHalf" parent="Balls/AcceptPrize6/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
+texture = ExtResource("8_wg5qp")
 
 [node name="TopHalf" parent="Balls/AcceptPrize6/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
@@ -147,25 +147,24 @@ position = Vector2(208, -27)
 prize_tracker_name = "FreakySanta"
 
 [node name="BottomHalf" parent="Balls/FreakPrize2/RigidBody2D" index="1"]
-self_modulate = Color(1, 0, 0, 1)
+texture = ExtResource("5_epul2")
 
 [node name="TopHalf" parent="Balls/FreakPrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.478431, 0, 0, 1)
 
 [node name="Label" parent="Balls/FreakPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
 text = "[center] ok u freaky"
 
 [node name="FreakPrize4" parent="Balls" instance=ExtResource("3_cnw08")]
 position = Vector2(161, 67)
 prize_tracker_name = "FreakySanta"
 
-[node name="BottomHalf" parent="Balls/FreakPrize4/RigidBody2D" index="1"]
-self_modulate = Color(1, 0, 0, 1)
-
 [node name="TopHalf" parent="Balls/FreakPrize4/RigidBody2D" index="2"]
 self_modulate = Color(0.478431, 0, 0, 1)
 
 [node name="Label" parent="Balls/FreakPrize4/RigidBody2D/TopHalf/MarginContainer" index="0"]
+theme_override_font_sizes/normal_font_size = 16
 text = "[center] ok u freaky"
 
 [node name="CallPolice" parent="Balls" instance=ExtResource("3_cnw08")]
@@ -173,13 +172,13 @@ position = Vector2(-22, 7)
 prize_tracker_name = "CallPoliceSanta"
 
 [node name="BottomHalf" parent="Balls/CallPolice/RigidBody2D" index="1"]
-self_modulate = Color(0.0999999, 0, 1, 1)
+texture = ExtResource("6_er2nk")
 
 [node name="TopHalf" parent="Balls/CallPolice/RigidBody2D" index="2"]
 self_modulate = Color(0.18, 0, 0, 1)
 
 [node name="Label" parent="Balls/CallPolice/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/normal_font_size = 13
 text = "[center]
 POLICE HELP"
 
@@ -188,13 +187,13 @@ position = Vector2(45, 117)
 prize_tracker_name = "CallPoliceSanta"
 
 [node name="BottomHalf" parent="Balls/CallPolice2/RigidBody2D" index="1"]
-self_modulate = Color(0.0999999, 0, 1, 1)
+texture = ExtResource("9_2tn22")
 
 [node name="TopHalf" parent="Balls/CallPolice2/RigidBody2D" index="2"]
 self_modulate = Color(0.18, 0, 0, 1)
 
 [node name="Label" parent="Balls/CallPolice2/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/normal_font_size = 12
 text = "[center]
 POLICE HELP"
 
@@ -202,14 +201,11 @@ POLICE HELP"
 position = Vector2(86, 30)
 prize_tracker_name = "BatshitSanta"
 
-[node name="BottomHalf" parent="Balls/InsanePrize/RigidBody2D" index="1"]
-self_modulate = Color(1, 0, 0.6, 1)
-
 [node name="TopHalf" parent="Balls/InsanePrize/RigidBody2D" index="2"]
 self_modulate = Color(0.233334, 0, 1, 1)
 
 [node name="Label" parent="Balls/InsanePrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/normal_font_size = 12
 text = "[center] you are batshit insane"
 
 [node name="InsanePrize2" parent="Balls" instance=ExtResource("3_cnw08")]
@@ -217,21 +213,18 @@ position = Vector2(141, 133)
 prize_tracker_name = "BatshitSanta"
 
 [node name="BottomHalf" parent="Balls/InsanePrize2/RigidBody2D" index="1"]
-self_modulate = Color(1, 0, 0.6, 1)
+texture = ExtResource("10_b7j3s")
 
 [node name="TopHalf" parent="Balls/InsanePrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.233334, 0, 1, 1)
 
 [node name="Label" parent="Balls/InsanePrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/normal_font_size = 11
 text = "[center] you are batshit insane"
 
 [node name="InsanePrize3" parent="Balls" instance=ExtResource("3_cnw08")]
 position = Vector2(176, -109)
 prize_tracker_name = "StalkerSanta"
-
-[node name="BottomHalf" parent="Balls/InsanePrize3/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.54, 0.816, 1)
 
 [node name="TopHalf" parent="Balls/InsanePrize3/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.483333, 0, 1)
@@ -245,7 +238,7 @@ position = Vector2(-86, -70)
 prize_tracker_name = "StalkerSanta"
 
 [node name="BottomHalf" parent="Balls/InsanePrize4/RigidBody2D" index="1"]
-self_modulate = Color(1, 0.54, 0.816, 1)
+texture = ExtResource("5_epul2")
 
 [node name="TopHalf" parent="Balls/InsanePrize4/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.483333, 0, 1)
