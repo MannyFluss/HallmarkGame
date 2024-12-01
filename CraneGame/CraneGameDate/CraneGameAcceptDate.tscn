@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://vxwuxbye8dob"]
+[gd_scene load_steps=15 format=3 uid="uid://vxwuxbye8dob"]
 
 [ext_resource type="Texture2D" uid="uid://bj5kv7ydlqwnn" path="res://CraneGame/CraneGameDate/IMG_6472.png" id="1_1mewv"]
 [ext_resource type="Script" path="res://CraneGame/CraneGameDate/CraneGameAcceptDate.gd" id="1_rludt"]
@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="3_yl31y"]
 [ext_resource type="Texture2D" uid="uid://cyle1e3a88qon" path="res://art/sprites/christine/front/casual/C_Blush_C_F.PNG" id="4_a3cu3"]
 [ext_resource type="Texture2D" uid="uid://cognn3cgtuqfj" path="res://icon.svg" id="4_ylhie"]
+[ext_resource type="Texture2D" uid="uid://c20i2df8e88vd" path="res://Ballz/Ball5.PNG" id="5_nmsgv"]
+[ext_resource type="Texture2D" uid="uid://cx5rb2uvvrukc" path="res://Ballz/Ball3.PNG" id="6_wsr4g"]
 [ext_resource type="Shader" path="res://scenes/LetterToSanta/Letter.gdshader" id="7_its67"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="7_ra7ai"]
+[ext_resource type="Texture2D" uid="uid://luxncrsa7yaq" path="res://Ballz/Ball8.PNG" id="7_w1mhs"]
+[ext_resource type="Texture2D" uid="uid://dhj1hmtneumh0" path="res://Ballz/Ball6.PNG" id="8_3eoam"]
 [ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="9_ncxq7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oq7s5"]
@@ -54,174 +58,168 @@ drag_strength = 2
 area_clamp_left = -105.0
 area_clamp_right = 305.0
 
-[node name="Sprite2D" parent="Node2D/RecievingField" index="1"]
-visible = false
-
 [node name="Balls" type="Node2D" parent="."]
 
 [node name="Sure?Prize" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(266, 130)
 prize_tracker_name = "Sure?Date"
 
-[node name="TopHalf" parent="Balls/Sure?Prize/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/Sure?Prize/RigidBody2D" index="1"]
+texture = ExtResource("5_nmsgv")
+
+[node name="TopHalf" parent="Balls/Sure?Prize/RigidBody2D" index="2"]
 self_modulate = Color(0.843137, 0.156863, 1, 1)
 
 [node name="Label" parent="Balls/Sure?Prize/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 26
-text = "[center] Sure"
+text = "[center] 
+Sure"
 scroll_active = false
-
-[node name="BottomHalf" parent="Balls/Sure?Prize/RigidBody2D" index="2"]
-self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
 
 [node name="Sure?Prize2" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(188, -30)
 prize_tracker_name = "Sure?Date"
 
-[node name="TopHalf" parent="Balls/Sure?Prize2/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/Sure?Prize2/RigidBody2D" index="1"]
+texture = ExtResource("5_nmsgv")
+
+[node name="TopHalf" parent="Balls/Sure?Prize2/RigidBody2D" index="2"]
 self_modulate = Color(0.843137, 0.156863, 1, 1)
 
 [node name="Label" parent="Balls/Sure?Prize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
-theme_override_font_sizes/normal_font_size = 26
-text = "[center] Sure"
+text = "[center]
+Sure"
 scroll_active = false
-
-[node name="BottomHalf" parent="Balls/Sure?Prize2/RigidBody2D" index="2"]
-self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
 
 [node name="NoImBusyPrize" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(127, 25)
 prize_tracker_name = "NoBusyDate"
 
-[node name="TopHalf" parent="Balls/NoImBusyPrize/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/NoImBusyPrize/RigidBody2D" index="1"]
+texture = ExtResource("5_nmsgv")
+
+[node name="TopHalf" parent="Balls/NoImBusyPrize/RigidBody2D" index="2"]
 self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
 
 [node name="Label" parent="Balls/NoImBusyPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Im Busy"
 scroll_active = false
 
-[node name="BottomHalf" parent="Balls/NoImBusyPrize/RigidBody2D" index="2"]
-self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
-
 [node name="NoImBusyPrize2" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(170, -122)
 prize_tracker_name = "NoBusyDate"
 
-[node name="TopHalf" parent="Balls/NoImBusyPrize2/RigidBody2D" index="1"]
+[node name="TopHalf" parent="Balls/NoImBusyPrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.207843, 0.356863, 0.321569, 1)
 
 [node name="Label" parent="Balls/NoImBusyPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Im Busy"
 scroll_active = false
 
-[node name="BottomHalf" parent="Balls/NoImBusyPrize2/RigidBody2D" index="2"]
-self_modulate = Color(0.478431, 0.698039, 0.882353, 1)
-
 [node name="FreakyPrize" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(39, 113)
 prize_tracker_name = "FreakyDate"
 
-[node name="TopHalf" parent="Balls/FreakyPrize/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/FreakyPrize/RigidBody2D" index="1"]
+texture = ExtResource("6_wsr4g")
+
+[node name="TopHalf" parent="Balls/FreakyPrize/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
 
 [node name="Label" parent="Balls/FreakyPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 theme_override_font_sizes/normal_font_size = 18
 text = "[center] u are freaky"
 
-[node name="BottomHalf" parent="Balls/FreakyPrize/RigidBody2D" index="2"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
-
 [node name="FreakyPrize2" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(-82, -17)
 prize_tracker_name = "FreakyDate"
 
-[node name="TopHalf" parent="Balls/FreakyPrize2/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/FreakyPrize2/RigidBody2D" index="1"]
+texture = ExtResource("7_w1mhs")
+
+[node name="TopHalf" parent="Balls/FreakyPrize2/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
 
 [node name="Label" parent="Balls/FreakyPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
 theme_override_font_sizes/normal_font_size = 18
 text = "[center] u are freaky"
 
-[node name="BottomHalf" parent="Balls/FreakyPrize2/RigidBody2D" index="2"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
-
 [node name="FreakyPrize3" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(3, -81)
 prize_tracker_name = "FreakyDate"
 
-[node name="TopHalf" parent="Balls/FreakyPrize3/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/FreakyPrize3/RigidBody2D" index="1"]
+texture = ExtResource("7_w1mhs")
+
+[node name="TopHalf" parent="Balls/FreakyPrize3/RigidBody2D" index="2"]
 self_modulate = Color(1, 0.356863, 0.321569, 1)
 
 [node name="Label" parent="Balls/FreakyPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
 theme_override_font_sizes/normal_font_size = 18
 text = "[center] u are freaky"
 
-[node name="BottomHalf" parent="Balls/FreakyPrize3/RigidBody2D" index="2"]
-self_modulate = Color(1, 0.698039, 0.882353, 1)
-
 [node name="ImGayPrize" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(98, -76)
 prize_tracker_name = "ImGayDate"
 
-[node name="TopHalf" parent="Balls/ImGayPrize/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/ImGayPrize/RigidBody2D" index="1"]
+texture = ExtResource("7_w1mhs")
+
+[node name="TopHalf" parent="Balls/ImGayPrize/RigidBody2D" index="2"]
 self_modulate = Color(0.72048, 0.79, 0.0948, 1)
 
 [node name="Label" parent="Balls/ImGayPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Im Gay..."
 scroll_active = false
 
-[node name="BottomHalf" parent="Balls/ImGayPrize/RigidBody2D" index="2"]
-self_modulate = Color(5.67943e-06, 0.812939, 0.612461, 1)
-
 [node name="ImGayPrize2" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(31, 3)
 prize_tracker_name = "ImGayDate"
 
-[node name="TopHalf" parent="Balls/ImGayPrize2/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/ImGayPrize2/RigidBody2D" index="1"]
+texture = ExtResource("8_3eoam")
+
+[node name="TopHalf" parent="Balls/ImGayPrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.72048, 0.79, 0.0948, 1)
 
 [node name="Label" parent="Balls/ImGayPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Im Gay..."
 scroll_active = false
 
-[node name="BottomHalf" parent="Balls/ImGayPrize2/RigidBody2D" index="2"]
-self_modulate = Color(5.67943e-06, 0.812939, 0.612461, 1)
-
 [node name="ImGayPrize3" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(265, -104)
 prize_tracker_name = "ImGayDate"
 
-[node name="TopHalf" parent="Balls/ImGayPrize3/RigidBody2D" index="1"]
+[node name="BottomHalf" parent="Balls/ImGayPrize3/RigidBody2D" index="1"]
+texture = ExtResource("8_3eoam")
+
+[node name="TopHalf" parent="Balls/ImGayPrize3/RigidBody2D" index="2"]
 self_modulate = Color(0.72048, 0.79, 0.0948, 1)
 
 [node name="Label" parent="Balls/ImGayPrize3/RigidBody2D/TopHalf/MarginContainer" index="0"]
 text = "[center] Im Gay..."
 scroll_active = false
 
-[node name="BottomHalf" parent="Balls/ImGayPrize3/RigidBody2D" index="2"]
-self_modulate = Color(5.67943e-06, 0.812939, 0.612461, 1)
-
 [node name="IHaveWorkPrize" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(203, 98)
 prize_tracker_name = "GotWorkDate"
 
-[node name="TopHalf" parent="Balls/IHaveWorkPrize/RigidBody2D" index="1"]
+[node name="TopHalf" parent="Balls/IHaveWorkPrize/RigidBody2D" index="2"]
 self_modulate = Color(0.3886, 0.67, 0.60434, 1)
 
 [node name="Label" parent="Balls/IHaveWorkPrize/RigidBody2D/TopHalf/MarginContainer" index="0"]
 theme_override_font_sizes/normal_font_size = 18
-text = "[center] Gotta work"
+text = "[center]Gotta work"
 
 [node name="IHaveWorkPrize2" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(-68, 112)
 prize_tracker_name = "GotWorkDate"
 
-[node name="TopHalf" parent="Balls/IHaveWorkPrize2/RigidBody2D" index="1"]
+[node name="TopHalf" parent="Balls/IHaveWorkPrize2/RigidBody2D" index="2"]
 self_modulate = Color(0.3886, 0.67, 0.60434, 1)
 
 [node name="Label" parent="Balls/IHaveWorkPrize2/RigidBody2D/TopHalf/MarginContainer" index="0"]
 theme_override_font_sizes/normal_font_size = 18
-text = "[center] Gotta work"
+text = "[center]Gotta work"
 
 [node name="Date?Prize3" parent="Balls" instance=ExtResource("3_yl31y")]
 position = Vector2(286, -38)
@@ -231,9 +229,6 @@ prize_tracker_name = "Date?Date"
 theme_override_font_sizes/normal_font_size = 18
 text = "[center] Erm... Date?"
 scroll_active = false
-
-[node name="BottomHalf" parent="Balls/Date?Prize3/RigidBody2D" index="2"]
-self_modulate = Color(0.878431, 0.47451, 0, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(6, 13)

@@ -16,7 +16,6 @@ script = ExtResource("2_qe20g")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Right"]
 position = Vector2(0.999985, -374)
-scale = Vector2(1, 1)
 texture = ExtResource("4_skbuv")
 
 [node name="RightSide" type="CollisionPolygon2D" parent="Right"]
