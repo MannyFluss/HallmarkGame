@@ -179,6 +179,24 @@
 "scale": 2.0,
 "scene": ""
 },
+"front/casual/mistletoe/neutral": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/casual/N_Neutral_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(300, 250),
+"scale": 1.2,
+"scene": ""
+},
+"front/casual/mistletoe/shocked": {
+"export_overrides": {
+"image": "\"res://art/sprites/nico/front/casual/N_Shocked_C_F.PNG\""
+},
+"mirror": false,
+"offset": Vector2(300, 250),
+"scale": 1.2,
+"scene": ""
+},
 "front/casual/neutral": {
 "export_overrides": {
 "image": "\"res://art/sprites/nico/front/casual/N_Neutral_C_F.PNG\""
@@ -212,7 +230,7 @@
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "front/work/blush2": {

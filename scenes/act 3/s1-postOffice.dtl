@@ -1,4 +1,3 @@
-jump outside
 [music path="res://audio/music/sad christmas.mp3" fade="2.0" volume="0.0"]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine

@@ -1,71 +1,116 @@
 [background arg="res://art/backgrounds/Date1.PNG" fade="1.0"]
-join christine (front/casual/happy) pos=x0.35
-join nico (front/casual/neutral) pos=x0.65
+join christine (front/casual/mistletoe/neutral) center [animation="Fade In"]
+join nico (front/casual/mistletoe/neutral) center [animation="Fade In"]
 [i]Light snow falls around us as we take our regular nighttime stroll.
+update christine (front/casual/mistletoe/happy)
 {mc}\: You know, I actually wrote a letter to Santa this year.
+update nico (front/casual/mistletoe/shocked) [animation="Bounce"]
 {n}\: Whaaaaat? Really?
+join christine (34/casual/blush) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+join nico (back/casual) pos=x0.68y1.1 size=y1.2 [length="0.0" z_index="20"]
 {mc}\: Yeah… Pretty embarrassing, I know.
+update christine (34/casual/neutral)
 {n}\: Not at all! So… what did you ask for?
+update christine (34/casual/happy)
 {mc}\: I said I wanted {gimme}.
+update christine (34/casual/neutral)
 {n}\: <Great choice!/Interesting choice.../Oh!/So do I!/Classic!/I've never thought of that before./If I were you I'd keep that to myself.>
 
+update christine (34/casual/sad)
 {mc}\: Well… what I said I [i]really[/i] wanted is a sense of purpose.
 {mc}\: Lately I’ve just been so unfulfilled. My life is just my career, and my career is just “how can we best exploit children and take all their money.”
 {mc}\: Honestly, all I really want to do is… No, it’s stupid.
+update nico (34/casual/happy) pos=x0.5y1 size=y1 [animation="Bounce"]
+update christine (back/casual) pos=x0.5y1 size=y1
 {n}\: What?! You can’t just stop now! Tell me!
-[sound path="res://Audio/SFX/male-sigh-6763.mp3" volume="0.0"]
 {mc}\: [i][sighs]
 {mc}\: I really just want to be a toymaker.
+update nico [animation="Bounce"]
 {n}\: !
 {mc}\: Weird, I know.
 {n}\: No, I think that’s really cool! What kind of toys do you want to make?
 {mc}\: Ha, thanks. Any kind really! I have so many ideas...
+join christine (34/casual/neutral) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+join nico (back/casual) pos=x0.68y1.1 size=y1.2 [length="0.0" z_index="20"]
 {mc}\: You know, I naively thought that claw machines could be the bridge to take me there, since they’re made for kids.
+update christine (34/casual/sad)
 {mc}\: But the claw machine industry… it’s so corrupt…
+update christine (34/casual/happy)
 {mc}\: Maybe I should’ve asked Santa for a job instead!
 [sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
+update nico [animation="Bounce"]
+update christine (34/casual/neutral)
 {n}\: [i][laughs]
 {n}\: Let’s say Santa just gave you full control of the workshop, what’s the first thing you’re making?
+leave nico
+join christine (34/casual/sad) center
 {mc}\: Hmmm, let’s see…
 
 - A fuzzy creature
+	join christine (front/casual/headshot/neutral) center
 	{mc}\: Kids are drawn to strange and uncanny things, right?
+	update christine (front/casual/headshot/happy)
 	{mc}\: So why not give them one they can treat as a little pet?
+	update christine [animation="Bounce"]
 	{mc}\: Oh, and they've [i]got[/i] to make noises. And turn on randomly in the middle of the night!
+	join christine (34/casual/neutral) center
 	{mc}\: And for design, it should look like a weird owl or hamster hybrid, but like super creepy!
+	update christine (34/casual/happy)
 	{mc}\: I'd call it, the Purby!
 - Versatile video game console
+	join christine (front/casual/headshot/neutral) center
 	{mc}\: You know, since they came out with the Microvision in recent years, handheld video games have gotten more popular.
+	update christine (front/casual/headshot/happy)
 	{mc}\: Why not have one that you can attach to your home console?
+	join christine (34/casual/neutral) center
 	{mc}\: That way, you can take your games on the go [i]and[/i] play comfortably at home! And you'd have access to your save files no matter where you are!
+	update christine (34/casual/happy)
 	{mc}\: I'd call it, the Swish!
+
+join christine (34/casual/happy) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+join nico (back/casual) pos=x0.68y1.1 size=y1.2 [length="0.0" z_index="20"]
 {n}\: …
+update christine (34/casual/neutral)
 {mc}\: What? You don't like my idea?
+leave christine [animation="Fade Out"]
+join nico (front/casual/headshot/blush) center
 {n}\: No, it’s just… your eyes… right now they’re just [i][b]sparkling.
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
 {mc}\: ?!
+update nico (front/casual/headshot/blush 2)
 {n}\: Haha, sorry… Ignore me…
 {mc}\: No, um… Thank you.
-[wait_input]
 
 # insert kiss scene???
-
+join nico (34/casual/blush) pos=x0.5y1 size=y1
+join christine (back/casual) pos=x0.5y1 size=y1
 {n}\: Here, I want you to have this.
 [i]He pulls out a cassette tape with a red ribbon tied around it.
+update christine [animation="Bounce"]
 {mc}\: You made me a mixtape?! How long did this take you?
+join christine (34/casual/blush) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
+join nico (back/casual) pos=x0.68y1.1 size=y1.2 [length="0.0" z_index="20"]
 [i]On the front of the tape it reads, "for {name.first}" with two badly drawn snowmen holding hands.
+update christine (34/casual/neutral)
 [i]He taped the song list to the otherside, and my breath catches when I read the first track.
+update christine [animation="Bounce"]
 {mc}\: [i]{fav.song}[/i]?! That’s my favorite Christmas song!
 [sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
+join nico (34/casual/happy) pos=x0.5y1 size=y1
+join christine (back/casual) pos=x0.5y1 size=y1
 {n}\: [i][laughs][/i]
 {n}\: That’s why I added it.
 {n}\: I know you’re planning to go back to the big city soon, so when you’re there, you can listen to this tape and remember your time here.
+update nico (34/casual/blush)
 {n}\: And hopefully remember me too…
 {mc}\: Nico…
 # shows mistletoe
 # option to smooch
 {mc}\: Thank you.
 
-# kiss smooch
+[background arg="res://art/backgrounds/black.png" fade="1.0"]
+[wait time="0.5"]
+leave --All-- [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
 jump s1-postOffice/
 [end_timeline]
