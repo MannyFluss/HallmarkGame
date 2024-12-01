@@ -30,8 +30,8 @@ texture = ExtResource("3_3wovv")
 [node name="LetterToScroll" type="Node2D" parent="."]
 
 [node name="Letter" type="Sprite2D" parent="LetterToScroll"]
-position = Vector2(960, 1080)
-scale = Vector2(0.69, 0.69)
+position = Vector2(954, 1006)
+scale = Vector2(0.539336, 0.539336)
 texture = ExtResource("2_q8x45")
 
 [node name="Control" type="Control" parent="LetterToScroll/Letter"]
@@ -57,6 +57,7 @@ theme_override_constants/margin_left = 200
 theme_override_constants/margin_top = 300
 theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 300
+metadata/_edit_use_anchors_ = true
 
 [node name="AllOfTheText" type="RichTextLabel" parent="LetterToScroll/Letter/Control/MarginContainer"]
 unique_name_in_owner = true

@@ -7,12 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://dcj1fh1821ttr" path="res://CraneGame/CranePrize/CranePrize.tscn" id="6_ip5yg"]
 [ext_resource type="Texture2D" uid="uid://cx5rb2uvvrukc" path="res://Ballz/Ball3.PNG" id="6_ljaxv"]
 [ext_resource type="Texture2D" uid="uid://c20i2df8e88vd" path="res://Ballz/Ball5.PNG" id="6_luu6f"]
-[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://Audio/Music/CraneGame_1.mp3" id="7_3f2vq"]
-[ext_resource type="Texture2D" uid="uid://0gikotte7yan" path="res://scenes/act 1/IMG_6454.png" id="7_ongo5"]
+[ext_resource type="AudioStream" uid="uid://bc0swuoevutma" path="res://audio/music/CraneGame_1.mp3" id="7_3f2vq"]
 [ext_resource type="Texture2D" uid="uid://dib5difwvuv04" path="res://art/backgrounds/IMG_6499.PNG" id="7_r6ksp"]
 [ext_resource type="Texture2D" uid="uid://luxncrsa7yaq" path="res://Ballz/Ball8.PNG" id="7_xiieh"]
 [ext_resource type="Texture2D" uid="uid://dhj1hmtneumh0" path="res://Ballz/Ball6.PNG" id="9_83307"]
 [ext_resource type="Texture2D" uid="uid://0edltxs52bc4" path="res://Ballz/Ball7.PNG" id="10_xmkkw"]
+[ext_resource type="Texture2D" uid="uid://c70cayaseqxgh" path="res://art/Credits/VHS.png" id="11_mq43p"]
 
 [sub_resource type="Animation" id="Animation_h7mxn"]
 length = 0.001
@@ -243,9 +243,9 @@ libraries = {
 [node name="Credits" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 z_index = 1665
-position = Vector2(617.25, 424.64)
-scale = Vector2(0.247, 0.247)
-texture = ExtResource("7_ongo5")
+position = Vector2(616.317, 440.495)
+scale = Vector2(0.325009, 0.325009)
+texture = ExtResource("11_mq43p")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_3f2vq")
