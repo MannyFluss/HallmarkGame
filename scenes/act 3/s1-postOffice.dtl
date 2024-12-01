@@ -1,3 +1,4 @@
+jump outside
 [music path="res://audio/music/sad christmas.mp3" fade="2.0" volume="0.0"]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 leave christine
@@ -8,44 +9,57 @@ leave nico
 [sound path="res://Audio/SFX/Store Door Sound Effect.mp3" volume="6.0"]
 [i][door chime jingles]
 [background arg="res://art/backgrounds/CozyPostOffice.PNG" fade="1.0"]
-join christine (front/casual/happy) center [animation="Fade In"]
+join christine (34/casual/neutral) center [animation="Fade In"]
 [i]Today, I finally decided to stop by with some {fav.drink}, his favorite.[/i]
 [i]He’s always so generous and thoughtful with me, so I wanted to return the favor.[/i]
 # he’s a good gift giver 
+update christine (34/casual/sad)
 [i]But honestly more than that… I miss him.[/i]
-join christine (front/casual/blush) center
+join christine (front/casual/headshot/neutral) center
 # [i]And I want to understand what that night under the mistletoe meant.[/i]
+update christine
 [i]I look around the post office, setting the cup on a table near the center of the room.[/i]
+update christine (front/casual/headshot/happy)
 {mc}\: Hello? Nico?
+update christine (front/casual/headshot/neutral)
 [i]The post office is empty, like the first time I visited.[/i]
-join christine (front/casual/sad) center
+join christine (34/casual/sad) center
 [i]I remember when we first met, I was so cold to him.[/i]
+update christine (34/casual/neutral)
 [i]But somehow, over this short holiday, we’ve gotten so close.[/i]
-join christine (front/casual/happy) center [animation="Fade In"]
+update christine (34/casual/happy) center
 [i]I’ve never met someone so joyful and warm.[/i]
+join christine (front/casual/headshot/blush) center
 [i]It doesn’t take long to see how much the people of this small town love him.[/i]
 [i]How much I think that I too might actually…[/i]
 join christine (front/casual/blush) center [animation="Fade In"]
 [i]Love him??![/i]
+update christine (front/casual/blush) [animation="Tada"]
 [i]Frantic with this newfound revelation, I swing my arms around and almost knock over the cup.[/i]
+label reveal
 join christine (side/casual/neutral) center [animation="Fade In"]
 [i]Steadying it, I notice a small maroon journal sitting on the table with a title scrawled on in sharpie\:[/i]
 [i]Nico’s Notebook[/i]
+update christine (side/casual/blush) center
 [i]Of course he’s the type of guy who journals, that’s just like him.[/i]
-join christine (side/casual/happy) center [animation="Fade In"]
 [i]…I kinda want to take a peek.[/i]
 
 - Pick it up
+	join christine (front/casual/headshot/happy) center
 	[i]Unable to resist, I pick up the notebook, and open to the first page.[/i]
 	join christine (front/casual/happy) center [animation="Fade In"]
 	[i]Smiling to myself, I begin to read.[/i]
 - Leave it alone
+	update christine (side/casual/neutral)
 	[i]I decide it’s better to respect Nico’s privacy and leave the notebook alone.[/i]
 	[i]I pick it up to put it safely behind the counter, when I trip over a fold in the rug and drop it.[i]
+	leave christine [animation="Slide Out Down"]
 	[i]It lands open to a blank black page.[/i]
 	# #{mc}\: That’s strange, I’ve never seen a notebook with black pages before.
+	join christine (front/casual/headshot/neutral) center
 	[i]I pick it up off the floor and quickly realize that it’s not a black page…[/i]
 	[music fade="0.0" volume="0.0"]
+	join christine (front/casual/sad) center
 	[i]It’s ink.[/i]
 [background arg="res://art/backgrounds/Scary Post Office.PNG" fade="3.0"]
 [music path="res://audio/music/Last_call_v2.mp3" fade="1.0" volume="0.0"]
@@ -58,88 +72,123 @@ join christine (front/casual/sad) center [animation="Fade In"]
 [i]Names upon names are scribbled in the tiniest font, leaving barely a hint of any white space left.[/i]
 [i]I frantically search for a name that I recognize…[/i]
 [i]And I find my own.[/i]
+join christine (front/casual/headshot/sad) center
 [sound path="res://Audio/SFX/eerie-scrape-220190.mp3" volume="-3.0"]
 {name.first} {name.last}
 [i]There’s a number in parentheses to the right of my name, and I quickly flip to the page.[/i]
 [i]Black ink seeps into almost every corner. The words are barely legible, but I can still make out the phrases\:[/i]
+join christine (34/casual/sad) center
 {name.first} {name.last}\:
 Favorite cookie\: {fav.cookie}, favorite drink\: {fav.drink}...
 Favorite Christmas song\: {fav.song}...
 The list continues on…
+join christine (front/casual/headshot/sad) center [animation="Fade In"]
 [i]My likes, dislikes, my place of work, all the cities I’ve ever lived, life milestones, life tragedies, things that even my mother doesn’t know…[/i]
-join christine (front/casual/angry) center [animation="Fade In"]
+join christine (front/casual/sad) center
 {mc}\: What the fuck…
 {n}\: {name.first} is that you?
-join nico (front/casual/happy) rightmost
+leave christine
+label nico appears
+join nico (front/work/happy) center
 {n}\: What are you doing here?
+join nico (front/work/headshot/sad) center
 # #NICOS FACE FALLS
-update nico (front/casual/sad) rightmost
 [wait_input]
-update nico right
 {n}\: You shouldn’t be reading that...
-update christine (front/casual/angry) left
+join nico (back/work) pos=x0.5y1.1 size=y1.2 [animation="Fade In" z_index="20"]
+join christine (34/casual/angry) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
 {mc}\: Nico… what is this?
 # #does he take the book away? I’ll say no for now
+update christine (back/casual) center [animation="Instant In" z_index="20"]
+update nico (34/work/sad) center [animation="Instant In" z_index="-10"]
 {n}\: It’s nothing.
+update christine (34/casual/angry) pos=x0.42y1.05 [animation="Instant In" z_index="-10"]
+update nico (back/work) pos=x0.5y1.1 size=y1.2 [animation="Instant In" z_index="20"]
 {mc}\: Nico… tell me what this is.
 # #Nico is silent, looking worried
 {mc}\: How do you know so much about me?
+update christine [animation="Heartbeat"]
 {mc}\: And, who are all these people?!
+update christine (back/casual) center [animation="Instant In" z_index="20"]
+update nico (34/work/sad) center [animation="Instant In" z_index="-10"]
 {n}\: …
+update christine (34/casual/angry) pos=x0.42y1.05 [animation="Instant In" z_index="-10"]
+update nico (back/work) pos=x0.5y1.1 size=y1.2 [animation="Instant In" z_index="20"]
 {mc}\: Nico, answer me!
+update christine (back/casual) center [animation="Instant In" z_index="20"]
+update nico (34/work/sad) center [animation="Instant In" z_index="-10"]
 {n}\: …I’ll tell you but promise not to freak out.
+update christine (34/casual/angry) pos=x0.42y1.05 [animation="Instant In" z_index="-10"]
+update nico (back/work) pos=x0.5y1.1 size=y1.2 [animation="Instant In" z_index="20"]
 {mc}\: I’m already freaking out!
 # #{mc}\:I don’t know if you could say [i]anything[/i] to make this situation worse!!
-update nico (front/casual/shocked) rightmost
+update christine (back/casual) center [animation="Instant In" z_index="20"]
+update nico (34/work/sad) center [animation="Bounce" z_index="-10"]
 {n}\: {name.first}, stay calm!
-update nico (front/casual/sad) rightmost
+update christine (34/casual/angry) pos=x0.42y1.05 [animation="Instant In" z_index="-10"]
+update nico (back/work) pos=x0.5y1.1 size=y1.2 [animation="Instant In" z_index="20"]
 {mc}\: You expect me to stay calm in this situation?!?!
 # #{n}\: You have a right to be upset, but-
 # #{mc}\: Just get to the point.
+leave christine
+join nico (front/work/sad) center
 {n}\: I-
+join nico (front/work/headshot/sad) center
 {n}\: [i][sighs]
 [wait_input]
 [music fade="0.5" volume="0.0"]
-update nico (front/casual/neutral) rightmost
 {n}\: I’m Santa Claus.
 [wait_input]
-join christine (front/casual/angry) leftmost
+leave nico [animation="Fade Out"]
+join christine (front/casual/headshot/angry) center
 {mc}\: Nico, what the fuck…
+join christine (side/casual/angry) pos=x0.4y1 size=y0.8
+join nico (side/work/sad) right
 {n}\: I swear!
-join nico (front/casual/shocked) rightmost
+join nico (side/work/sad) pos=x0.65
 {n}\: Nico, Nicolas! St Nick? Nicolas Claus?
-update nico (front/casual/neutral) rightmost
-update christine (front/casual/neutral) rightmost
+join christine (side/casual/sad) pos=x0.3
 {mc}\: ...
-update christine (front/casual/angry) rightmost
 {mc}\: I'm leaving.
-leave christine
-leave nico
+leave christine [animation="Slide Out Right" length="1.0"]
 {n}\: {name.first}, wait!
+leave nico [animation="Fade Out" wait="true"]
 # she leaves
 # #change bg
+label outside
 [music path="res://audio/music/sad christmas.mp3" fade="0.5" volume="0.0"]
 [background arg="res://art/backgrounds/DoYouTrustME.PNG" fade="1.0"]
 
 [wait time="1.0"]
-join christine (front/casual/sad) right
+join christine (side/casual/sad) pos=x0.4y1 size=y0.8 [mirrored="true"]
 [wait_input]
-join nico (front/casual/sad) left
+join nico (side/work/sad) right
 {n}\: Please listen to me! I swear I'm telling the truth!!
+leave christine
+join nico (front/work/headshot/sad) center
 {n}\: I work at the post office because it’s my job to deliver presents!!
+update nico (front/work/headshot/shocked)
 {n}\: Did you really think Santa could give out all those presents in just one night??! That’s impossible!!!
+update nico [animation="Bounce"]
 {n}\: [i]That’s[/i] why I know so much about you!
 {n}\: That’s why I have this book!
+update nico (front/work/headshot/sad)
 {n}\: And… I need you to know that I’m only telling you this because you mean so much to me.
-{n}\: I didn’t- I didn’t expect to feel this way about you.
+update nico (front/work/headshot/blush)
 {n}\: I knew you were going through a rough time, and I just wanted to bring you some holiday cheer when we first met.
+join nico (34/work/sad) center
+join christine (back/casual) center
 {n}\: But somewhere along the way…
 [music path="res://audio/music/hallmarkRomantic_2.mp3" fade="1.0" volume="0.0"]
+update nico (34/work/blush) center
 {n}\: I fell in love with you…
 # #MC: silent eyes shaking omg thoughts grappling
+leave nico
+join christine (front/casual/sad) center
 {mc}\: Nico…
 [i]WHAT SHOULD I SAY???
-join christine (front/work/neutral) pos=-y6.3 size=y6.9
+[music fade="1.0" volume="0.0"]
+join christine (front/casual/sad) pos=-y6.3 size=y6.9
 do SceneSwitcher.SwitchScene("res://CraneGame/CraneGameAcceptSanta/CraneGameAcceptSanta.tscn")
 [wait time="0.1"]
 [end_timeline]

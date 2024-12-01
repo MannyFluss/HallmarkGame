@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://scenes/Act3.1/act_3_1.gd" id="1_q0llv"]
 
 [node name="Act31" type="Node2D"]
+visible = false
 script = ExtResource("1_q0llv")
