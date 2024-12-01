@@ -37,7 +37,6 @@ update christine (34/casual/sad)
 {mc}\: But the claw machine industry… it’s so corrupt…
 update christine (34/casual/happy)
 {mc}\: Maybe I should’ve asked Santa for a job instead!
-[sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
 update nico [animation="Bounce"]
 update christine (34/casual/neutral)
 {n}\: [i][laughs]
@@ -91,11 +90,9 @@ update christine [animation="Bounce"]
 join christine (34/casual/blush) pos=x0.42y1.05 [animation="Fade In" z_index="-10"]
 join nico (back/casual) pos=x0.68y1.1 size=y1.2 [length="0.0" z_index="20"]
 [i]On the front of the tape it reads, "for {name.first}" with two badly drawn snowmen holding hands.
-update christine (34/casual/neutral)
 [i]He taped the song list to the otherside, and my breath catches when I read the first track.
 update christine [animation="Bounce"]
 {mc}\: [i]{fav.song}[/i]?! That’s my favorite Christmas song!
-[sound path="res://Audio/SFX/laugh-105488.mp3" volume="6.0"]
 join nico (34/casual/happy) pos=x0.5y1 size=y1
 join christine (back/casual) pos=x0.5y1 size=y1
 {n}\: [i][laughs][/i]

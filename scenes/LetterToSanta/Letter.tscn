@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://ct014ypitk3xt"]
+[gd_scene load_steps=12 format=3 uid="uid://ct014ypitk3xt"]
 
 [ext_resource type="Script" path="res://scenes/LetterToSanta/SantasLetter.gd" id="1_gxd5f"]
+[ext_resource type="Texture2D" uid="uid://phtinodl2ukr" path="res://art/backgrounds/wood.png" id="2_a1wkc"]
 [ext_resource type="Texture2D" uid="uid://70fgwlwdntir" path="res://scenes/LetterToSanta/Letter paper.PNG" id="2_o7eke"]
 [ext_resource type="Texture2D" uid="uid://cpwi08xvr1w0a" path="res://scenes/LetterToSanta/letterupdated.png" id="2_q8x45"]
-[ext_resource type="Texture2D" uid="uid://cfgjhs1iifae7" path="res://art/backgrounds/IMG_6478.png" id="2_rif7k"]
+[ext_resource type="Texture2D" uid="uid://b3kdbqj8hix7f" path="res://art/UI/hot_bars.png" id="3_3wovv"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_mfclv"]
 [ext_resource type="Texture2D" uid="uid://bqp2m3f7u2u7x" path="res://scenes/LetterToSanta/ArrowStroke.png" id="6_tjaux"]
 [ext_resource type="Texture2D" uid="uid://87edqsestmh7" path="res://scenes/LetterToSanta/Arrow.png" id="7_ujbc4"]
@@ -20,7 +21,11 @@ script = ExtResource("1_gxd5f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("2_rif7k")
+texture = ExtResource("2_a1wkc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("3_3wovv")
 
 [node name="LetterToScroll" type="Node2D" parent="."]
 

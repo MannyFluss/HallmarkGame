@@ -1,12 +1,12 @@
 [music path="res://audio/music/hallmarkGeneric.mp3" fade="1.0" volume="0.0"]
 [background arg="res://art/backgrounds/black.png" fade="1.0"]
 [i]Nico and I begin to spend every free moment we can together.
-[background arg="res://scenes/act 2/Montage pics/Date2.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/Date2.PNG" fade="1.0"]
 
 [i]He shows me how to make the perfect gingerbread house.
-[background arg="res://scenes/act 2/Montage pics/Date3.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/Date3.PNG" fade="1.0"]
 [i]I show him the tricks to winning a prize from the claw machine [b][i]every [pause=0.3]time.
-[background arg="res://scenes/act 2/Montage pics/Date4.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/Date4.PNG" fade="1.0"]
 [i]We cover the town in an army of snowmen.
 [background arg="res://scenes/act 2/Montage pics/DateMontage.PNG" fade="1.0"]
 [i]And every day, we end the night by walking around town, looking at the Christmas lights, and swapping stories.

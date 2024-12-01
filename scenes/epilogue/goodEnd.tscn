@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://crf0pru8ia0qf"]
 
-[ext_resource type="Texture2D" uid="uid://cmtb5qq2px6ij" path="res://art/backgrounds/wood.PNG" id="1_hiwww"]
+[ext_resource type="Texture2D" uid="uid://phtinodl2ukr" path="res://art/backgrounds/wood.PNG" id="1_hiwww"]
 [ext_resource type="Texture2D" uid="uid://cpwi08xvr1w0a" path="res://scenes/LetterToSanta/letterupdated.png" id="2_mmr66"]
 [ext_resource type="FontFile" uid="uid://glrx4kohpuvf" path="res://Fonts/Jojoba.otf" id="3_83njm"]
 [ext_resource type="Script" path="res://scenes/epilogue/name.gd" id="3_82100"]

@@ -1,4 +1,3 @@
-
 join christine (front/casual/neutral) pos=x0.35
 join nico (front/casual/neutral) pos=x0.65
 [i]An awkward air settles between us, but it’s interrupted by a bell tolling in the distance.[/i]
@@ -57,7 +56,6 @@ leave nico [animation="Fade Out"]
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
 join christine (34/casual/blush) center
 {mc}\: You didn’t have to do that… but thank you.
-[sound path="res://Audio/SFX/drink-sip-and-swallow-6974.mp3" volume="0.0"]
 join christine (front/casual/neutral) pos=x0.35
 join nico (front/casual/neutral) pos=x0.65
 [i]We begin to explore the market together, drinks in hand, and I take a sip out of mine.
