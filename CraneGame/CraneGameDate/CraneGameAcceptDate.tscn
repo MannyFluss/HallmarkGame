@@ -17,19 +17,19 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oq7s5"]
 shader = ExtResource("7_its67")
 shader_parameter/overlay = true
-shader_parameter/scanlines_opacity = 0.154
+shader_parameter/scanlines_opacity = 0.0
 shader_parameter/scanlines_width = 0.0
-shader_parameter/grille_opacity = 0.313
+shader_parameter/grille_opacity = 0.0
 shader_parameter/resolution = Vector2(640, 480)
 shader_parameter/pixelate = true
 shader_parameter/roll = false
 shader_parameter/roll_speed = 7.72
-shader_parameter/roll_size = 43.667
-shader_parameter/roll_variation = 1.8
-shader_parameter/distort_intensity = 0.05
-shader_parameter/noise_opacity = 0.4
+shader_parameter/roll_size = 0.0
+shader_parameter/roll_variation = 0.1
+shader_parameter/distort_intensity = 0.0
+shader_parameter/noise_opacity = 0.0
 shader_parameter/noise_speed = 5.0
-shader_parameter/static_noise_intensity = 0.06
+shader_parameter/static_noise_intensity = 0.0
 shader_parameter/aberration = 0.00300005
 shader_parameter/brightness = 1.34
 shader_parameter/discolor = true
@@ -265,6 +265,7 @@ mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Sprite2D/CanvasLayer/Control"]
+visible = false
 material = SubResource("ShaderMaterial_oq7s5")
 layout_mode = 1
 anchors_preset = 15
@@ -275,6 +276,7 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D2" type="Camera2D" parent="."]
+visible = false
 
 [node name="Attempts Text" type="RichTextLabel" parent="."]
 offset_left = 318.0
