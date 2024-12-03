@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8v26ubyouorc"
-path="res://.godot/imported/DateMontage.PNG-7cce2feb6aac46db1484d42c6bc6d066.ctex"
+path="res://.godot/imported/DateMontage.png-7945abbde5a04857107ce33fe7195a31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/backgrounds/DateMontage.PNG"
-dest_files=["res://.godot/imported/DateMontage.PNG-7cce2feb6aac46db1484d42c6bc6d066.ctex"]
+source_file="res://art/backgrounds/DateMontage.png"
+dest_files=["res://.godot/imported/DateMontage.png-7945abbde5a04857107ce33fe7195a31.ctex"]
 
 [params]
 

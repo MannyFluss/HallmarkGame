@@ -53,7 +53,7 @@ join christine (front/work/headshot/neutral) center
 update christine (front/work/headshot/happy)
 [i]Why not…[/i]
 update christine (front/work/headshot/neutral)
-[sound path="res://Audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
+[sound path="res://audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
 
 [i]I give $5 to the strange elf man, grab one of the themed letter sheets, and sit down to write.[/i]
 do SceneSwitcher.SwitchScene("res://scenes/LetterToSanta/Letter.tscn")

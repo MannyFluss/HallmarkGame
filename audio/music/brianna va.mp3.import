@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ddpfci6owow50"
-path="res://.godot/imported/brianna va.mp3-f3603e4e231ea6f379ed15de166643f4.mp3str"
+path="res://.godot/imported/brianna va.mp3-2341b991d079f74be256234b64d544eb.mp3str"
 
 [deps]
 
-source_file="res://Audio/Music/brianna va.mp3"
-dest_files=["res://.godot/imported/brianna va.mp3-f3603e4e231ea6f379ed15de166643f4.mp3str"]
+source_file="res://audio/music/brianna va.mp3"
+dest_files=["res://.godot/imported/brianna va.mp3-2341b991d079f74be256234b64d544eb.mp3str"]
 
 [params]
 

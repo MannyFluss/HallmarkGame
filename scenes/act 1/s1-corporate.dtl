@@ -7,7 +7,7 @@ As you can see, the new state of the art model works like a charm!
 Simply by adjusting the settings, we can now control the dropping skill and claw strength of the crane.
 The power is in [i]your own hands[/i] to control the odds!
 update christine (34/work/neutral)
-[sound path="res://Audio/SFX/Golf clap sound Effect.mp3" volume="6.0"]
+[sound path="res://audio/SFX/Golf clap sound Effect.mp3" volume="6.0"]
 [i][applause][/i]
 update christine (34/work/happy)
 Furthermore, I’m delighted to announce an upcoming partnership with the beloved pizza chain Koko’s.
@@ -18,7 +18,7 @@ Kids will be lining up around the block to get a chance for their very own Koko!
 This partnership is expected to drive overall revenue through increasing the number of players playing, the time spent playing, and the capital users are willing to invest.
 We estimate that by the end of this fiscal year, we will see a 150% growth in our profits.
 update christine (front/work/headshot/neutral)
-[sound path="res://Audio/SFX/Clapping Sound Effects.mp3" volume="0.0"]
+[sound path="res://audio/SFX/Clapping Sound Effects.mp3" volume="0.0"]
 [i][loud applause][/i]
 MR. FLUSS\: Wonderful job yet again!
 MISS MONICA\: The shareholders are going to love this.
@@ -39,7 +39,7 @@ No, he makes a great point. Thank you for your question.
 	But I’d like to ask you a question in return.
 	update christine (front/work/headshot/angry)
 	When you buy a lottery ticket, are you genuinely expecting to win?
-	[sound path="res://Audio/SFX/People Talking - Sound Effect.mp3" volume="-6.0"]
+	[sound path="res://audio/SFX/People Talking - Sound Effect.mp3" volume="-6.0"]
 	[i][inquisitive muttering][/i]
 	update christine (front/work/headshot/happy)
 	No! You’re buying it for the fantasy.
@@ -55,7 +55,7 @@ No, he makes a great point. Thank you for your question.
 	It’s not like these machines are [i]impossible![/i]
 	update christine (front/work/headshot/neutral)
 	MR. FLUSS\: Just rigged!
-	[sound path="res://Audio/SFX/laugh-105488.mp3" volume="0.0"]
+	[sound path="res://audio/SFX/laugh-105488.mp3" volume="0.0"]
 	[i][laughter][/i]
 join christine (34/work/neutral) center
 

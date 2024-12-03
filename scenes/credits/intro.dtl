@@ -1,3 +1,4 @@
+[style name="subtitles"]
 [music fade="2.0" volume="0.0"]
 [background arg="res://art/Logo/Blank.PNG" fade="0.0"]
 [wait time="1.5"]

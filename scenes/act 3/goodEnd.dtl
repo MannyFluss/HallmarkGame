@@ -1,6 +1,6 @@
 [background arg="res://art/backgrounds/black.png" fade="0.0"]
 [wait time="1.0"]
-[background arg="res://art/backgrounds/wood.PNG" fade="1.0"]
+[background arg="res://art/backgrounds/wood.png" fade="1.0"]
 join goodEndLetter pos=x0.5y0.85 rot=-4 [animation="Slide In Up" length="3.0"]
 [wait time="2.0"]
 [wait_input]

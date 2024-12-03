@@ -50,7 +50,7 @@ update christine (front/casual/blush)
 join nico (front/casual/happy) pos=x0.6 [z_index="20"]
 {n}\: In that case, I’ll pay for her drink then.
 {n}\: Two cups of {fav.drink} please.
-[sound path="res://Audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
+[sound path="res://audio/SFX/cash-register-kaching-sound-effect-125042.mp3" volume="-6.0"]
 leave christine [animation="Fade Out"]
 leave nico [animation="Fade Out"]
 [i]Nico pays the barista and we step off to the side while we wait.[/i]
@@ -71,7 +71,7 @@ label fight
 [music fade="0.0" volume="0.0"]
 leave nico [animation="Slide Out Left" length="2.0"]
 # #NICO GETS KNOCKED OFF THE SCREEN
-[sound path="res://Audio/SFX/vine-boom.mp3" volume="0.0"]
+[sound path="res://audio/SFX/vine-boom.mp3" volume="0.0"]
 [i][b][THUD]
 update christine (front/casual/sad)
 GUY WHO LOOKS LIKE A BIFF\: Hey, [b]WATCH IT!
